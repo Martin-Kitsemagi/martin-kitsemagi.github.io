@@ -122,7 +122,7 @@ function headerBubbles() {
 			var radius = Math.floor(Math.random() * (radius_max - radius_min)) + radius_min;
 			
 			var x = Math.floor(Math.random() * (canvas.width - radius));
-			var y = canvas.height + radius - 150;
+			var y = canvas.height + radius;
 			
 			var speed_min = 50;
 			var speed_max = 150;

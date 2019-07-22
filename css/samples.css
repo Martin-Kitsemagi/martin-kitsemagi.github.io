@@ -1,0 +1,15 @@
+.samples {
+	background-image: linear-gradient(#38455c, #2f3951);
+}
+
+#sample_the_cube .panel_link_background {
+	background: url(../images/scaled/sample_cube.jpg);
+}
+
+#sample_animal_park .panel_link_background {
+	background: url(../images/scaled/sample_animal_park.jpg);
+}
+
+#sample_gallery .panel_link_background {
+	background: url(../images/scaled/sample_gallery.jpg);
+}

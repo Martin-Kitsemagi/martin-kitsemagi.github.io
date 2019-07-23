@@ -75,20 +75,6 @@ a:hover {
 	color: #fe8b8b;
 }
 
-#page_nav .page_nav_lang_wrapper {
-	float: right;
-}
-
-#page_nav .page_nav_lang_wrapper .page_nav_lang {
-	color: #fe8b8b;
-}
-
-#page_nav .page_nav_lang_wrapper span {
-	float: left;
-	
-	color: #404f68;
-}
-
 #page_popup {
 	width: 32.5em;
 	padding: 1.5em 1em 1em 1.5em;
@@ -611,21 +597,6 @@ a:hover {
 		line-height: 3.25em;
 		color: #fafafa;
 		font-size: 1.15em;
-	}
-	
-	#page_nav .page_nav_lang_wrapper {
-		margin: 1em 0 0 1.5em;
-		float: none;
-	}
-	
-	#page_nav .page_nav_lang_wrapper .page_nav_element {
-		padding: 0.5em;
-	}
-	
-	#page_nav .page_nav_lang_wrapper span {
-		float: none;
-		
-		color: #fafafa;
 	}
 	
 	.header_nav_mobile_animate {

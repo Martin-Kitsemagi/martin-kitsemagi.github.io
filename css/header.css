@@ -54,9 +54,6 @@
 	height: 100%;
 	padding: 0 0.7em;
 	display: none;
-	position: relative;
-	right: 0;
-	float: right;
 }
 
 .header .header_nav .header_nav_mobile .header_nav_mobile_inner_wrapper {
@@ -65,8 +62,8 @@
 }
 
 .header .header_nav .header_nav_mobile .header_nav_mobile_inner_wrapper div {
-	width: 2.25em;
-	height: 0.225em;
+	width: 2.5em;
+	height: 0.275em;
 	margin: 0.475em 0;
 	
 	background-color: #404f68;

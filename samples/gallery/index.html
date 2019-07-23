@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head lang="et">
+	<title>Sample gallery</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no' />
+	
+	<link rel='icon' type="image/png" href="../../images/icon.png" />
+
+	<link href='Css/font-awesome-4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
+	
+	<link href='Css/main.css' rel='stylesheet' type='text/css'>
+	<link href='Css/top_nav.css' rel='stylesheet' type='text/css'>
+	<link href='Css/about.css' rel='stylesheet' type='text/css'>
+	<link href='Css/gallery.css' rel='stylesheet' type='text/css'>
+	<link href='Css/contact.css' rel='stylesheet' type='text/css'>
+	<link href='Css/footer.css' rel='stylesheet' type='text/css'>
+	
+	<link href='Css/to_top.css' rel='stylesheet' type='text/css'>
+
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	
+	<script src='Javascript/top_nav.js'></script>
+	<script src='Javascript/gallery.js'></script>
+	<script src='Javascript/contact.js'></script>
+</head>
+<body>
+	<div id='top_nav_wrapper' class='no_text_select'>
+		<a href='' id='top_nav_title'>
+			NIMI
+		</a>
+		
+		<div id='nav_hide_cover' onclick="closeNavDropdown('#top_nav_drop_button');"></div>
+		
+		<div id='top_nav_top_wrapper'>
+			<div id='top_nav_left_wrapper'>
+				<ul id='top_nav_n'>
+					<li onclick="scrollToElement('#about_wrapper')">MINUST</li>
+					<li onclick="scrollToElement('#gallery_main_wrapper')">GALERII</li>
+					<li onclick="scrollToElement('#contact_wrapper')">KONTAKT</li>
+				</ul>
+			</div>
+		
+			<div id='top_nav_right_wrapper'>		
+				<div id='top_nav_lang_wrapper'>
+					<span style='color:#FFFFFF;'>EST</span>
+					/
+					<span onclick="changePageLanguage('https://MartinKitsemagi.github.io/sample_gallery/en')">ENG</span>
+				</div>
+				
+				<span id='top_nav_drop_button'>
+					<i id='top_nav_drop_button_i' class='fa fa-bars' aria-hidden='true'></i>
+			
+					<ul id='top_nav_drop_button_l'>
+						<li onclick="scrollToElement('#about_wrapper')">MINUST</li>
+						<li onclick="scrollToElement('#gallery_main_wrapper')">GALERII</li>
+						<li onclick="scrollToElement('#contact_wrapper')">KONTAKT</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div id='gallery_full'>
+	</div>
+	<div id="page_wrapper">
+		<div id='about_wrapper'>
+			<div id='about_header_wrapper' class='no_text_select'>
+				<h1 class='header_title'>
+					MINUST
+				</h1>
+			</div>
+			<div id='about_content_wrapper' class='main_wrapper'>
+				<div class='inner_wrapper_two'>
+					<h2 class='no_text_select'>
+						Kes ma olen?
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis pulvinar sem. Nam at
+						laoreet eros. In vestibulum dapibus elit nec tempus. Aenean pretium arcu ut nisi efficitur,
+						et egestas massa molestie. Curabitur at commodo tortor. Integer faucibus facilisis nisl,
+						sed dignissim leo malesuada non. Integer eget dolor a turpis ornare malesuada sed et augue.
+						Nulla sapien dui, blandit et justo a, eleifend pharetra quam. Ut mollis, enim id suscipit aliquam,
+						ipsum lorem mattis lorem, eu dictum dui arcu non felis. Orci varius natoque penatibus et magnis
+						dis parturient montes, nascetur ridiculus mus. Ut vel auctor nunc, sit amet pretium magna.
+						Vestibulum ut nulla volutpat, consequat tellus auctor, tempus quam. Curabitur ultrices
+						interdum aliquam. Ut posuere justo est, sit amet ultricies ipsum convallis id. Aenean id dictum est.
+					</p>
+					<br>
+					<p>
+						Nulla a porttitor augue, vel sollicitudin est. Donec sed leo consequat, pellentesque urna pretium,
+						consequat nibh. Phasellus tincidunt nunc vel tempor imperdiet. Pellentesque sit amet eros ut erat
+						posuere sagittis id eget urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+						Suspendisse posuere nulla sed magna tempor, nec gravida massa vestibulum. Pellentesque
+						posuere sem condimentum interdum varius. Nullam quis risus imperdiet, bibendum ligula sit amet,
+						fermentum mi.
+					</p>
+					<br>
+					<p>
+						Sed sit amet vestibulum enim. Proin euismod purus eget convallis maximus. Cras auctor nunc id
+						malesuada maximus. Aenean urna mauris, lobortis et est in, pharetra tristique mi. Pellentesque
+						mollis tincidunt pharetra. Quisque imperdiet, erat a imperdiet mollis, ligula orci consequat est,
+						ac placerat tortor turpis et turpis. Mauris facilisis sem ut facilisis iaculis. Nulla commodo lacus
+						ac tellus imperdiet commodo. Nam feugiat tortor eget orci luctus fringilla. Proin non eros turpis.
+						Duis mollis tellus vel urna ultrices, sed tempor leo vulputate. Curabitur id lectus condimentum,
+						bibendum arcu vel, maximus dolor. Pellentesque lacinia eros arcu, et gravida tortor
+						fermentum eget. Mauris non nibh sem.
+					</p>
+				</div>
+				<div class='inner_wrapper_two'>
+					<h2 class='no_text_select'>
+						Millega ma tegelen
+					</h2>
+					<p>
+						Cras ultrices ultrices elit id molestie. Suspendisse risus nulla, auctor et erat ut, vehicula tempus
+						lorem. Integer blandit dui non luctus posuere. Proin at dolor feugiat, congue ligula sit amet,
+						condimentum neque. Sed venenatis rutrum aliquet. Pellentesque pharetra purus quis urna
+						laoreet, et egestas elit suscipit. Aliquam euismod pulvinar pharetra. Aenean tempor dui vel
+						libero interdum, vitae semper enim lobortis. Aenean faucibus porta lorem, et tempus dui
+						ullamcorper in. Maecenas accumsan justo id ex maximus accumsan. Mauris blandit gravida ex
+						ac congue. Ut ut augue leo.
+					</p>
+					
+					<div id='offer_wrapper'>
+						<h2 class='no_text_select'>
+							Mida ma pakun
+						</h2>
+						<span>
+							<i class='fa fa-camera' aria-hidden='true'></i>
+							<p>
+								Pildistamisteenused 25€/tund
+							</p>
+						</span>
+						<span>
+							<i class='fa fa-picture-o' aria-hidden='true'></i>
+							<p>
+								Piltide töötelmine 15€/tund
+							</p>
+						</span>
+						<span>
+							<i class='fa fa-file-image-o' aria-hidden='true'></i>
+							<p>
+								Piltide ilmutamine ning raamimine
+							</p>
+						</span>
+						<span style='font-size:15px'>
+							*Hinnakiri on paindlik ja võib muutuda vastavalt kokkuleppele
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id='gallery_main_wrapper'>
+			<h2 class='no_text_select'>
+				GALERII
+			</h2>
+			
+			<div id='gallery_nav_wrapper'>
+				<span title='Võre vaade' id='gallery_nav_grid_button'>
+					<i class='fa fa-th' aria-hidden='true'></i>
+				</span>
+				<span title='Foto vaade' id='gallery_nav_photo_button'>
+					<i class='fa fa-picture-o' aria-hidden='true'></i>
+				</span>
+			</div>
+			<div id='gallery_wrapper' class='no_text_select'>
+				<button id='gallery_next' onclick='galleryNext()'>
+					<i class='fa fa-angle-right' aria-hidden='true'></i>
+				</button>
+				<button id='gallery_previous' onclick='galleryPrevious()'>
+					<i class='fa fa-angle-left' aria-hidden='true'></i>
+				</button>
+				<div id='gallery_image_wrapper'>
+					<div id='gallery_img_0'></div>
+					<div id='gallery_img_1'></div>
+					<div id='gallery_img_2'></div>
+					<div id='gallery_img_3'></div>
+					<div id='gallery_img_4'></div>
+					<div id='gallery_img_5'></div>
+				</div>
+			</div>
+			
+			<div id='gallery_min_wrapper' class='main_wrapper'>
+				<div id='gallery_min_1' class='inner_wrapper_three'></div>
+				<div id='gallery_min_2' class='inner_wrapper_three'></div>
+				<div id='gallery_min_3' class='inner_wrapper_three'></div>
+				
+				<button id='gallery_min_load' onclick='loadMoreMinImages();blur();' class='no_text_select'>
+					Lae rohkem
+				</button>
+			</div>
+		</div>
+		
+		<div id='contact_popout' class='no_text_select'>
+			<p id='message_success'>
+				Teie teade on saadetud
+			</p>
+			
+			<p id='message_fail'>
+				Probleem teate saatmisel, proovi hiljem uuesti
+			</p>
+			
+			<button onclick='contactPopoutClose()'>
+				Sulge
+			</button>
+		</div>
+
+		<div id='contact_wrapper'>
+			<div id='contact_header_wrapper' class='no_text_select'>
+				<h1 class='header_title'>
+					KONTAKT
+				</h1>
+			</div>
+			<div id='contact_content_wrapper' class='main_wrapper'>
+				<div class='inner_wrapper_two'>
+					<h2 class='no_text_select'>
+						Jäta mulle teade
+					</h2>
+					
+					<form action='' onsubmit='return false;'>
+						<input id='contact_name' placeholder='Nimi' maxlength='100' tabindex='1' spellcheck='false' required></input>
+						<input id='contact_email' placeholder='Email' maxlength='100' tabindex='1' spellcheck='false' required></input>
+						<input id='contact_phone' placeholder='Telefon' maxlength='100' tabindex='1' spellcheck='false' onkeypress='onlyNumbers(event)' required></input>
+						<textarea id='contact_message' placeholder='Teade' maxlength='10000' tabindex='1' spellcheck='false' required></textarea>
+						
+						<button id='contact_button' class='no_text_select' onclick='messageSuccess()'>
+							Saada
+						</button>
+					</form>
+				</div>
+				<div class='inner_wrapper_two'>
+					<div id='contact_info_wrapper'>
+						<h2 class='no_text_select'>
+							Võta minuga ühendust
+						</h2>
+						
+						<span>
+							<i class='fa fa-mobile' aria-hidden='true' style='font-size:32px'></i>
+							<p>33 899 122</p>
+						</span>
+						<span>
+							<i class='fa fa-phone' aria-hidden='true' style='font-size:26x'></i>
+							<p>38 45 328</p>
+						</span>
+						<span>
+							<i class='fa fa-envelope' aria-hidden='true'></i>
+							<p>mina@mail.com</p>
+						</span>
+						
+						<p>
+							Olen kättesaadaval E-R (10:00-18:00)
+						</p>
+						
+						<h2 class='no_text_select'>
+							Jälgi mind
+						</h2>
+						
+						<span>
+							<a href='' title='Facebook'><i class='fa fa-facebook-square' aria-hidden='true'></i></a>
+							<a href='' title='Twitter'><i class='fa fa-twitter-square' aria-hidden='true'></i></i></a>
+							<a href='' title='Instagram'><i class='fa fa-instagram' aria-hidden='true'></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id='footer_wrapper'>
+			<p>
+				Nimi 2017
+			</p>
+		</div>
+		
+		<div id='to_top' title='Tagasi üles' onclick='scrollToTop()'>
+			<i class='fa fa-angle-up' aria-hidden='true'></i>
+		</div>
+	</div>
+</body>
+</html>

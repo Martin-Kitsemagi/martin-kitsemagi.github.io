@@ -1,0 +1,21 @@
+
+#footer_wrapper * {
+	color: #FFFFFF;
+}
+
+#footer_wrapper {
+	width: 100%;
+	min-height: 100px;
+	margin: 50px 0px 0px 0px;
+	position: relative;
+	
+	text-align: center;
+	background: #131313;
+}
+
+#footer_wrapper p {
+	display: inline-block;
+	margin: 50px 0px 50px 0px;
+	
+	font-size: 16px;
+}

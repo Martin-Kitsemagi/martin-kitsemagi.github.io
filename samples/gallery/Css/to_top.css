@@ -1,0 +1,42 @@
+
+#to_top {
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+	
+	background: #d85c41;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#to_top i {
+	width: 100%;
+	height: 100%;
+	
+	color: #212121;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+#to_top:hover {
+	cursor: pointer;
+	background: #d44a2b;
+	
+	-webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+#to_top:hover i {
+	color: #131313;
+}

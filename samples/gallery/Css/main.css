@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+	color: #424242;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	
+	background: #FAFAFA;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+#page_wrapper {
+	-ms-overflow-x: hidden;
+	overflow-x: hidden;
+}
+
+::-webkit-input-placeholder {
+    color: #9E9E9E;
+}
+
+::-moz-placeholder {
+    color: #9E9E9E;
+}
+
+::-ms-placeholder {
+    color: #9E9E9E;
+}
+
+::placeholder {
+    color: #9E9E9E;
+}
+
+.no_text_select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.no_text_select:hover {
+	cursor: default;
+}
+
+.main_wrapper {
+	max-width: 960px;
+	height: auto;
+	display: table;
+	margin: 0px auto 0px auto;
+	position: relative;
+}
+
+.inner_wrapper_two {
+	width: 480px;
+	height: auto;
+	display: table-cell;
+	margin: 0px 0px 30px 0px;
+	vertical-align:top;
+	position: relative;
+	
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.inner_wrapper_three {
+	width: 320px;
+	height: auto;
+	display: table-cell;
+	margin: 0px 0px 30px 0px;
+	vertical-align:top;
+	position: relative;
+	
+	text-align: center;
+	
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.header_title {
+	color: #FFFFFF;
+	font-size: 42x;
+	text-align: center;
+	font-weight: normal;
+}
+
+.inner_title {
+	font-size: 36px;
+	text-align: center;
+}
+
+.to_top {
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+	
+	background: #FAFAFA;
+	
+	-webkit-box-shadow: 1px 1px 5px #BDBDBD;
+	-moz-box-shadow: 1px 1px 5px #BDBDBD;
+	box-shadow: 1px 1px 5px #BDBDBD;
+	
+	border-radius: 50%;
+}
+
+.to_top i {
+	width: 100%;
+	height: 100%;
+	
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.to_top:hover {
+	cursor: pointer;
+	background: #E0E0E0;
+	
+	-webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+.to_top:hover i {
+	color: #212121;
+}
+
+@media only screen and (max-width: 976px) {
+	.inner_wrapper_two { 
+		display: block;
+		width: 100%;
+	}
+	
+	.inner_wrapper_three { 
+		display: block;
+		width: 100%;
+	}
+}
+
+

@@ -78,16 +78,18 @@ function windowResizeListener() {
 		var font_size = 16;
 		var container_width_large = 1200;
 		var page_width = 1920;
-		var width_per_pixel_change = 150;
+		var width_per_pixel_change = 125;
 		var page = $("#page_wrapper");
 		
 		if ($(window).width() > page_width) {
-			page.css("font-size", font_size + ($(window).width() - page_width) / width_per_pixel_change);
+			font_size = font_size + ($(window).width() - page_width) / width_per_pixel_change;
 		} else if ($(window).width() < container_width_large) {
-			page.css("font-size", font_size + ($(window).width() - container_width_large) / width_per_pixel_change);
-		} else {
-			page.css("font-size", font_size);
+			font_size = font_size + ($(window).width() - container_width_large) / width_per_pixel_change;
 		}
+		
+		if (font_size < 14) font_size = 14;
+
+		page.css("font-size", font_size);
 	}
 }
 

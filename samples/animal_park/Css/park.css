@@ -1,0 +1,271 @@
+
+#park_wrapper {
+	width: 100%;
+	height: auto;
+}
+
+#park_wrapper h1 {
+	margin: 75px 0px 35px 0px;
+	
+	text-align: center;
+	color: #4b4034;
+	font-weight: normal;
+	font-size: calc(21px + 0.5vw);
+}
+
+#park_wrapper h2 {
+	margin: 35px 0px 35px 0px;
+	
+	text-align: center;
+	color: #4b4034;
+	font-weight: normal;
+	font-size: calc(18px + 0.5vw);
+}
+
+#park_wrapper p {
+	margin: 15px 0px;
+	padding: 0px 20px;
+	
+	color: #4b4034;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#image_zoom_cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	
+	background: rgba(19, 19, 19, 0.9);
+}
+
+#image_zoom_cover:hover {
+	cursor: zoom-out;
+}
+
+#image_zoom_cover img {
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+	-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */	
+}
+
+#park_gallery_wrapper {
+	width: 100%;
+	height: auto;
+	padding: 0px 5px;
+	
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+#park_gallery_wrapper a {
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	margin-bottom: 35px;
+	
+	background: #b5a494;
+	line-height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #4b4034;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#park_gallery_wrapper a:hover {
+	cursor: pointer;
+	
+	color: #3c332a;
+	background: #a18c78;
+	
+	-webkit-transition: all 125ms ease-in;
+    -moz-transition: all 125ms ease-in;
+    -o-transition: all 125ms ease-in;
+    -ms-transition: all 125ms ease-in;
+    transition: all 125ms ease-in;
+}
+
+.park_gallery_i {
+	width: 210px;
+	height: 130px;
+	float: left;
+	
+	-webkit-transition: all 150ms linear	;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+.park_gallery_i:hover {
+	cursor: zoom-in;
+	
+	-webkit-box-shadow: 0px 0px 75px #212121 inset;
+	-moz-box-shadow: 0px 0px 75px #212121 inset;
+	box-shadow: 0px 0px 75px #212121 inset;
+}
+
+#park_species_wrapper {
+	width: 100%;
+	height: auto;
+	padding: 0px 20px;
+	
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+#park_species_wrapper a {
+	width: 100%;
+	height: auto;
+	margin: 20px 0px;
+	display: inline-block;
+	
+	text-align: center;
+	color: #4b4034;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#park_species_wrapper a:hover {
+	cursor: pointer;
+	
+	text-decoration: underline;
+}
+
+#park_species_wrapper span {
+	width: 0%;
+	height: 40px;
+	display: block;
+	margin: 15px 0px;
+	overflow: hidden;
+	
+	background: #b5a494;
+	text-align: center;
+	color: #4b4034;
+	line-height: 40px;
+	font-size: 16px;
+	
+	white-space: nowrap;
+	
+	-webkit-transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -ms-transition: width 1s linear;
+    transition: width 1s linear;
+}
+
+#park_species_wrapper span b {
+	font-weight: normal;
+}
+
+#location_wrapper {
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	margin: 35px auto 35px auto;
+}
+
+#location_wrapper iframe {
+	width: 100%;
+	height: 100%;
+	
+	border: 2px solid #b5a494;
+}
+
+#location_wrapper span {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin: 20px 0px;
+	
+	text-align: center;
+	font-size: 18px;
+	color: #5a4c3f;
+}
+
+@media only screen and (max-width: 1296px) {
+	#park_gallery_wrapper {
+		width: 600px;
+		height: auto;
+		margin: 0px auto;
+	}
+	
+	.park_gallery_i {
+		width: 600px;
+		height: 400px;
+		margin: 10px 0px;
+	}
+	
+	#park_gallery_wrapper a {
+		width: 600px;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 616px) {
+	#park_gallery_wrapper {
+		width: 400px;
+		height: auto;
+		margin: 0px auto;
+	}
+
+	.park_gallery_i {
+		width: 400px;
+		height: 250px;
+		margin: 5px 0px;
+	}
+
+	#park_gallery_wrapper a {
+		width: 400px;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (max-width: 556px) {
+	#location_wrapper {
+		width: 100%;
+		padding: 0px 20px;
+		
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box; 
+	}
+}
+
+@media only screen and (max-width: 416px) {
+	#park_gallery_wrapper {
+		width: 250px;
+		height: auto;
+		margin: 0px auto;
+	}
+
+	.park_gallery_i {
+		width: 250px;
+		height: 155px;
+		margin: 5px 0px;
+	}
+
+	#park_gallery_wrapper a {
+		width: 250px;
+		margin-top: 5px;
+	}
+	
+	#park_species_wrapper span {
+		padding: 0px 30px 0px 5px;
+	}
+}
+
+

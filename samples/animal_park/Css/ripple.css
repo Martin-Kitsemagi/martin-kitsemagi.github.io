@@ -1,0 +1,95 @@
+
+.ripple_effect {
+	position: relative;
+	overflow: hidden;
+}
+
+.ripple {
+	width: 0;
+	height: 0;
+	position: absolute;
+	
+	background: rgba(255, 255, 255, 0.3);
+	
+	-webkit-filter: alpha(opacity=100);
+	filter: alpha(opacity=100);
+	opacity: 1;
+	
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+	-webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+	transform: scale(0);
+}
+
+.rippleExpandEffect {
+	-webkit-animation: rippleExpand 0.325s linear;
+	-moz-animation: rippleExpand 0.325s linear;
+	-o-animation: rippleExpand 0.325s linear;
+	animation: rippleExpand 0.325s linear;
+	
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes rippleExpand {
+	100% {
+		-webkit-transform: scale(0.80);
+		-moz-transform: scale(0.80);
+		-o-transform: scale(0.80);
+		-ms-transform: scale(0.80);
+		transform: scale(0.80);
+	}
+}
+
+.rippleShrinkEffect {
+	-webkit-animation: rippleShrink 3.25s linear infinite;
+	-moz-animation: rippleShrink 3.25s linear infinite;
+	-o-animation: rippleShrink 3.25s linear infinite;
+	animation: rippleShrink 3.25s linear infinite;
+}
+
+@keyframes rippleShrink {
+	0%, 100% {
+		-webkit-transform: scale(0.80);
+		-moz-transform: scale(0.80);
+		-o-transform: scale(0.80);
+		-ms-transform: scale(0.80);
+		transform: scale(0.80);
+	}
+	50% {
+		-webkit-transform: scale(0.60);
+		-moz-transform: scale(0.60);
+		-o-transform: scale(0.60);
+		-ms-transform: scale(0.60);
+		transform: scale(0.60);
+	}
+}
+
+.rippleExplodeEffect {
+	-webkit-animation: rippleExplode 0.325s linear;
+	-moz-animation: rippleExplode 0.325s linear;
+	-o-animation: rippleExplode 0.325s linear;
+	animation: rippleExplode 0.325s linear;
+}
+
+@keyframes rippleExplode {
+	100% {
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-o-transform: scale(2);
+		-ms-transform: scale(2);
+		transform: scale(2);
+		
+		-webkit-filter: alpha(opacity=0);
+		filter: alpha(opacity=0);
+		opacity: 0;
+	}
+}
+

@@ -63,8 +63,8 @@
 
 .header .header_nav .header_nav_mobile .header_nav_mobile_inner_wrapper div {
 	width: 2.5em;
-	height: 0.275em;
-	margin: 0.475em 0;
+	height: 0.35em;
+	margin: 0.5em 0;
 	
 	background-color: #404f68;
 	
@@ -98,4 +98,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	
+	pointer-events: none;
 }

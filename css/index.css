@@ -638,17 +638,17 @@ a:hover {
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_top {
-		transform: rotate(45deg) translate3d(0.525em, 0.525em, 0);
+		transform: rotate(45deg) translate3d(0.595em, 0.595em, 0);
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_middle {
 		opacity: 0 !important;
 		
-		transform: translate3d(0.275em, 0, 0);
+		transform: translate3d(0.325em, 0, 0);
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_bottom {
-		transform: rotate(-45deg) translate3d(0.525em, -0.5275em, 0);
+		transform: rotate(-45deg) translate3d(0.595em, -0.595em, 0);
 	}
 	
 	.header .header_nav {

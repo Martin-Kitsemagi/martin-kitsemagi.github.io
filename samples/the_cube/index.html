@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Sample cube</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<link rel="icon" type="image/png" href="../../images/icon.png" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<link href="Css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<link href="Css/page.css" rel="stylesheet" type="text/css">
+	<link href="Css/top_nav.css" rel="stylesheet" type="text/css">
+	<link href="Css/cube.css" rel="stylesheet" type="text/css">
+	<link href="Css/interactions.css" rel="stylesheet" type="text/css">
+	<link href="Css/footer.css" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="Javascript/cube.js"></script>
+	<script src="Javascript/interactions.js"></script>
+</head>
+<body>
+	<div id="page_wrapper" class="no_text_select">
+		<div id="top_nav_wrapper">
+			<div id="top_nav_cube_wrapper"></div>
+			
+			<div id="top_nav_title">
+				<h1>The&nbsp;<b>Cube</b></h1>
+			
+				<div id="top_nav_title_line">
+					<span></span>
+				</div>
+				
+				<p>A collection of CSS 3D transforms</p>
+			</div>
+			<div id="top_nav_bottom">
+				<p>Learn more</p><br>
+				<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div id="interactions_wrapper">
+			<div id="interactions_first_header">
+				<h1>3D Objects</h1>
+			</div>
+			
+			<div id="interactions_cube_wrapper">
+				<div>
+					<div class="object">
+						<span class="cube_interactive">
+							<span class="cube_interactive_front">Front</span>
+							<span class="cube_interactive_back">Back</span>
+							<span class="cube_interactive_top">Top</span>
+							<span class="cube_interactive_bottom">Bottom</span>
+							<span class="cube_interactive_left">Left</span>
+							<span class="cube_interactive_right">Right</span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Cube</h2>
+							<p>Click on the sides of the cube to change its orientation.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="interactions_sphere_wrapper">
+				<div>
+					<div class="object">
+						<span class="sphere_interactive">
+							<span class="sphere_interactive_0"></span>
+							<span class="sphere_interactive_225"></span>
+							<span class="sphere_interactive_45"></span>
+							<span class="sphere_interactive_675"></span>
+							<span class="sphere_interactive_90"></span>
+							<span class="sphere_interactive_1125"></span>
+							<span class="sphere_interactive_135"></span>
+							<span class="sphere_interactive_1575"></span>
+							
+							<span class="sphere_interactive_top"></span>
+							<span class="sphere_interactive_center"></span>
+							<span class="sphere_interactive_bottom"></span>
+							
+							<span id="sphere_interactive_child">
+								<span class="sphere_interactive_0"></span>
+								<span class="sphere_interactive_225"></span>
+								<span class="sphere_interactive_45"></span>
+								<span class="sphere_interactive_675"></span>
+								<span class="sphere_interactive_90"></span>
+								<span class="sphere_interactive_1125"></span>
+								<span class="sphere_interactive_135"></span>
+								<span class="sphere_interactive_1575"></span>
+								
+								<span class="sphere_interactive_top"></span>
+							</span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Sphere</h2>
+							<p>Click on the sphere to speed the smaller sphere up or down.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="interactions_book_wrapper">
+				<div>
+					<div class="object">
+						<span class="book_interactive">
+							<span class="book_interactive_8 page">
+								<figure>
+									<p class="book_header">A Sample Book</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+								
+								<span>
+									<p class="book_header">By M.K</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_7 page">
+								<figure>
+									<p>Page 1</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 2</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_6 page">
+								<figure>
+									<p>Page 3</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 4</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_5 page">
+								<figure>
+									<p>Page 5</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 6</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_4 page">
+								<figure>
+									<p>Page 7</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 8</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_3 page">
+								<figure>
+									<p>Page 9</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 10</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_2 page">
+								<figure>
+									<p>Page 11</p>
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+								</figure>
+									
+								<span>
+									<p>Page 12</p>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</span>
+							</span>
+							<span class="book_interactive_1 page">
+								<p></p>
+							</span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Book</h2>
+							<p>Click on the pages to go through the book.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="interactions_second_header">
+				<h1>Raised Cards</h1>
+			</div>
+			
+			<div id="interactions_card_stack_wrapper">
+				<div>
+					<div class="object">
+						<span class="card_stack_interactive">
+							<span class="card_stack_top">
+								<p>First Card</p>
+							</span>
+							<span class="card_stack_middle">
+								<p>Second Card</p>
+							</span>
+							<span class="card_stack_bottom">
+								<p>Third Card</p>
+							</span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Card stack</h2>
+							<p>Hover your mouse over the stack of cards to view them.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="interactions_hovering_cards_wrapper">
+				<div>
+					<div class="object">
+						<span class="hovering_cards_interactive">
+							<span class="hovering_card_left">
+								<span>
+									<p>Facebook</p>
+									
+									<span>
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</span>
+								</span>
+							</span>
+							<span class="hovering_card_middle">
+								<span>
+									<p>Twitter</p>
+									
+									<span>
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</span>
+								</span>
+							</span>
+							<span class="hovering_card_right">
+								<span>
+									<p>Instagram</p>
+								
+									<span>
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</span>
+								</span>
+							</span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Hovering cards</h2>
+							<p>Hover your mouse over the cards to flip them over.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="interactions_third_header">
+				<h1>Layered images</h1>
+			</div>
+				
+			<div id="interactions_layered_image_wrapper">
+				<div>
+					<div class="object">
+						<span class="layered_image_interactive">
+							<span class="image_layer_top"></span>
+							<span class="image_layer_middle"></span>
+							<span class="image_layer_bottom"></span>
+						</span>
+					</div>
+					<div class="object_description">
+						<span>
+							<h2>Multi layer image</h2>
+							<p>Hover your mouse over the image to change the angle.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_wrapper">
+			<p>The Cube 2018</p>
+		</div>
+	</div>
+</body>
+</html>

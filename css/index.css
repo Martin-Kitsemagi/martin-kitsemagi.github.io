@@ -638,7 +638,7 @@ a:hover {
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_top {
-		transform: rotate(45deg) translate3d(0.595em, 0.595em, 0);
+		transform: rotate(45deg) translate3d(0.6105em, 0.6105em, 0);
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_middle {
@@ -648,7 +648,7 @@ a:hover {
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_bottom {
-		transform: rotate(-45deg) translate3d(0.615em, -0.615em, 0);
+		transform: rotate(-45deg) translate3d(0.6105em, -0.6105em, 0);
 	}
 	
 	.header .header_nav {

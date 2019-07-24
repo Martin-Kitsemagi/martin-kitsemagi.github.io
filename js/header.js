@@ -175,7 +175,15 @@ function headerBubbles() {
 	header_bubbles.startBubblesAnimation();
 }
 
+function setHeaderHeight() {
+	if (/Mobi/.test(navigator.userAgent)) {
+		var viewport_height = $("#header").outerHeight();
+		$("#header").css("height", viewport_height);
+	}
+}
+
 $(document).ready(function() {
+	setHeaderHeight();
 	headerBubbles();
 	
 	navMobile();

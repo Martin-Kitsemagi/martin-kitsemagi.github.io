@@ -175,12 +175,7 @@ function headerBubbles() {
 	header_bubbles.startBubblesAnimation();
 }
 
-function setHeaderHeight() {
-	$("#header").height($(window).innerHeight());
-}
-
 $(document).ready(function() {
-	setHeaderHeight();
 	headerBubbles();
 	
 	navMobile();

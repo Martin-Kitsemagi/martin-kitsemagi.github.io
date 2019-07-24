@@ -162,8 +162,8 @@ function headerBubbles() {
 	
 	function resizeCanvas() {
 		$(window).on("resize", function() {
-			canvas.width = $(window).width();
-			canvas.height = $(window).height();
+			canvas.width = $(window).innerWidth();
+			canvas.height = $(window).innerHeight();
 		});
 		
 		$(document).ready(function() {

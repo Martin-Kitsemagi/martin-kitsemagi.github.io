@@ -72,6 +72,8 @@ function windowScrollListener() {
 function windowResizeListener() {
 	$(window).on("resize", function() {
 		pageSetFontSize();
+		
+		setHeaderHeight();
 	});
 	
 	function pageSetFontSize() {
@@ -90,6 +92,10 @@ function windowResizeListener() {
 		if (font_size < 14) font_size = 14;
 
 		page.css("font-size", font_size);
+	}
+	
+	function setHeaderHeight() {
+		$("#header").height($(window).innerHeight());
 	}
 }
 

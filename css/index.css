@@ -642,7 +642,7 @@ a:hover {
 	}
 	
 	.header_nav_mobile_animate .header_nav_mobile_middle {
-		opacity: 1 !important;
+		opacity: 0 !important;
 		
 		transform: translate3d(0.325em, 0, 0);
 	}

@@ -598,7 +598,9 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.header .header_title {
-		font-size: 3.15em !important;
+		top: 35% !important;
+		
+		font-size: 3em !important;
 	}
 	
 	.header_nav_mobile .header_nav_mobile_inner_wrapper div {

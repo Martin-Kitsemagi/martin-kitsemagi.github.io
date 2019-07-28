@@ -81,6 +81,38 @@
 	background-color: #fe8b8b;
 }
 
+.header .header_nav .header_nav_element {
+	height: 100%;
+	padding: 0 0.7em;
+	float: left;
+
+	color: #404f68;
+	font-size: 1.05em;
+	
+	transition: color 55ms ease-out;
+}
+
+.header .header_nav .header_nav_element:hover {
+	cursor: pointer;
+	
+	color: #fe8b8b;
+	text-decoration: none;
+}
+
+.header .header_nav .header_nav_lang_wrapper {
+	float: right;
+}
+
+.header .header_nav .header_nav_lang_wrapper span {
+	float: left;
+	
+	color: #404f68;
+}
+
+.header .header_nav .header_nav_lang_wrapper .header_nav_lang {
+	color: #fe8b8b;
+}
+
 .header .header_background_layer {
 	width: 100%;
 	height: 100%;

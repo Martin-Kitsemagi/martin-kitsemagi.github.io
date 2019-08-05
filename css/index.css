@@ -3,8 +3,8 @@
 	padding: 0;
 	
 	color: #fafafa;
-	font-family: "Open Sans", sans-serif;
-	letter-spacing: 0.1em;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.075em;
 	font-weight: 500;
 }
 
@@ -548,7 +548,7 @@ button:focus, input:focus, textarea:focus {
 
 @media (max-width: 767.98px) {
 	#page_inner_wrapper {
-		transition: transform 0.425s ease-out;
+		transition: transform 0.425s ease-in-out;
 	}
 	
 	.page_inner_wrapper_mobile {
@@ -564,7 +564,7 @@ button:focus, input:focus, textarea:focus {
 		
 		background-color: #27303f;
 		
-		transition: transform 0.425s ease-out;
+		transition: transform 0.425s ease-in-out;
 	}
 	
 	.page_nav_mobile {

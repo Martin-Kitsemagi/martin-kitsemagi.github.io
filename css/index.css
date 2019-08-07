@@ -173,7 +173,6 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel {
-	margin-top: -0.04em;
 	position: relative;
 }
 
@@ -251,7 +250,8 @@ button:focus, input:focus, textarea:focus {
 .panel_transition_svg {
 	width: 100%;
 	height: 10em;
-	display: block;
+	margin-bottom: -0.5em;
+	display: inline-block;
 }
 
 .panel .panel_element_transparent {
@@ -417,20 +417,20 @@ button:focus, input:focus, textarea:focus {
 	height: 3.5em;
 	padding: 0 0.5em 0 1em;
 	
-	background-color: #38455c;
+	background-color: #3d4b64;
 	font-size: 1.05em;
 	
 	border: none;
 	
 	border-radius: 0.476em;
 	
-	box-shadow: 0 0.417em 0 #2d374e inset;
+	box-shadow: 0 0.417em 0 #2f394c inset;
 	
 	transition: background-color 75ms ease-out;
 }
 
 .panel_form .panel_form_input_wrapper .panel_form_input:focus {
-	background-color: #404e68;
+	background-color: #42516c;
 }
 
 .panel_form .panel_form_textarea_wrapper {
@@ -444,14 +444,14 @@ button:focus, input:focus, textarea:focus {
 	padding: 1em 0.5em 0.5em 1em;
 	overflow: hidden;
 	
-	background-color: #38455c;
+	background-color: #3d4b64;
 	font-size: 1.05em;
 	
 	border: none;
 	
 	border-radius: 0.476em;
 	
-	box-shadow: 0 0.417em 0 #2d374e inset;
+	box-shadow: 0 0.417em 0 #2f394c inset;
 	
 	resize: none;
 	
@@ -459,7 +459,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_textarea_wrapper .panel_form_textarea:focus {
-	background-color: #404e68;
+	background-color: #42516c;
 }
 
 .panel_form .panel_form_submit_wrapper {

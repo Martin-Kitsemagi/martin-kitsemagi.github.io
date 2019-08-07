@@ -173,6 +173,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel {
+	margin-top: -0.04em;
 	position: relative;
 }
 

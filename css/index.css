@@ -368,7 +368,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0 0 0.476em 0.476em;
 	
-	box-shadow: 0 0.417em 0 #fe6d6d;
+	box-shadow: 0 0.298em 0 #fe6d6d;
 	
 	transition: background-color 75ms ease-out;
 }
@@ -386,7 +386,7 @@ button:focus, input:focus, textarea:focus {
 .panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_link_button:hover {
 	background-color: #fe7777;
 	
-	box-shadow: 0 0.417em 0 #fe6262;
+	box-shadow: 0 0.298em 0 #fe6262;
 }
 
 .panel_form {
@@ -490,7 +490,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0.476em;
 	
-	box-shadow: 0 0.417em 0 #fe6d6d;
+	box-shadow: 0 0.298em 0 #fe6d6d;
 	
 	transition: background-color 75ms ease-out;
 }
@@ -500,7 +500,7 @@ button:focus, input:focus, textarea:focus {
 	
 	background-color: #fe7777;
 	
-	box-shadow: 0 0.417em 0 #fe6262;
+	box-shadow: 0 0.298em 0 #fe6262;
 }
 
 @media (min-width: 1920.98px) {
@@ -649,7 +649,6 @@ button:focus, input:focus, textarea:focus {
 		padding: 1.5em 2em 1.5em 1.5em;
 		bottom: 0;
 		right: -100%;
-		display: none;
 
 		border-radius: 0;
 	

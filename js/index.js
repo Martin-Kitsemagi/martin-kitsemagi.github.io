@@ -72,6 +72,11 @@ function windowScrollListener() {
 function windowResizeListener() {
 	$(window).on("resize", function() {
 		pageSetFontSize();
+		header_bubbles.resizeCanvas();
+	});
+	
+	$(document).ready(function() {
+		$(window).trigger("resize");
 	});
 	
 	function pageSetFontSize() {

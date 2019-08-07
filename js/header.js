@@ -68,43 +68,46 @@ function headerBubbles() {
 	var bubbles = [];
 	var fps = 60;
 	var frames = 0;
-	
-	var loop;
 	var canvas = document.getElementById("header_canvas");
 	var context = canvas.getContext("2d");
 	
-	resizeCanvas();
+	var loop;
 	
 	var bubbleAnimation = {
 		bubbles: bubbles,
 		fps: fps,
 		frames: frames,
-		loop: loop,
 		canvas: canvas,
 		context: context,
 		
+		loop: loop,
+		
 		startBubblesAnimation: function() {
-			if (this.loop === undefined) {
-				var self = this;
+			if (this.loop !== undefined) return;
+			
+			var self = this;
+			
+			var animation_loop = function() {
+				self.context.clearRect(0, 0, self.canvas.width, self.canvas.height);
 				
-				this.loop = setInterval(function() {
-					self.context.clearRect(0, 0, self.canvas.width, self.canvas.height);
+				if (self.frames % self.fps === 0) {
+					self.frames = 0;
+					self.bubbles.push(self.generateBubble());
+				}
+				
+				for (var i = self.bubbles.length - 1; i >= 0; i--) {
+					self.bubbles[i].draw();
+					self.bubbles[i].move();
 					
-					if (self.frames % self.fps === 0) {
-						self.frames = 0;
-						self.bubbles.push(self.generateBubble());
-					}
-					
-					for (var i = self.bubbles.length - 1; i >= 0; i--) {
-						self.bubbles[i].draw();
-						self.bubbles[i].move();
-						
-						if (self.bubbles[i].y < (0 - self.bubbles[i].radius)) self.bubbles.splice(i, 1);
-					}
-					
-					self.frames++;
-				}, 1000 / this.fps);
+					if (self.bubbles[i].y < (0 - self.bubbles[i].radius)) self.bubbles.splice(i, 1);
+				}
+				
+				self.frames++;
 			}
+			
+			this.loop = setInterval(function() {
+				requestAnimationFrame(animation_loop);
+			}, 1000 / this.fps);
 		},
 	
 		stopBubblesAnimation: function() {
@@ -113,7 +116,7 @@ function headerBubbles() {
 				this.loop = undefined;
 			}
 		},
-	
+		
 		generateBubble: function() {
 			var self = this;
 			
@@ -157,21 +160,17 @@ function headerBubbles() {
 			}
 			
 			return bubble;
+		},
+		
+		resizeCanvas: function() {
+			this.canvas.width = $(window).innerWidth();
+			this.canvas.height = $(window).innerHeight();
 		}
 	}
 	
-	function resizeCanvas() {
-		$(window).on("resize", function() {
-			canvas.width = $(window).innerWidth();
-			canvas.height = $(window).innerHeight();
-		});
-		
-		$(document).ready(function() {
-			$(window).trigger("resize");
-		});
-	}
-	
 	header_bubbles = bubbleAnimation;
+	
+	header_bubbles.resizeCanvas();
 	header_bubbles.startBubblesAnimation();
 }
 

@@ -173,6 +173,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel {
+	margin-top: -0.04em;
 	position: relative;
 }
 
@@ -552,12 +553,12 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.page_inner_wrapper_mobile {
-		transform: translate3d(80%, 0, 0);
+		transform: translate3d(79.9%, 0, 0);
 	}
 	
 	#page_nav {
 		width: 80%;
-		height: 100vh;
+		height: 150vh;
 		padding: 0;
 		position: fixed;
 		left: -80%;

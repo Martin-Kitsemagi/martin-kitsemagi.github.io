@@ -425,7 +425,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0.476em;
 	
-	box-shadow: 0 0.417em 0 #2f394c inset;
+	box-shadow: 0 0.298em 0 #2f394c inset;
 	
 	transition: background-color 75ms ease-out;
 }
@@ -452,7 +452,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0.476em;
 	
-	box-shadow: 0 0.417em 0 #2f394c inset;
+	box-shadow: 0 0.298em 0 #2f394c inset;
 	
 	resize: none;
 	
@@ -649,6 +649,7 @@ button:focus, input:focus, textarea:focus {
 		padding: 1.5em 2em 1.5em 1.5em;
 		bottom: 0;
 		right: -100%;
+		display: none;
 
 		border-radius: 0;
 	

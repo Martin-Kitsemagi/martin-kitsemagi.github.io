@@ -335,7 +335,7 @@ button:focus, input:focus, textarea:focus {
 	top: 100%;
 	left: 0;
 	
-	background-color: rgba(50, 62, 129, 0.7);
+	background-color: rgba(50, 62, 129, 0.8);
 	
 	transition: top 0.315s ease-in-out;
 	

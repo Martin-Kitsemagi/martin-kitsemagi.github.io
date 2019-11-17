@@ -153,11 +153,11 @@
 	transition: transform 0.325s ease-in-out;
 }
 
-#header_element_transparent {
+.header_element_transparent {
 	opacity: 0;
 }
 
-#header_element_opaque {
+.header_element_opaque {
 	opacity: 1;
 }
 
@@ -178,7 +178,7 @@
 
 @keyframes header_arrow {
 	100% {
-		height: 35%;
+		height: 25%;
 	}
 }
 

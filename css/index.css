@@ -42,13 +42,7 @@ button:focus, input:focus, textarea:focus {
 
 #page_inner_wrapper {
 	position: relative;
-	
-	background: url(../images/scaled/header_background.jpg);
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	
+
 	transition: transform 0.425s ease-in-out;
 }
 
@@ -741,11 +735,6 @@ button:focus, input:focus, textarea:focus {
 }
 
 @media (max-width: 767.98px) {
-	#page_inner_wrapper {
-		background-attachment: fixed;
-		background-size: cover;
-	}
-	
 	.page_inner_wrapper_mobile {
 		transform: translate3d(79.9%, 0, 0);
 	}

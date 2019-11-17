@@ -742,7 +742,8 @@ button:focus, input:focus, textarea:focus {
 
 @media (max-width: 767.98px) {
 	#page_inner_wrapper {
-		/*background-size: cover;*/
+		background-attachment: fixed;
+		background-size: cover;
 	}
 	
 	.page_inner_wrapper_mobile {

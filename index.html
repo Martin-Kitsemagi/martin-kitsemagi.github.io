@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head lang="et">
+<html lang="et">
+<head>
 	<title>Martin Kitsemägi portfoolio</title>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=no">
-	<meta name="description" content="Martin Kitsemägi, vabakutseline veebilehekülgede/kasutajaliideste kujundaja & arendaja.">
-	<meta name="keywords" content="Vabakutseline, veebiarendaja, kujundaja, veebileheküljed, kasutajaliidesed, html, css, javascript, sass, bootstrap, wordpress, php, java.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="description" content="Martin Kitsemägi, vabakutseline veebilehekülgede/kasutajaliideste arendaja & kujundaja.">
+	<meta name="keywords" content="Vabakutseline, veebiarendaja, kujundaja, veebileheküljed, kasutajaliidesed, HTML, CSS, Javascript, Sass, Bootstrap, Wordpress, PHP, SQL.">
 	<meta name="author" content="Martin Kitsemägi">
 	
 	<link rel="icon" type="image/png" href="images/icon.png">
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
 	
 	<link href="css/fontawesome_free_5.9.0/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,6 +21,7 @@
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/header.css" rel="stylesheet" type="text/css">
 	<link href="css/about_me.css" rel="stylesheet" type="text/css">
+	<link href="css/qualities.css" rel="stylesheet" type="text/css">
 	<link href="css/technologies.css" rel="stylesheet" type="text/css">
 	<link href="css/samples.css" rel="stylesheet" type="text/css">
 	<link href="css/contact.css" rel="stylesheet" type="text/css">
@@ -37,29 +39,82 @@
 				<span>Mk</span>
 			</div>
 			
-			<div id="about_me_nav" class="page_nav_element">Minust</div>
-			<div id="technologies_nav" class="page_nav_element">Oskused</div>
-			<div id="samples_nav" class="page_nav_element">Näidised</div>
-			<div id="contact_nav" class="page_nav_element">Kontakt</div>
+			<div id="about_me_nav" class="page_nav_element">Minust<span><i class="fas fa-user-astronaut"></i></span></div>
+			<div id="qualities_nav" class="page_nav_element">Oskused<span><i class="fas fa-code-branch"></i></span></div>
+			<div id="samples_nav" class="page_nav_element">Näidised<span><i class="far fa-file-image"></i></span></div>
+			<div id="contact_nav" class="page_nav_element">Kontakt<span><i class="far fa-address-book"></i></span></div>
 		</div>
 		
-		<div id="page_popup">
-			<div id="page_popup_close">
-				<div id="page_popup_close_top"></div>
-				<div id="page_popup_close_bottom"></div>
+		<div id="samples_view">
+			<div id="samples_view_wrapper">
+				<div class="samples_view_top">
+					<div id="samples_view_back_button" class="no_text_select">
+						<i class="fas fa-long-arrow-alt-left"></i>
+						Tagasi
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="samples_view_mobile">
+								<div class="samples_view_mobile_top">
+									<span></span><span></span>
+								</div>
+								<div class="samples_view_mobile_background">
+								</div>
+								<div class="samples_view_mobile_bottom">
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div id="sample_the_cube_view_text" class="samples_view_text">
+								<h2 class="panel_title">The Cube</h2>
+								<p class="panel_text">
+									Hobiprojekt, mille arendamise käigus õppisin kasutama CSS 3D transforme ning erinevaid 
+									animatsioone.
+								</p>
+								<div class="no_text_select">
+									<a class="samples_view_text_link" target="_blank" href="https://martin-kitsemagi.github.io/samples/the_cube">Külasta lehekülge</a>
+									<a class="samples_view_text_link" target="_blank" href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/the_cube">Vaata lähtekoodi</a>
+								</div>
+							</div>
+							<div id="sample_animal_park_view_text" class="samples_view_text">
+								<h2 class="panel_title">Loomapark</h2>
+								<p class="panel_text">
+									Hobiprojekt, mille peamiseks eesmärgiks oli lehekülje päises videofaili kasutamine taustana ja 
+									sliderite loomine.
+								</p>
+								<div class="no_text_select">
+									<a class="samples_view_text_link" target="_blank" href="https://martin-kitsemagi.github.io/samples/animal_park">Külasta lehekülge</a>
+									<a class="samples_view_text_link" target="_blank" href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/animal_park">Vaata lähtekoodi</a>
+								</div>
+							</div>
+							<div id="sample_gallery_view_text" class="samples_view_text">
+								<h2 class="panel_title">Galerii</h2>
+								<p class="panel_text">
+									Hobiprojekt, kus keskendusin responsiivsele disainile ning 
+									CSS/Javascript abil erinevate effektide loomisele.
+								</p>
+								<div class="no_text_select">
+									<a class="samples_view_text_link" target="_blank" href="https://martin-kitsemagi.github.io/samples/gallery">Külasta lehekülge</a>
+									<a class="samples_view_text_link" target="_blank" href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/gallery">Vaata lähtekoodi</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		
-			<h3 id="page_popup_title"></h3>
-			<p id="page_popup_text"></p>
-			
-			<button id="page_popup_button"></button>
 		</div>
 		
 		<div id="page_inner_wrapper">
-			<div id="header" class="header no_text_select panel">
-				<canvas id="header_canvas"></canvas>
-			
-				<h1 class="header_title">Martin Kitsemägi portfoolio</h1>
+			<div id="header" class="header no_text_select panel parallax">
+				<div id="header_title" class="header_title header_element_opaque">
+					<h1>Martin Kitsemägi portfoolio</h1>
+					<span>Vabakutseline veebilehekülgede</span>
+					<span>Arendaja &amp;</span>
+					<span>Kujundaja</span>
+				</div>
 				
 				<div class="header_nav">
 					<div class="header_nav_icon">Mk</div>
@@ -73,15 +128,16 @@
 					</div>
 				</div>
 				
-				<div class="header_background_layer">
+				<div id="header_arrow" class="header_element_opaque">
+					<span></span><span></span>
 				</div>
 			</div>
-			
+				
 			<div id="about_me" class="about_me panel panel_transparent">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
-							<div class="panel_inner_wrapper ">
+						<div class="col-lg-6 panel panel_transparent">
+							<div class="panel_inner_wrapper">
 								<h2 class="panel_title">Minust</h2>
 								<p class="panel_text"> 
 									Hei, Martin siinpool. Olen lõpetanud 2016. aastal Tallinna Tehnikaülikooli informaatika erialal.
@@ -92,16 +148,85 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="panel_inner_wrapper ">
+						<div class="col-lg-6 panel panel_transparent">
+							<div class="panel_inner_wrapper">
 								<h2 class="panel_title">Kuidas minuga ühendust saada?</h2>
 								<p class="panel_text">
 									Parim viis minuga kontakti saada on e-kirja teel:<br>
 									<a class="panel_text_link" href="mailto:martin.kitsemagi@gmail.com?Subject=Tere, Martin">martin.kitsemagi@gmail.com&nbsp;<i class="fas fa-paper-plane"></i></a>
-									<br>Samuti saad leida minu CV:<br>
+									<br>Samuti saab leida minu CV:<br>
 									<a class="panel_text_link" target="_blank" rel="noopener noreferrer" href="https://www.cvkeskus.ee/m_cvs.php?op=preview&cv_id=1517632">cvkeskus&nbsp;<i class="fas fa-external-link-alt"></i></a>
 									<a class="panel_text_link" target="_blank" rel="noopener noreferrer" href="https://www.cv.ee/CVC/5800327.html">cv.ee&nbsp;<i class="fas fa-external-link-alt"></i></a>
 								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="qualities" class="panel_qualities">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg panel panel_transparent">
+							<div class="panel_inner_wrapper">
+								<h2 class="panel_title_large panel_text_center">Oskused ja tehnoloogiad</h2>
+								<p class="panel_text_large panel_text_center">
+									Põhimõtted, millest veebiarendamisel lähtun.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 panel panel_transparent">
+							<div class="panel_inner_wrapper">
+								<div class="panel_quality_wrapper">
+									<div class="panel_quality">
+										<i class="fas fa-desktop"></i>
+										<h2 class="panel_title">Responsiivne disain</h2>
+										<p class="panel_text">
+											Pean tähtsaks, et minu poolt loodud leheküljed näeksid head välja erineva suurusega ekraanidel.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 panel panel_transparent">
+							<div class="panel_inner_wrapper">
+								<div class="panel_quality_wrapper">
+									<div class="panel_quality">
+										<i class="fas fa-mobile-alt"></i>
+										<h2 class="panel_title">Ühilduvus erinevatel platvormidel</h2>
+										<p class="panel_text">
+											Loon lahendusi, mis töötavad erinevates brauserites ning platvormidel.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 panel panel_transparent">
+							<div class="panel_inner_wrapper">
+								<div class="panel_quality_wrapper">
+									<div class="panel_quality">										
+										<i class="far fa-user"></i>
+										<h2 class="panel_title">Kasutajasõbralikud lahendused</h2>									
+										<p class="panel_text">
+											Pööran tähelepanu kasutajaliideste kujundamisele, mida oleks lihtne kasutada ning mõista.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 panel panel_transparent">
+							<div class="panel_inner_wrapper">
+								<div class="panel_quality_wrapper">
+									<div class="panel_quality">										
+										<i class="fab fa-pushed"></i>
+										<h2 class="panel_title">Minimalistlik lähenemine</h2>										
+										<p class="panel_text">
+											Hoian leheküljed müravabad ning keskendun ainult vajaliku informatsiooni kuvamisele.
+										</p>										
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -112,60 +237,128 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg">
-							<div class="panel_inner_wrapper ">
-								<h2 class="panel_title_large panel_text_center">Oskused ja tehnoloogiad</h2>
+							<div class="panel_illustration"><i class="fas fa-tree"></i></div>
+							<div class="panel_inner_wrapper">
 								<p class="panel_text_large panel_text_center">
-									Peamised tehnoloogiad, mida kasutan erinevatel platvormidel responsiivsete ning kasutajasõbralike lahenduste ellu viimiseks.
+									Tehnoloogiad, mida peamiselt oma projektides kasutan.
 								</p>
 								
 								<div class="panel_icons">
 									<div class="panel_icons_inner_wrapper">
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-html5 fa-fw"></i>
-												<span class="panel_icon_text">Html 5</span>
+										<div class="panel_icon_wrapper">
+											<div id="html5_icon" class="panel_icon panel_element_transparent">
+												<div class="panel_hexagon">
+													<div class="panel_hexagon_inner_wrapper">
+														<div class="panel_hexagon_background">
+															<i class="fab fa-html5 fa-fw"></i>
+															<div class="panel_hexagon_overlay">
+																<span class="panel_hexagon_overlay_text">HTML5</span>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-css3-alt fa-fw"></i>
-												<span class="panel_icon_text">Css 3</span>
+										<div class="panel_icon_wrapper">
+											<div id="css3_icon" class="panel_icon panel_element_transparent">
+												<div class="panel_hexagon">
+													<div class="panel_hexagon_inner_wrapper">
+														<div class="panel_hexagon_background">
+															<i class="fab fa-css3-alt fa-fw"></i>
+															<div class="panel_hexagon_overlay">
+																<span class="panel_hexagon_overlay_text">CSS3</span>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-js-square fa-fw"></i>
-												<span class="panel_icon_text">Javascript</span>
+										<div class="panel_icon_wrapper">
+											<div id="js_icon" class="panel_icon panel_element_transparent">
+												<div class="panel_hexagon">
+													<div class="panel_hexagon_inner_wrapper">
+														<div class="panel_hexagon_background">
+															<i class="fab fa-js-square fa-fw"></i>
+															<div class="panel_hexagon_overlay">
+																<span class="panel_hexagon_overlay_text">Javascript</span>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-sass fa-fw"></i>
-												<span class="panel_icon_text">Sass</span>
+										<div class="panel_icons_inner_middle_wrapper">
+											<div class="panel_icon_wrapper">
+												<div id="sass_icon" class="panel_icon panel_element_transparent">
+													<div class="panel_hexagon">
+														<div class="panel_hexagon_inner_wrapper">
+															<div class="panel_hexagon_background">
+																<i class="fab fa-sass fa-fw"></i>
+																<div class="panel_hexagon_overlay">
+																	<span class="panel_hexagon_overlay_text">Sass</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel_icon_wrapper">
+												<div id="bootstrap_icon" class="panel_icon panel_element_transparent">
+													<div class="panel_hexagon">
+														<div class="panel_hexagon_inner_wrapper">
+															<div class="panel_hexagon_background">
+																<i class="fab fa-bootstrap fa-fw"></i>
+																<div class="panel_hexagon_overlay">
+																	<span class="panel_hexagon_overlay_text">Bootstrap</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-bootstrap fa-fw"></i>
-												<span class="panel_icon_text">Bootstrap</span>
+										<div class="panel_icons_inner_bottom_wrapper">
+											<div class="panel_icon_wrapper">
+												<div id="wordpress_icon" class="panel_icon panel_element_transparent">
+													<div class="panel_hexagon">
+														<div class="panel_hexagon_inner_wrapper">
+															<div class="panel_hexagon_background">
+																<i class="fab fa-wordpress-simple fa-fw"></i>
+																<div class="panel_hexagon_overlay">
+																	<span class="panel_hexagon_overlay_text">Wordpress</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-wordpress-simple fa-fw"></i>
-												<span class="panel_icon_text">Wordpress</span>
+											<div class="panel_icon_wrapper">
+												<div id="php_icon" class="panel_icon panel_element_transparent">
+													<div class="panel_hexagon">
+														<div class="panel_hexagon_inner_wrapper">
+															<div class="panel_hexagon_background">
+																<i class="fab fa-php fa-fw"></i>
+																<div class="panel_hexagon_overlay">
+																	<span class="panel_hexagon_overlay_text">PHP</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-php fa-fw"></i>
-												<span class="panel_icon_text">Php</span>
-											</div>
-										</div>
-										<div class="panel_icon_wrapper ">
-											<div class="panel_icon panel_element_transparent">
-												<i class="fab fa-java fa-fw"></i>
-												<span class="panel_icon_text">Java</span>
+											<div class="panel_icon_wrapper">
+												<div id="sql_icon" class="panel_icon panel_element_transparent">
+													<div class="panel_hexagon">
+														<div class="panel_hexagon_inner_wrapper">
+															<div class="panel_hexagon_background">
+																<i class="fas fa-database"></i>
+																<div class="panel_hexagon_overlay">
+																	<span class="panel_hexagon_overlay_text">SQL</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -174,17 +367,13 @@
 						</div>
 					</div>
 				</div>
-				
-				<svg class="panel_transition_svg technologies_panel_transition_svg" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 750 100" preserveAspectRatio="none">
-					<path d="M 0 0 S 0 150, 1000 0 L 900 150 L 0 150 Z"></path>
-				</svg>
 			</div>
-			
+		
 			<div id="samples" class="samples panel panel_transparent">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg">
-							<div class="panel_inner_wrapper ">
+							<div class="panel_inner_wrapper">
 								<h2 class="panel_title_large panel_text_center">Näidised</h2>
 								<p class="panel_text_large panel_text_center">
 									Hobi korras teostatud vanemad lehekülgede näidised.
@@ -192,28 +381,46 @@
 								
 								<div class="panel_links no_text_select">
 									<div class="panel_links_inner_wrapper">
-										<div id="sample_the_cube" class="panel_link_wrapper ">
+										<div id="sample_the_cube" class="panel_link_wrapper">
 											<div class="panel_link panel_element_transparent">
-												<div class="panel_link_background">
-													<span class="panel_link_text">The cube</span>
+												<div class="panel_diamond">
+													<div class="panel_diamond_background panel_link_background">
+														<span class="panel_link_text">The cube</span>
+														<div class="panel_diamond_overlay">
+															<span class="panel_diamond_overlay_text">
+																Vaata lähemalt
+															</span>
+														</div>
+													</div>
 												</div>
-												<a class="panel_link_button" target="_blank" href="https://martin-kitsemagi.github.io/samples/the_cube">Vaata lähemalt<i class="fas fa-chevron-right"></i></a>
 											</div>
 										</div>
-										<div id="sample_animal_park" class="panel_link_wrapper ">
+										<div id="sample_animal_park" class="panel_link_wrapper">
 											<div class="panel_link panel_element_transparent">
-												<div class="panel_link_background">
-													<span class="panel_link_text">Loomapark</span>
+												<div class="panel_diamond">
+													<div class="panel_diamond_background panel_link_background">
+														<span class="panel_link_text">Loomapark</span>
+														<div class="panel_diamond_overlay">
+															<span class="panel_diamond_overlay_text">
+																Vaata lähemalt
+															</span>
+														</div>
+													</div>
 												</div>
-												<a class="panel_link_button" target="_blank" href="https://martin-kitsemagi.github.io/samples/animal_park">Vaata lähemalt<i class="fas fa-chevron-right"></i></a>
 											</div>
-										</div>
-										<div id="sample_gallery" class="panel_link_wrapper ">
+										</div><br>
+										<div id="sample_gallery" class="panel_link_wrapper">
 											<div class="panel_link panel_element_transparent">
-												<div class="panel_link_background">
-													<span class="panel_link_text">Galerii</span>
+												<div class="panel_diamond">
+													<div class="panel_diamond_background panel_link_background">
+														<span class="panel_link_text">Galerii</span>
+														<div class="panel_diamond_overlay">
+															<span class="panel_diamond_overlay_text">
+																Vaata lähemalt
+															</span>
+														</div>
+													</div>
 												</div>
-												<a class="panel_link_button" target="_blank" href="https://martin-kitsemagi.github.io/samples/gallery">Vaata lähemalt<i class="fas fa-chevron-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -235,16 +442,26 @@
 								</p>
 								
 								<form id="contact_form" class="panel_form" action="https://formspree.io/mk.webmessages@gmail.com" method="post">
-									<div class="panel_form_input_wrapper">
-										<span class="panel_form_text">Teie email:</span>
-										<input class="panel_form_input" type="email" name="email" required>
+									<div class="panel_form_input_wrapper panel_element_transparent">
+										<div class="panel_element_border">
+											<span></span><span></span><span></span><span></span>
+										</div>
+										<label class="panel_form_label" for="contact_form_email">Teie email</label>
+										<input id="contact_form_email" class="panel_form_input" type="email" name="email" required>
 									</div>
-									<div class="panel_form_input_wrapper">
-										<span class="panel_form_text">Teema:</span>
-										<input class="panel_form_input" type="text" name="subject" required>
+									<div class="panel_form_input_wrapper panel_element_transparent">
+										<div class="panel_element_border">
+											<span></span><span></span><span></span><span></span>
+										</div>
+										<label class="panel_form_label" for="contact_form_subject">Teema</label>
+										<input id="contact_form_subject" class="panel_form_input" type="text" name="subject" required>
 									</div>
 									<div class="panel_form_textarea_wrapper">
-										<textarea class="panel_form_textarea" name="message" required></textarea>
+										<div class="panel_element_border">
+											<span></span><span></span><span></span><span></span>
+										</div>
+										<label class="panel_form_label" for="contact_form_message">Sõnum</label>
+										<textarea id="panel_form_message" class="panel_form_textarea" name="message" required></textarea>
 									</div>
 									<div class="panel_form_submit_wrapper">
 										<input class="panel_form_submit" type="submit" value="Saada sõnum">
@@ -256,15 +473,27 @@
 					</div>
 				</div>
 			</div>
-			
+
+		
+			<svg id="footer_transition_svg" class="page_inner_wrapper_top_transition_svg panel_transition_svg" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 750 100" preserveAspectRatio="none">
+				<path class="page_inner_wrapper_top_transition_svg_top" d="M 0 250 S -100 -150, 1250 185 L 900 0 L 0 0 Z"></path>
+				<path d="M 0 125 S 0 -100, 1100 150 L 900 0 L 0 0 Z"></path>
+			</svg>
+		
+		
 			<div id="footer" class="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg">
 							<div class="panel_inner_wrapper">
 								<div class="footer_text">
-									<span>Mk</span>
-									<p>2019</p>
+									<p>Tehtud <i class="fas fa-coffee"></i> ja <i class="fas fa-heart"></i> Eestis</p>
+								</div>
+								<div class="footer_text">
+									<p>Email: <b>martin.kitsemagi@gmail.com</b></p>
+								</div>
+								<div class="footer_text">
+									<p><span>Mk</span> 2019</p>
 								</div>
 							</div>
 						</div>

@@ -1,0 +1,14 @@
+
+#qualities {
+	padding: 4em 0 0 0;
+	
+	background-color: #FAFAFA;
+}
+
+#qualities .panel_title_large {
+	color: #283177;
+}
+
+#qualities .panel_text_large {
+	margin: 3.5em 0 0 0;
+}

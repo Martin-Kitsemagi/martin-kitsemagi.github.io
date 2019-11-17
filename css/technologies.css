@@ -1,8 +1,135 @@
-.technologies {
-	background-color: #45556a;
+
+#technologies {
+	padding: 5em 0 0 0;
+	
+	background-color: #FAFAFA;
 }
 
-.technologies .technologies_panel_transition_svg {
-	background-color: #45556a;
-	fill: #38455c;
+#technologies .panel_illustration {
+	bottom: -0.5em;
+	right: 2em;
 }
+
+#technologies .panel_illustration i {
+	color: #ffe0e0;
+}
+
+#html5_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #e75e3c, #e3441c);
+}
+
+#css3_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #195af0, #0e4ee1);
+}
+
+#js_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #ecd227, #ebce14);
+}
+
+#sass_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #c34b85, #bb3e7b);
+}
+
+#bootstrap_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #8465b3, #7754ab);
+}
+
+#wordpress_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #0095c7, #0078a1);
+}
+
+#php_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #5b5ea4, #55599b);
+}
+
+#sql_icon .panel_hexagon_background {
+	background: linear-gradient(to bottom right, #f3951a, #e7880c);
+}
+
+@media (max-width: 485.98px) {
+	.panel_icons {
+		height: 23em !important;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper {
+		width: 23em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
+		top: -3.75em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
+		top: -7.5em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
+		margin: 0 0.25em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon {
+		width: 7em;
+		height: 10em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon i {
+		font-size: 4.5em;
+	}
+}
+
+@media (max-width: 370.98px) {
+	.panel_icons {
+		height: 19em !important;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper {
+		width: 19em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
+		width: 14em;
+		top: -2.75em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
+		top: -5.5em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
+		margin: 0 0.25em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon {
+		width: 5.5em;
+		height: 7.85em;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon i {
+		font-size: 3.5em;
+	}
+}
+
+@media (max-width: 310.98px) {
+	.panel_icons {
+		width: 100%;
+		height: auto !important;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper {
+		width: 100%;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
+		width: 100%;
+		top: 0;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
+		top: 0;
+	}
+	
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
+		margin: -1em 0.5em;
+	}
+}
+

@@ -207,6 +207,10 @@
 	box-shadow: 0 0.15em 0.25em rgba(26, 26, 26, 0.25);
 }
 
+#samples_view .samples_view_text .samples_view_text_link i {
+	margin: 0 0 0 0.75em;
+}
+
 #samples_view .samples_view_text .samples_view_text_link:hover {
 	background: linear-gradient(to bottom right, #323e81, #2c3772);
 }
@@ -252,6 +256,10 @@
 		max-width: 31em;
 		margin: 0 auto;
 		padding: 0.5em 0 4em 0;
+	}
+		
+	#samples_view .samples_view_text {
+		text-align: center;
 	}
 }
 
@@ -299,6 +307,14 @@
 	#samples_view .sample_gallery .samples_view_mobile .samples_view_mobile_background {
 		background: url("../images/scaled/sample_gallery_mobile_background_small.jpg");
 	}
+		
+	#samples_view .samples_view_text .samples_view_text_link {
+		width: 12em;
+		margin: 0.5em 0.5em 0.5em 0;
+		padding: 0.75em 0;
+		
+		text-align: center;
+	}
 }
 
 @media (max-width: 428.98px) {
@@ -317,13 +333,6 @@
 	
 	.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_diamond .panel_diamond_background .panel_link_text {
 		font-size: 1.2em;
-	}
-	
-	#samples_view .samples_view_text .samples_view_text_link {
-		width: 10.5em;
-		margin: 0.5em 0.5em 0.5em 0;
-		
-		text-align: center;
 	}
 }
 

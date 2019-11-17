@@ -219,7 +219,7 @@
 
 @media (max-width: 767.98px) {
 	#header {
-		background-attachment: scroll !important;
-		background-size: cover !important;
+		background-attachment: initial;
+		background-size: cover;
 	}
 }

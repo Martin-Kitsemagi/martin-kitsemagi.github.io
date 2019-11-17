@@ -216,3 +216,10 @@
 	border-right: 0.3125em solid transparent;
 	border-left: 0.3125em solid transparent;
 }
+
+@media (max-width: 767.98px) {
+	#header {
+		background-attachment: initial;
+		background-size: cover;
+	}
+}

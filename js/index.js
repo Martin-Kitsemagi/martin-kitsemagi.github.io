@@ -69,9 +69,8 @@ function windowScrollListener() {
 	function headerElementsSetStyle() {
 		var viewport_top = $(window).scrollTop();
 		var viewport_height = $(window).outerHeight();
-		var mobile_width = 767.98;
 		
-		if ($(window).outerWidth() <= mobile_width) {
+		if (/Mobi/.test(navigator.userAgent)) {
 			headerElementSetStyle("#header_title", 20);
 			headerElementSetStyle("#header_arrow", 50);
 		}
@@ -93,9 +92,8 @@ function windowScrollListener() {
 	
 	function parallaxScroll() {
 		var parallax_speed = 0.5;
-		var mobile_width = 767.98;
 		
-		if ($(window).outerWidth() > mobile_width && $(window).scrollTop() < $("#header").outerHeight()) {
+		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $("#header").outerHeight()) {
 			$(".parallax").css("top", $(window).scrollTop() * parallax_speed);
 		}
 	}
@@ -126,6 +124,12 @@ function windowResizeListener() {
 		if (font_size < 14) font_size = 14;
 
 		page.css("font-size", font_size);
+	}
+}
+
+function contactSetMobile() {
+	if (/Mobi/.test(navigator.userAgent)) {
+		$("#contact").addClass("panel_mobile");
 	}
 }
 
@@ -191,4 +195,6 @@ $(document).ready(function() {
 	formInputListener();
 	
 	samplesView();
+	
+	contactSetMobile();
 });

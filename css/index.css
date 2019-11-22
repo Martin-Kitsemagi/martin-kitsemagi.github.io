@@ -20,8 +20,8 @@ button:focus, input:focus, textarea:focus {
 	text-decoration: none;
 }
 
-* a:hover {
-	text-decoration: underline;
+* a:hover, * a:focus {
+	text-decoration: underline !important;
 }
 
 .no_text_select {
@@ -107,6 +107,10 @@ button:focus, input:focus, textarea:focus {
 	color: #FAFAFA;
 }
 
+.panel_mobile {
+	background-attachment: initial !important;
+}
+
 .panel {
 	position: relative;
 }
@@ -168,15 +172,15 @@ button:focus, input:focus, textarea:focus {
 	padding: 0.5em 0.5em 0.5em 0;
 	margin-bottom: 1em;
 	
-	text-decoration: underline;
+	transition: transform 225ms ease-out;
 }
 
 .panel_text_link i {
 	display: inline;
 }
 
-.panel_text_link:hover {
-	color: #fe8b8b;
+.panel_text_link:hover, .panel_text_link:focus {
+	transform: scale(0.95);
 }
 
 .panel .panel_element_transparent {
@@ -287,8 +291,14 @@ button:focus, input:focus, textarea:focus {
 	background-color: transparent;
 	
 	transform: rotate(120deg);
-
+	
+	transition: transform 225ms ease-out;
+	
 	pointer-events: none;
+}
+
+.panel_hexagon:hover {
+	transform: rotate(120deg) scale(0.95);
 }
 
 .panel_hexagon .panel_hexagon_inner_wrapper {
@@ -317,7 +327,13 @@ button:focus, input:focus, textarea:focus {
 	
 	transform: rotate(45deg);
 	
+	transition: transform 225ms ease-out;
+	
 	pointer-events: auto;
+}
+
+.panel_diamond:hover {
+	transform: rotate(45deg) scale(0.95);
 }
 
 .panel_diamond .panel_diamond_background {
@@ -691,6 +707,7 @@ button:focus, input:focus, textarea:focus {
 .panel_form .panel_form_submit {
 	width: 100%;
 	height: 3.5em;
+	display: inline-block;
 	
 	color: #FAFAFA;
 	font-size: 1.05em;
@@ -703,13 +720,15 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0.1em;
 	
-	transition: background 75ms ease-out;
+	transition: transform 225ms ease-in-out;
 }
 
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
 	cursor: pointer;
 	
 	background: linear-gradient(to bottom right, #fe8b8b, #fe7777);
+	
+	transform: scale(0.95);
 }
 
 @media (min-width: 1920.98px) {

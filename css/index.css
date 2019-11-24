@@ -877,7 +877,7 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.panel_form .panel_form_textarea_wrapper {
-		margin: 0 0 0.75em 0;
+		margin: 0 0 1em 0;
 	}
 
 	.panel_form .panel_form_input_wrapper:nth-child(2n + 1) {

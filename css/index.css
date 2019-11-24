@@ -44,7 +44,7 @@ button:focus, input:focus, textarea:focus {
 	position: relative;
 	left: 0;
 
-	transition: left 0.425s ease-in-out;
+	transition: transform 0.425s ease-in-out;
 }
 
 .page_inner_wrapper_top_transition_svg, .page_inner_wrapper_bottom_transition_svg {
@@ -760,7 +760,7 @@ button:focus, input:focus, textarea:focus {
 
 @media (max-width: 767.98px) {
 	.page_inner_wrapper_mobile {
-		left: 55% !important;
+		transform: translate3d(55%, 0, 0);
 	}
 	
 	#page_nav {
@@ -774,7 +774,7 @@ button:focus, input:focus, textarea:focus {
 		
 		background-color: #222a58;
 		
-		transition: left 0.425s ease-in-out;
+		transition: transform 0.425s ease-in-out;
 	}
 	
 	.page_nav_scroll {
@@ -782,7 +782,7 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.page_nav_mobile {
-		left: 0% !important;
+		transform: translate3d(100%, 0, 0);
 	}
 	
 	#page_nav .page_nav_element_icon {
@@ -887,7 +887,7 @@ button:focus, input:focus, textarea:focus {
 
 @media (max-width: 575.98px) {
 	.page_inner_wrapper_mobile {
-		left: 70% !important;
+		transform: translate3d(70%, 0, 0);
 	}
 	
 	#page_nav {

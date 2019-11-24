@@ -34,7 +34,7 @@
 	
 	background-color: #FAFAFA;
 	
-	transition: left 0.425s ease-in-out;
+	transition: transform 0.425s ease-in-out;
 }
 
 .samples_view_body_display {
@@ -42,11 +42,11 @@
 }
 
 .samples_view_page_display {
-	left: -100% !important;
+	transform: translate3d(-100%, 0, 0);
 }
 
 .samples_view_display {
-	left: 0% !important;
+	transform: translate3d(-100%, 0, 0);
 }
 
 .samples_view_display .samples_view_mobile {

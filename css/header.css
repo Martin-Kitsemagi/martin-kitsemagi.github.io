@@ -93,15 +93,13 @@
 }
 
 #header #header_nav {
-	top: 0;
+	top: -5em;
 	
 	background: rgba(44, 55, 114, 0.95);
 	
 	box-shadow: 0 0.2em 0.5em rgba(26, 26, 26, 0.25);
 	
-	transform: translate3d(0, -5em, 0);
-	
-	transition: top 425ms ease-out;
+	transition: transform 425ms ease-out;
 }
 
 #header #header_nav .header_nav_element {
@@ -126,7 +124,7 @@
 }
 
 #header .header_nav_scroll {
-	top: 5em !important;
+	transform: translate3d(0, 5em, 0);
 }
 
 #header .header_nav .header_nav_icon {

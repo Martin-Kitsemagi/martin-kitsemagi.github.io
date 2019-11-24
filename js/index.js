@@ -104,7 +104,7 @@ function windowScrollListener() {
 	function parallaxScroll() {
 		var parallax_speed = 0.5;
 		
-		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $(window).outerHeight()) {
+		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $("#header").outerHeight()) {
 			$(".parallax").css("top", $(window).scrollTop() * parallax_speed);
 		}
 	}

@@ -35,14 +35,14 @@
 <body>
 	<div id="page_wrapper">
 		<div id="page_nav" class="no_text_select">
-			<div class="page_nav_element_icon">
+			<div class="page_nav_element_icon scroll_header">
 				<span>Mk</span>
 			</div>
 			
-			<div id="about_me_nav" class="page_nav_element">Minust<span><i class="fas fa-user-astronaut"></i></span></div>
-			<div id="qualities_nav" class="page_nav_element">Oskused<span><i class="fas fa-code-branch"></i></span></div>
-			<div id="samples_nav" class="page_nav_element">Näidised<span><i class="far fa-file-image"></i></span></div>
-			<div id="contact_nav" class="page_nav_element">Kontakt<span><i class="far fa-address-book"></i></span></div>
+			<div class="page_nav_element scroll_about_me">Minust<span><i class="fas fa-user-astronaut"></i></span></div>
+			<div class="page_nav_element scroll_qualities">Oskused<span><i class="fas fa-code-branch"></i></span></div>
+			<div class="page_nav_element scroll_samples">Näidised<span><i class="far fa-file-image"></i></span></div>
+			<div class="page_nav_element scroll_contact">Kontakt<span><i class="far fa-address-book"></i></span></div>
 		</div>
 		
 		<div id="samples_view">
@@ -116,16 +116,42 @@
 					<span>Kujundaja</span>
 				</div>
 				
-				<div class="header_nav">
-					<div class="header_nav_icon">Mk</div>
-
-					<div id="header_nav_mobile" class="header_nav_mobile">
+				<div id="header_nav_top" class="header_nav">
+					<div class="header_nav_icon scroll_header">
+						<span>Mk</span>
+					</div>
+				
+					<div class="header_nav_mobile">
 						<div class="header_nav_mobile_inner_wrapper">
 							<div class="header_nav_mobile_top"></div>
 							<div class="header_nav_mobile_middle"></div>
 							<div class="header_nav_mobile_bottom"></div>
 						</div>
 					</div>
+					
+					<div class="header_nav_element scroll_about_me">Minust</div>
+					<div class="header_nav_element scroll_qualities">Oskused</div>
+					<div class="header_nav_element scroll_samples">Näidised</div>
+					<div class="header_nav_element scroll_contact">Kontakt</div>
+				</div>
+				
+				<div id="header_nav" class="header_nav">
+					<div class="header_nav_icon scroll_header">
+						<span>Mk</span>
+					</div>
+				
+					<div class="header_nav_mobile">
+						<div class="header_nav_mobile_inner_wrapper">
+							<div class="header_nav_mobile_top"></div>
+							<div class="header_nav_mobile_middle"></div>
+							<div class="header_nav_mobile_bottom"></div>
+						</div>
+					</div>
+					
+					<div class="header_nav_element scroll_about_me">Minust</div>
+					<div class="header_nav_element scroll_qualities">Oskused</div>
+					<div class="header_nav_element scroll_samples">Näidised</div>
+					<div class="header_nav_element scroll_contact">Kontakt</div>
 				</div>
 				
 				<div id="header_arrow" class="header_element_opaque">
@@ -442,19 +468,29 @@
 								</p>
 								
 								<form id="contact_form" class="panel_form" action="https://formspree.io/mk.webmessages@gmail.com" method="post">
-									<div class="panel_form_input_wrapper panel_element_transparent">
+									<div class="panel_form_input_wrapper">
 										<div class="panel_element_border">
 											<span></span><span></span><span></span><span></span>
 										</div>
 										<label class="panel_form_label" for="contact_form_email">Teie email</label>
 										<input id="contact_form_email" class="panel_form_input" type="email" name="email" required>
+										<div class="panel_form_input_button">
+											<div class="panel_form_input_button_inner_wrapper">
+												<div></div><div></div>
+											</div>
+										</div>
 									</div>
-									<div class="panel_form_input_wrapper panel_element_transparent">
+									<div class="panel_form_input_wrapper">
 										<div class="panel_element_border">
 											<span></span><span></span><span></span><span></span>
 										</div>
 										<label class="panel_form_label" for="contact_form_subject">Teema</label>
 										<input id="contact_form_subject" class="panel_form_input" type="text" name="subject" required>
+										<div class="panel_form_input_button">
+											<div class="panel_form_input_button_inner_wrapper">
+												<div></div><div></div>
+											</div>
+										</div>
 									</div>
 									<div class="panel_form_textarea_wrapper">
 										<div class="panel_element_border">
@@ -462,6 +498,11 @@
 										</div>
 										<label class="panel_form_label" for="panel_form_message">Sõnum</label>
 										<textarea id="panel_form_message" class="panel_form_textarea" name="message" required></textarea>
+										<div class="panel_form_input_button">
+											<div class="panel_form_input_button_inner_wrapper">
+												<div></div><div></div>
+											</div>
+										</div>
 									</div>
 									<div class="panel_form_submit_wrapper">
 										<button class="panel_form_submit" type="submit">

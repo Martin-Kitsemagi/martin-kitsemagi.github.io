@@ -2,6 +2,7 @@
 function windowScrollListener() {
 	$(window).on("scroll", function() {
 		panelsSetStyle();
+		headerNavSetStyle();
 		headerElementsSetStyle();
 		parallaxScroll();
 	});
@@ -66,6 +67,16 @@ function windowScrollListener() {
 		}
 	}
 	
+	function headerNavSetStyle() {
+		var scroll_from_top = 250;
+		
+		if ($(window).scrollTop() > scroll_from_top) {
+			$("#header_nav").addClass("header_nav_scroll");
+		} else {
+			$("#header_nav").removeClass("header_nav_scroll");
+		}
+	}
+	
 	function headerElementsSetStyle() {
 		var viewport_top = $(window).scrollTop();
 		var viewport_height = $(window).outerHeight();
@@ -93,7 +104,7 @@ function windowScrollListener() {
 	function parallaxScroll() {
 		var parallax_speed = 0.5;
 		
-		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $("#header").outerHeight()) {
+		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $(window).outerHeight()) {
 			$(".parallax").css("top", $(window).scrollTop() * parallax_speed);
 		}
 	}
@@ -150,6 +161,30 @@ function formInputListener() {
 	$(".panel_form_input, .panel_form_textarea").on("focusout", function() {
 		if ($(this).val() === "" && $(this).siblings(".panel_form_label")) {
 			$(this).parent().removeClass("panel_form_label_top");
+		}
+	});
+	
+	$(".panel_form_input, .panel_form_textarea").on("input change", function() {
+		if ($(this).val() !== "") {
+			if ($(this).siblings(".panel_form_input_button")) {
+				$(this).parent().addClass("panel_form_button_right");
+			}
+		} else {
+			if ($(this).siblings(".panel_form_input_button")) {
+				$(this).parent().removeClass("panel_form_button_right");
+			}
+		}
+	});
+	
+	$(".panel_form_input_button").on("click", function() {
+		if ($(this).siblings("input")) {
+			$(this).siblings("input:first").val("").change();
+			$(this).siblings("input:first").focus();
+		}
+		
+		if ($(this).siblings("textarea")) {
+			$(this).siblings("textarea:first").val("").change();
+			$(this).siblings("textarea:first").focus();
 		}
 	});
 }

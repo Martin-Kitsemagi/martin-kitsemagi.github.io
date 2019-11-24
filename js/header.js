@@ -1,6 +1,6 @@
 
 function navMobile() {
-	$("#header_nav_mobile").on("click", function(event) {
+	$(".header_nav_mobile").on("click", function(event) {
 		if ($("#page_nav").hasClass("page_nav_mobile")) {
 			navMobileClose();
 		} else {
@@ -18,22 +18,38 @@ function navMobile() {
 function navMobileOpen() {
 	$("#page_nav").addClass("page_nav_mobile");
 	$("#page_inner_wrapper").addClass("page_inner_wrapper_mobile");
-	$("#header_nav_mobile").addClass("header_nav_mobile_animate");
+	$(".header_nav_mobile").addClass("header_nav_mobile_animate");
 }
 
 function navMobileClose() {
 	$("#page_nav").removeClass("page_nav_mobile");
 	$("#page_inner_wrapper").removeClass("page_inner_wrapper_mobile");
-	$("#header_nav_mobile").removeClass("header_nav_mobile_animate");
+	$(".header_nav_mobile").removeClass("header_nav_mobile_animate");
 }
 
 function navPage() {
-	$(".page_nav_element").on("click", function() {
-		if ($(this).attr("id") !== undefined) {
-			scrollToPanel("#" + $(this).attr("id").replace("_nav", ""));
+	$("[class*=scroll_]").on("click", function() {
+		var classes = $(this).attr("class").split(" ");
+		var id;
+		
+		for (var i = 0; i < classes.length; i++) {
+			if (classes[i].substring(0, 7) === "scroll_") {
+				id = "#" + classes[i].substring(7, classes[i].length);
+				break;
+			}
 		}
 		
-		navMobileClose();
+		if (id !== undefined) {
+			if (id === "#header") {
+				scrollToTop();
+			} else {
+				scrollToPanel(id);
+			}
+			
+			if ($(this).hasClass("page_nav_element") || $(this).hasClass("page_nav_element_icon")) {
+				navMobileClose();
+			}
+		}
 	});
 }
 

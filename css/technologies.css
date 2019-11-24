@@ -46,6 +46,12 @@
 	background: linear-gradient(to bottom right, #f3951a, #e7880c);
 }
 
+@media (max-width: 575.98px) {
+	#technologies {
+		padding: 4em 0 0 0;
+	}
+}
+
 @media (max-width: 485.98px) {
 	.panel_icons {
 		height: 23em !important;

@@ -10,15 +10,15 @@
 }
 
 #sample_the_cube .panel_link_background {
-	background: url(../images/scaled/sample_the_cube_background.jpg);
+	background-image: url(../images/scaled/sample_the_cube_background.jpg);
 }
 
 #sample_animal_park .panel_link_background {
-	background: url(../images/scaled/sample_animal_park_background.jpg);
+	background-image: url(../images/scaled/sample_animal_park_background.jpg);
 }
 
 #sample_gallery .panel_link_background {
-	background: url(../images/scaled/sample_gallery_background.jpg);
+	background-image: url(../images/scaled/sample_gallery_background.jpg);
 }
 
 #samples_view {
@@ -34,7 +34,7 @@
 	
 	background-color: #FAFAFA;
 	
-	transition: transform 0.425s ease-in-out;
+	transition: left 0.425s ease-in-out;
 }
 
 .samples_view_body_display {
@@ -42,17 +42,15 @@
 }
 
 .samples_view_page_display {
-	transform: translate3d(-100%, 0, 0);
+	left: -100% !important;
 }
 
 .samples_view_display {
-	transform: translate3d(-100%, 0, 0);
+	left: 0% !important;
 }
 
 .samples_view_display .samples_view_mobile {
-	top: 0em !important;
-	
-	opacity: 0;
+	transform: translate3d(0, 5em, 0);
 	
 	animation: samples_view_mobile_top 325ms ease-out;
 	animation-delay: 225ms;
@@ -60,21 +58,13 @@
 }
 
 @keyframes samples_view_mobile_top {
-	50% {
-		opacity: 1;
-	}
 	100% {
-		top: -5em;
-		
-		opacity: 1;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
 .samples_view_display .samples_view_text {
-	position: relative;
-	top: 5em;
-	
-	opacity: 0;
+	transform: translate3d(0, 5em, 0);
 	
 	animation: samples_view_text_top 325ms ease-out;
 	animation-delay: 375ms;
@@ -82,13 +72,8 @@
 }
 
 @keyframes samples_view_text_top {
-	50% {
-		opacity: 1;
-	}
 	100% {
-		top: 0;
-		
-		opacity: 1;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
@@ -218,6 +203,7 @@
 #samples_view .samples_view_text {
 	padding: 3em 0 4em 0;
 	display: none;
+	position: relative;
 }
 
 #samples_view .samples_view_text_display {
@@ -280,7 +266,7 @@
 }
 
 #samples_view .sample_the_cube .samples_view_mobile .samples_view_mobile_background {
-	background: url("../images/scaled/sample_the_cube_mobile_background.jpg");
+	background-image: url("../images/scaled/sample_the_cube_mobile_background.jpg");
 }
 
 #samples_view .sample_the_cube .samples_view_text h2 {
@@ -292,7 +278,7 @@
 }
 
 #samples_view .sample_animal_park .samples_view_mobile .samples_view_mobile_background {
-	background: url("../images/scaled/sample_animal_park_mobile_background.jpg");
+	background-image: url("../images/scaled/sample_animal_park_mobile_background.jpg");
 }
 
 #samples_view .sample_animal_park .samples_view_text h2 {
@@ -304,7 +290,7 @@
 }
 
 #samples_view .sample_gallery .samples_view_mobile .samples_view_mobile_background {
-	background: url("../images/scaled/sample_gallery_mobile_background.jpg");
+	background-image: url("../images/scaled/sample_gallery_mobile_background.jpg");
 }
 
 #samples_view .sample_gallery .samples_view_text h2 {
@@ -357,15 +343,15 @@
 	}
 	
 	#samples_view .sample_the_cube .samples_view_mobile .samples_view_mobile_background {
-		background: url("../images/scaled/sample_the_cube_mobile_background_small.jpg");
+		background-image: url("../images/scaled/sample_the_cube_mobile_background_small.jpg");
 	}
 	
 	#samples_view .sample_animal_park .samples_view_mobile .samples_view_mobile_background {
-		background: url("../images/scaled/sample_animal_park_mobile_background_small.jpg");
+		background-image: url("../images/scaled/sample_animal_park_mobile_background_small.jpg");
 	}
 	
 	#samples_view .sample_gallery .samples_view_mobile .samples_view_mobile_background {
-		background: url("../images/scaled/sample_gallery_mobile_background_small.jpg");
+		background-image: url("../images/scaled/sample_gallery_mobile_background_small.jpg");
 	}
 		
 	#samples_view .samples_view_text .samples_view_text_link {

@@ -930,6 +930,10 @@ button:focus, input:focus, textarea:focus {
 		left: -70%;
 	}
 	
+	.panel .panel_element_border span {
+		font-size: 1.25em;
+	}
+	
 	.panel_qualities .col-lg-3 {
 		width: 100%;
 		max-width: 100%;

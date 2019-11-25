@@ -18,12 +18,14 @@ function navMobile() {
 function navMobileOpen() {
 	$("#page_nav").addClass("page_nav_mobile");
 	$("#page_inner_wrapper").addClass("page_inner_wrapper_mobile");
+	$("#header_nav").addClass("header_nav_scroll_mobile");
 	$(".header_nav_mobile").addClass("header_nav_mobile_animate");
 }
 
 function navMobileClose() {
 	$("#page_nav").removeClass("page_nav_mobile");
 	$("#page_inner_wrapper").removeClass("page_inner_wrapper_mobile");
+	$("#header_nav").removeClass("header_nav_scroll_mobile");
 	$(".header_nav_mobile").removeClass("header_nav_mobile_animate");
 }
 

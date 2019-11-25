@@ -23,10 +23,6 @@
 	color: #FAFAFA;
 }
 
-#contact .panel_element_border span {
-	background-color: #FAFAFA;
-}
-
 @media (max-width: 767.98px) {
 	#contact {
 		background-size: cover;

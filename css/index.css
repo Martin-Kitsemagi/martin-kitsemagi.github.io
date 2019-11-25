@@ -181,13 +181,13 @@ button:focus, input:focus, textarea:focus {
 	position: absolute;
 	z-index: 1;
 	
-	background-color: #57578c;
+	background-color: #FAFAFA;
+	font-size: 1.05em;
 }
 
 .panel .panel_element_border span:nth-of-type(1) {
 	max-width: 100%;
 	height: 0.0625em;
-	min-height: 1px;
 	top: 0;
 	left: 0;
 	
@@ -198,7 +198,6 @@ button:focus, input:focus, textarea:focus {
 
 .panel .panel_element_border span:nth-of-type(2) {
 	width: 0.0625em;
-	min-width: 1px;
 	max-height: 100%;
 	top: 0;
 	right: 0;
@@ -212,7 +211,6 @@ button:focus, input:focus, textarea:focus {
 .panel .panel_element_border span:nth-of-type(3) {
 	max-width: 100%;
 	height: 0.0625em;
-	min-height: 1px;
 	bottom: 0;
 	left: 0;
 	
@@ -224,7 +222,6 @@ button:focus, input:focus, textarea:focus {
 
 .panel .panel_element_border span:nth-of-type(4) {
 	width: 0.0625em;
-	min-width: 1px;
 	max-height: 100%;
 	top: 0;
 	left: 0;
@@ -578,8 +575,8 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper {
-	width: 1em;
-	height: 1em;
+	width: 1.25em;
+	height: 1.25em;
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
@@ -587,16 +584,16 @@ button:focus, input:focus, textarea:focus {
 
 .panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div {
 	width: 100%;
-	height: 0.2em;
+	height: 0.15em;
 	position: absolute;
-	top: calc(50% - 0.1em);
+	top: 50%;
 	left: 0%;
 	
 	background-color: #FAFAFA;
 	
 	opacity: 0;
 	
-	border-radius: 0.075em;
+	border-radius: 0.15em;
 	
 	transition: background-color 75ms ease-out, opacity 125ms ease-out;
 }
@@ -615,6 +612,7 @@ button:focus, input:focus, textarea:focus {
 
 .panel_form .panel_form_input_wrapper {
 	width: 48%;
+	height: 3.5em;
 	margin: 1.25em 0 1.25em 0;
 	position: relative;
 	float: left;
@@ -655,7 +653,7 @@ button:focus, input:focus, textarea:focus {
 
 .panel_form .panel_form_input_wrapper .panel_form_input {
 	width: 100%;
-	height: 3.5em;
+	height: 100%;
 	padding: 0 3em 0 1em;
 	
 	background-color: transparent;
@@ -771,6 +769,7 @@ button:focus, input:focus, textarea:focus {
 		position: fixed;
 		top: 0;
 		left: -55%;
+		z-index: 11;
 		
 		background-color: #222a58;
 		
@@ -854,6 +853,10 @@ button:focus, input:focus, textarea:focus {
 		transform: translate(0, -50%);
 	}
 	
+	.panel .panel_element_border span {
+		font-size: 1.15em;
+	}
+	
 	.panel .panel_inner_wrapper {
 		padding: 0 2.5% 2em 2.5%;
 	}
@@ -867,9 +870,31 @@ button:focus, input:focus, textarea:focus {
 		margin: 2em auto 3em auto;
 	}
 	
+	.panel_form .panel_form_input_button {
+		width: 3em;
+		height: 3em;
+		
+		line-height: 3em;
+	}
+	
+	.panel_form .panel_form_label {
+		top: 0.8em;
+		left: 1em;
+	}
+
+	.panel_form .panel_form_label_top .panel_form_label {
+		top: -1.85em;
+		left: 0;
+	}
+	
 	.panel_form .panel_form_input_wrapper {
 		width: 100%;
+		height: 3em;
 		margin: 0 0 1.25em 0;
+	}
+	
+	.panel_form .panel_form_input_wrapper .panel_form_input {
+		padding-right: 2.5em;
 	}
 	
 	.panel_form .panel_form_input_wrapper:nth-child(1) {
@@ -877,11 +902,21 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.panel_form .panel_form_textarea_wrapper {
-		margin: 0 0 1em 0;
+		margin: 0 0 0.75em 0;
+	}
+
+	.panel_form .panel_form_textarea_wrapper .panel_form_textarea {
+		padding: 0.8em 2.5em 0.2em 1em;
 	}
 
 	.panel_form .panel_form_input_wrapper:nth-child(2n + 1) {
 		margin-right: 0;
+	}
+	
+	.panel_form .panel_form_submit {
+		height: 3em;
+		
+		line-height: 3em;
 	}
 }
 

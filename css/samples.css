@@ -169,12 +169,11 @@
 	top: 50%;
 	left: 50%;
 	
-	background-color: #f7f7fa;
 	background-repeat: no-repeat !important;
 	background-position: top center !important;
 	background-size: cover !important;
 	
-	border-radius: 0.25em;
+	border-radius: 0.1em;
 	
 	transform: translate(-50%, -50%);
 }

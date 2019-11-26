@@ -923,21 +923,21 @@ button:focus, input:focus, textarea:focus {
 		left: -70%;
 	}
 	
-	.panel .panel_element_border span:nth-of-type(1) {
-		min-height: 1.5px;
+	/*.panel .panel_element_border span:nth-of-type(1) {
+		height: 0.1em;
 	}
 	
 	.panel .panel_element_border span:nth-of-type(2) {
-		
+		width: 0.1em;
 	}
 
 	.panel .panel_element_border span:nth-of-type(3) {
-		min-height: 1.5px;
+		height: 0.1em;
 	}
 
 	.panel .panel_element_border span:nth-of-type(4) {
-		
-	}
+		width: 0.1em;
+	}*/
 	
 	.panel_qualities .col-lg-3 {
 		width: 100%;

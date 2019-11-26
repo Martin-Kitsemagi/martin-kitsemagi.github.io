@@ -865,25 +865,9 @@ button:focus, input:focus, textarea:focus {
 		margin: 2em auto 3em auto;
 	}
 	
-	.panel_form .panel_form_input_button {
-		width: 3em;
-		height: 3em;
-		
-		line-height: 3em;
-	}
-	
-	.panel_form .panel_form_label {
-		top: 0.8em;
-	}
-	
 	.panel_form .panel_form_input_wrapper {
 		width: 100%;
-		height: 3em;
 		margin: 0 0 1.25em 0;
-	}
-	
-	.panel_form .panel_form_input_wrapper .panel_form_input {
-		padding-right: 2.5em;
 	}
 	
 	.panel_form .panel_form_input_wrapper:nth-child(1) {
@@ -894,18 +878,8 @@ button:focus, input:focus, textarea:focus {
 		margin: 0 0 0.75em 0;
 	}
 
-	.panel_form .panel_form_textarea_wrapper .panel_form_textarea {
-		padding: 0.8em 2.5em 0.2em 1em;
-	}
-
 	.panel_form .panel_form_input_wrapper:nth-child(2n + 1) {
 		margin-right: 0;
-	}
-	
-	.panel_form .panel_form_submit {
-		height: 3em;
-		
-		line-height: 3em;
 	}
 }
 

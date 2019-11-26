@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
 	<title>Sample gallery</title>
 	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no' />
-	<meta name='description' content=''>
-	
-	<link rel='icon' type="image/png" href="../../../images/icon.png" />
+	<meta name='viewport' content='width=device-width, initial-scale = 1.0, maximum-scale=5.0'>
+
+	<link rel='icon' type="image/png" href="../../../images/icon.png">
 
 	<link href='../Css/font-awesome-4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 	
@@ -224,10 +223,10 @@
 					</h2>
 					
 					<form action='' onsubmit='return false;'>
-						<input id='contact_name' placeholder='Name' maxlength='100' tabindex='1' spellcheck='false' required></input>
-						<input id='contact_email' placeholder='Email' maxlength='100' tabindex='1' spellcheck='false' required></input>
-						<input id='contact_phone' placeholder='Phone' maxlength='100' tabindex='1' spellcheck='false' onkeypress='onlyNumbers(event)' required></input>
-						<textarea id='contact_message' placeholder='Message' maxlength='10000' tabindex='1' spellcheck='false' required></textarea>
+						<input id='contact_name' placeholder='Name' maxlength='100' spellcheck='false' required></input>
+						<input id='contact_email' placeholder='Email' maxlength='100' spellcheck='false' required></input>
+						<input id='contact_phone' placeholder='Phone' maxlength='100' spellcheck='false' onkeypress='onlyNumbers(event)' required></input>
+						<textarea id='contact_message' placeholder='Message' maxlength='10000' spellcheck='false' required></textarea>
 						
 						<button id='contact_button' class='no_text_select' onclick='messageSuccess()'>
 							Send

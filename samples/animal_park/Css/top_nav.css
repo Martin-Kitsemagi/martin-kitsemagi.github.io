@@ -568,9 +568,9 @@
 }
 
 @media screen and (max-width: 1296px) {
-	#top_header_wrapper {
+	/*#top_header_wrapper {
 		height: auto;
-	}
+	}*/
 	
 	#top_header_video {
 		display: none;

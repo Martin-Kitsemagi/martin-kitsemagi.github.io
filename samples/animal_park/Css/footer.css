@@ -54,7 +54,7 @@
 }
 
 #footer_inner_wrapper .inner_wrapper_four {
-	border-right: 1px solid #87715e;
+	/*border-right: 1px solid #87715e;*/
 }
 
 #footer_inner_wrapper h1 {
@@ -111,7 +111,7 @@
 #footer_social_media_wrapper {
 	width: 100%;
 	height: auto;
-	margin: 20px 0xp;
+	margin: 20px auto;
 }
 
 #social_media {

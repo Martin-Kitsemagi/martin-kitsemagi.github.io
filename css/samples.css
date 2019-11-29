@@ -253,9 +253,8 @@
 
 #samples_view .samples_view_text .samples_view_text_link:hover,
 	#samples_view .samples_view_text .samples_view_text_link:focus {
-	text-decoration: none !important;
-	
 	background: linear-gradient(to bottom right, #323e81, #2c3772);
+	text-decoration: none !important;
 	
 	transform: scale(0.95);
 }

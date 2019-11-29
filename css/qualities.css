@@ -12,3 +12,27 @@
 #qualities .panel_text_large {
 	margin: 3.5em 0 0 0;
 }
+
+.panel_qualities .col-4:nth-child(1) .panel_quality span {
+	background-color: #e0e0ff;
+}
+
+.panel_qualities .col-4:nth-child(1) .panel_quality span i {
+	color: #0000cc;
+}
+
+.panel_qualities .col-4:nth-child(2) .panel_quality span {
+	background-color: #ffeee0;
+}
+
+.panel_qualities .col-4:nth-child(2) .panel_quality span i {
+	color: #ff7300;
+}
+
+.panel_qualities .col-4:nth-child(3) .panel_quality span {
+	background-color: #e0ffe0;
+}
+
+.panel_qualities .col-4:nth-child(3) .panel_quality span i {
+	color: #00cc00;
+}

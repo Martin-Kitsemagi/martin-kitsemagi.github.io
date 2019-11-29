@@ -127,6 +127,10 @@
 	color: #FAFAFA;
 }
 
+#header_nav .header_nav_element:hover {
+	background-color: #1c2247;
+}
+
 #header_nav .header_nav_mobile .header_nav_mobile_inner_wrapper div {
 	background-color: #FAFAFA;
 }

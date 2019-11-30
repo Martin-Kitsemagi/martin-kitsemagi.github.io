@@ -77,8 +77,8 @@
 #slider_btn_left i, #slider_btn_right i {
 	line-height: 550px;
 	color: #FAFAFA;
-	font-weight: normal;
-	font-size: 48px;
+	/*font-weight: normal;*/
+	font-size: 32px;
 }
 
 #slider_btn_left:hover, #slider_btn_right:hover {

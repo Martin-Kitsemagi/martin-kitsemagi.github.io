@@ -114,7 +114,7 @@
 	margin: 20px auto;
 }
 
-#social_media {
+#footer_social_media {
 	width: auto;
 	height: 100px;
 	float: right;
@@ -123,7 +123,7 @@
 	text-align: center;
 }
 
-#social_media h2 {
+#footer_social_media h2 {
 	display: inline-block;
 	margin-right: 25px;
 	
@@ -133,13 +133,13 @@
 	text-shadow: 1px 1px #0d0d0d;
 }
 
-#social_media div {
+#footer_social_media div {
 	width: 60px;
 	height: 100%;
 	display: inline-block;
 }
 
-#social_media span {
+#footer_social_media span {
 	width: 50px;
 	height: 50px;
 	display: inline-block;
@@ -154,7 +154,7 @@
 	box-shadow: 1px 1px 3px #131313;
 }
 
-#social_media span i {
+#footer_social_media span i {
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -166,7 +166,7 @@
 	line-height: 50px;
 }
 
-#social_media span:hover {
+#footer_social_media span:hover {
 	cursor: pointer;
 	
 	-webkit-filter: brightness(75%);
@@ -250,7 +250,7 @@
 		border: none;
 	}
 	
-	#social_media {
+	#footer_social_media {
 		width: 100%;
 		height: auto;
 		display: inline-block;
@@ -258,14 +258,14 @@
 		line-height: 60px;
 	}
 	
-	#social_media h2 {
+	#footer_social_media h2 {
 		width: 100%;
 		height: auto;
 		
 		text-align: left;
 	}
 	
-	#social_media div {
+	#footer_social_media div {
 		display: block;
 		float: left;
 	}

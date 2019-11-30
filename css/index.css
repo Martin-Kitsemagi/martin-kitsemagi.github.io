@@ -582,6 +582,10 @@ button:focus, input:focus, textarea:focus {
 	margin: 2.75em auto 3em auto;
 }
 
+.panel_form .panel_form_button_right .panel_form_input_button {
+	pointer-events: auto;
+}
+
 .panel_form .panel_form_button_right .panel_form_input_button:hover {
 	cursor: pointer;
 }
@@ -599,6 +603,8 @@ button:focus, input:focus, textarea:focus {
 	
 	line-height: 3.5em;
 	text-align: center;
+	
+	pointer-events: none;
 }
 
 .panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper {

@@ -145,7 +145,7 @@ function contactSetMobile() {
 }
 
 function textareaInputListener() {
-	$("textarea").on("input", function() {
+	$("textarea").on("input change", function() {
 		$(this).css("height", "auto");
 		$(this).css("height", $(this).prop("scrollHeight"));
 	});

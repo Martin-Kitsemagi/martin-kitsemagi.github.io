@@ -421,6 +421,12 @@ button:focus, input:focus, textarea:focus {
 	position: relative;
 	
 	border-radius: 50%;
+	
+	transition: transform 225ms ease-out;
+}
+
+.panel_qualities .col-4 .panel_quality span:hover {
+	transform: scale(0.85);
 }
 
 .panel_qualities .col-4 .panel_quality span i {
@@ -808,7 +814,7 @@ button:focus, input:focus, textarea:focus {
 		left: -55%;
 		z-index: 11;
 		
-		background-color: #222a58;
+		background-color: #1c2247;
 		
 		transition: transform 0.425s ease-in-out;
 	}

@@ -230,7 +230,7 @@
 	padding: 1em 1.55em;
 	display: inline-block;
 	
-	background-color: #fe8080;
+	background-color: #fe7777;
 	color: #FAFAFA;
 	font-size: 1em;
 	
@@ -267,7 +267,7 @@
 
 #samples_view .samples_view_text .samples_view_text_link:hover,
 	#samples_view .samples_view_text .samples_view_text_link:focus {
-	background-color: #fe7272;
+	background-color: #fe6565;
 	text-decoration: none !important;
 	
 	transform: scale(0.9);

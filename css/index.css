@@ -46,7 +46,7 @@ button:focus, input:focus, textarea:focus {
 	position: relative;
 	left: 0;
 
-	transition: transform 0.475s ease-out;
+	transition: transform 0.425s ease-out;
 }
 
 .page_inner_wrapper_top_transition_svg, .page_inner_wrapper_bottom_transition_svg {
@@ -802,7 +802,7 @@ button:focus, input:focus, textarea:focus {
 		
 		background-color: #1c2247;
 		
-		transition: transform 0.475s ease-out;
+		transition: transform 0.425s ease-out;
 	}
 	
 	.page_nav_scroll {
@@ -931,22 +931,6 @@ button:focus, input:focus, textarea:focus {
 	#page_nav {
 		width: 70%;
 		left: -70%;
-	}
-	
-	.panel .panel_element_border span:nth-of-type(1) {
-		/*min-height: 1.34px;*/
-	}
-	
-	.panel .panel_element_border span:nth-of-type(2) {
-		/*min-width: 1.34px;*/
-	}
-
-	.panel .panel_element_border span:nth-of-type(3) {
-		/*min-height: 1.34px;*/
-	}
-
-	.panel .panel_element_border span:nth-of-type(4) {
-		/*min-width: 1.34px;*/
 	}
 	
 	.panel_qualities .row:nth-of-type(2)::after {

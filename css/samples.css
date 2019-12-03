@@ -34,7 +34,7 @@
 	overflow-y: scroll;
 	z-index: 20;
 	
-	transition: transform 0.475s ease-out;
+	transition: transform 0.425s ease-out;
 }
 
 #samples_view #samples_view_wrapper {

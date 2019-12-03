@@ -5,17 +5,12 @@
 	background-color: #FAFAFA;
 }
 
-#technologies .panel_illustration {
-	bottom: -0.5em;
-	right: 2em;
-}
-
-#technologies .panel_illustration i {
-	color: #ffe0e0;
-}
-
 #technologies .panel_title_large {
 	color: #283177;
+}
+
+#technologies .panel_title_large::before {
+	background-color: #e0e0ff;
 }
 
 #html5_icon .panel_hexagon_background {

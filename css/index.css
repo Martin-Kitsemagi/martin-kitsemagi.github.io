@@ -749,7 +749,7 @@ button:focus, input:focus, textarea:focus {
 	padding: 1em 2em;
 	display: inline-block;
 	
-	background-color: #fe7575;
+	background-color: #fe8080;
 	color: #FAFAFA;
 	font-size: 1em;
 	text-align: center;
@@ -764,7 +764,7 @@ button:focus, input:focus, textarea:focus {
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
 	cursor: pointer;
 	
-	background-color: #fe5e5e;
+	background-color: #fe7272;
 	
 	transform: scale(0.9);
 }

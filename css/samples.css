@@ -34,7 +34,7 @@
 	overflow-y: scroll;
 	z-index: 20;
 	
-	transition: transform 0.575s ease-out;
+	transition: transform 0.475s ease-out;
 }
 
 #samples_view #samples_view_wrapper {
@@ -47,8 +47,6 @@
 
 .samples_view_page_display {
 	transform: translate3d(-100%, 0, 0);
-	
-	transition: transform 0.575s ease-out !important;
 }
 
 .samples_view_display {
@@ -58,8 +56,8 @@
 .samples_view_display .samples_view_mobile {
 	transform: translate3d(0, 5em, 0);
 	
-	animation: samples_view_mobile_top 525ms ease-out;
-	animation-delay: 225ms;
+	animation: samples_view_mobile_top 375ms ease-out;
+	animation-delay: 125ms;
 	animation-fill-mode: forwards;
 }
 
@@ -72,8 +70,8 @@
 .samples_view_display .samples_view_text {
 	transform: translate3d(0, 5em, 0);
 	
-	animation: samples_view_text_top 525ms ease-out;
-	animation-delay: 375ms;
+	animation: samples_view_text_top 375ms ease-out;
+	animation-delay: 275ms;
 	animation-fill-mode: forwards;
 }
 

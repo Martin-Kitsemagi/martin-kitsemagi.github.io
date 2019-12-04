@@ -14,15 +14,15 @@
 }
 
 #sample_the_cube .panel_link_background {
-	background-image: url(../images/scaled/sample_the_cube_background.jpg);
+	background-image: url("../images/compressed/sample_the_cube_background.jpg");
 }
 
 #sample_animal_park .panel_link_background {
-	background-image: url(../images/scaled/sample_animal_park_background.jpg);
+	background-image: url("../images/compressed/sample_animal_park_background.jpg");
 }
 
 #sample_gallery .panel_link_background {
-	background-image: url(../images/scaled/sample_gallery_background.jpg);
+	background-image: url("../images/compressed/sample_gallery_background.jpg");
 }
 
 #samples_view {
@@ -230,7 +230,7 @@
 	padding: 1em 1.55em;
 	display: inline-block;
 	
-	background-color: #e85c5c;
+	background-color: #e95252;
 	color: #FAFAFA;
 	font-size: 1em;
 	
@@ -267,7 +267,7 @@
 
 #samples_view .samples_view_text .samples_view_text_link:hover,
 	#samples_view .samples_view_text .samples_view_text_link:focus {
-	background-color: #e54747;
+	background-color: #e24343;
 	text-decoration: none !important;
 	
 	transform: scale(0.9);
@@ -282,7 +282,7 @@
 }
 
 #samples_view .sample_the_cube .samples_view_mobile .samples_view_mobile_background {
-	background-image: url("../images/scaled/sample_the_cube_mobile_background.jpg");
+	background-image: url("../images/compressed/sample_the_cube_mobile_background.jpg");
 }
 
 #samples_view .sample_the_cube .samples_view_text h2 {
@@ -298,7 +298,7 @@
 }
 
 #samples_view .sample_animal_park .samples_view_mobile .samples_view_mobile_background {
-	background-image: url("../images/scaled/sample_animal_park_mobile_background.jpg");
+	background-image: url("../images/compressed/sample_animal_park_mobile_background.jpg");
 }
 
 #samples_view .sample_animal_park .samples_view_text h2 {
@@ -314,7 +314,7 @@
 }
 
 #samples_view .sample_gallery .samples_view_mobile .samples_view_mobile_background {
-	background-image: url("../images/scaled/sample_gallery_mobile_background.jpg");
+	background-image: url("../images/compressed/sample_gallery_mobile_background.jpg");
 }
 
 #samples_view .sample_gallery .samples_view_text h2 {
@@ -369,17 +369,17 @@
 		height: 0.25em;
 		left: 50%;
 	}
-	
+
 	#samples_view .sample_the_cube .samples_view_mobile .samples_view_mobile_background {
-		background-image: url("../images/scaled/sample_the_cube_mobile_background_small.jpg");
+		background-image: url("../images/compressed/sample_the_cube_mobile_background_small.jpg");
 	}
 	
 	#samples_view .sample_animal_park .samples_view_mobile .samples_view_mobile_background {
-		background-image: url("../images/scaled/sample_animal_park_mobile_background_small.jpg");
+		background-image: url("../images/compressed/sample_animal_park_mobile_background_small.jpg");
 	}
 	
 	#samples_view .sample_gallery .samples_view_mobile .samples_view_mobile_background {
-		background-image: url("../images/scaled/sample_gallery_mobile_background_small.jpg");
+		background-image: url("../images/compressed/sample_gallery_mobile_background_small.jpg");
 	}
 		
 	#samples_view .samples_view_text .samples_view_text_link {

@@ -1,7 +1,7 @@
 #contact {
 	padding: 4em 0 10em 0;
 	
-	background-image: url(../images/scaled/header_background.jpg);
+	background-image: url("../images/compressed/header_background.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
@@ -19,12 +19,58 @@
 	background-color: rgba(50, 62, 129, 0.95);
 }
 
+#contact .col-lg-6:nth-child(1) {
+	background-image: url("../images/svg/contact_illustration.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 100%;
+}
+
 #contact .panel_text_large {
 	color: #FAFAFA;
+}
+
+@media (max-width: 991.98px) {
+	#contact {
+		text-align: center;
+	}
+
+	#contact .col-lg-6:nth-child(1) {
+		height: 27em;
+
+		background-position: 75% 25%;
+		background-size: 70%;
+	}
 }
 
 @media (max-width: 767.98px) {
 	#contact {
 		background-size: cover;
 	}
+
+	#contact .col-lg-6:nth-child(1) {
+		height: 25em;
+
+		background-position: right 25%;
+		background-size: 90%;
+	}
 }
+
+@media (max-width: 475.98px) {
+	#contact .col-lg-6:nth-child(1) {
+		height: 22em;
+	}
+}
+
+@media (max-width: 425.98px) {
+	#contact .col-lg-6:nth-child(1) {
+		height: 17em;
+	}
+}
+
+@media (max-width: 320.98px) {
+	#contact .col-lg-6:nth-child(1) {
+		height: 14em;
+	}
+}
+

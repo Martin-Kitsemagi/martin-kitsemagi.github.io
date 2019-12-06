@@ -26,6 +26,10 @@ button:focus, input:focus, textarea:focus {
 	text-decoration: underline !important;
 }
 
+* p {
+	margin: 0;
+}
+
 .no_text_select {
 	user-select: none;
 }
@@ -896,10 +900,18 @@ button:focus, input:focus, textarea:focus {
 		transform: translate(0, -50%);
 	}
 	
+	.panel_title_large {
+		font-size: 1.9em;
+	}
+
+	.panel_text_large {
+		font-size: 1.15em;
+	}
+
 	.panel .panel_inner_wrapper {
 		padding: 0 2.5% 2em 2.5%;
 	}
-	
+
 	.panel_qualities .col-4 {
 		min-width: 100%;
 		margin: 0 0 3em 0;

@@ -27,11 +27,11 @@
 	<link href="css/contact.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/bootstrap_4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+	<script src="js/bootstrap_4.3.1/js/bootstrap.min.js" defer></script>
 
-	<script src="js/index.js"></script>
-	<script src="js/header.js"></script>
+	<script src="js/index.js" defer></script>
+	<script src="js/header.js" defer></script>
 </head>
 <body>
 	<div id="page_wrapper">
@@ -134,6 +134,11 @@
 		<div id="page_inner_wrapper">
 			<div id="header" class="header no_text_select panel parallax">
 				<div id="header_carousel" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#header_carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#header_carousel" data-slide-to="1"></li>
+						<li data-target="#header_carousel" data-slide-to="2"></li>
+					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active" data-interval="7000">
 							<img src="images/compressed/header_background.jpg" class="d-block w-100" alt="header_background">

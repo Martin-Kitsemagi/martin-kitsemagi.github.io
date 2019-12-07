@@ -24,7 +24,7 @@
 
 #about_me .panel_text_link {
 	margin: 3em 0 0 0;
-	padding: 1em 2em;
+	padding: 0.75em 1.5em;
 	
 	color: #FAFAFA;
 	font-size: 1em;
@@ -34,7 +34,7 @@
 	
 	border-radius: 2em;
 	
-	transition: transform 325ms ease-out, background-color 75ms ease-out, border-color 75ms ease-out;
+	transition: transform 325ms ease-out, background-color 75ms ease-out, border-color 25ms ease-out;
 }
 
 #about_me .panel_text_link i {

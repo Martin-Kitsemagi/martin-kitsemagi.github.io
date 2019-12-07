@@ -5,7 +5,40 @@
 
 #header .carousel {
 	height: 100%;
-	z-index: -1;
+	
+	z-index: 0;
+}
+
+#header .carousel .carousel-indicators {
+	width: 0.5em;
+	height: 4em;
+	margin: 0;
+	display: inline-block;
+	top: 35%;
+	right: 2.5%;
+	left: auto;
+
+	opacity: 0;
+
+	animation: header_element 525ms ease;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+#header .carousel .carousel-indicators li {
+	width: 0.5em;
+	height: 0.5em;
+	margin: 0 0 1.25em 0;
+
+	background-color: #FAFAFA;
+
+	border: none;
+
+	transition: transform 75ms ease-out, opacity 575ms ease !important;
+}
+
+#header .carousel .carousel-indicators li:hover {
+	transform: scale(1.25);
 }
 
 #header .carousel .carousel-inner {
@@ -14,8 +47,9 @@
 
 #header .carousel .carousel-inner .carousel-item {
 	height: 100%;
+	z-index: -1;
 
-	transition: transform 1s ease-out, opacity 0.725s ease;
+	transition: transform 1s ease-out, opacity 725ms ease;
 }
 
 #header .carousel .carousel-inner .carousel-item img {
@@ -110,6 +144,18 @@
 	z-index: 9;
 	
 	background-color: transparent;
+
+	opacity: 0;
+
+	animation: header_element 525ms ease;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes header_element {
+	100% {
+		opacity: 1;
+	}
 }
 
 #header_nav_top .header_nav_elements_wrapper::after {
@@ -379,9 +425,14 @@
 		transform: translate3d(55%, 0, 0);
 	}
 
+	#header .carousel .carousel-indicators {
+		display: none;
+	}
+
 	#header .header_title {
 		width: 100%;
 		max-width: 21em;
+		top: 45%;
 		left: 50%;
 
 		text-align: center;

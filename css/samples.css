@@ -227,10 +227,10 @@
 
 #samples_view .samples_view_text .samples_view_text_link {
 	margin: 0.75em 0.75em 0.75em 0;
-	padding: 1em 1.55em;
+	padding: 0.75em 1.5em;
 	display: inline-block;
 	
-	background-color: #e95252;
+	background-color: #e74949;
 	color: #FAFAFA;
 	font-size: 1em;
 	
@@ -267,7 +267,7 @@
 
 #samples_view .samples_view_text .samples_view_text_link:hover,
 	#samples_view .samples_view_text .samples_view_text_link:focus {
-	background-color: #e24343;
+	background-color: #e23838;
 	text-decoration: none !important;
 	
 	transform: scale(0.9);

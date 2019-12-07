@@ -357,7 +357,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-	font-size: 0.85em;
+	font-size: 0.8em;
 }
 
 .panel_qualities .row:nth-of-type(2) {
@@ -748,10 +748,10 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_submit {
-	padding: 1em 2em;
+	padding: 0.75em 1.5em;
 	display: inline-block;
 	
-	background-color: #e95252;
+	background-color: #e74949;
 	color: #FAFAFA;
 	font-size: 1em;
 	text-align: center;
@@ -766,7 +766,7 @@ button:focus, input:focus, textarea:focus {
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
 	cursor: pointer;
 	
-	background-color: #e24343;
+	background-color: #e23838;
 	
 	transform: scale(0.9);
 }

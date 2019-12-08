@@ -69,10 +69,6 @@ button:focus, input:focus, textarea:focus {
 	display: none;
 }
 
-.panel_mobile {
-	background-attachment: initial !important;
-}
-
 .panel {
 	position: relative;
 }
@@ -171,96 +167,6 @@ button:focus, input:focus, textarea:focus {
 	transform: translate3d(0, 0, 0);
 	
 	opacity: 1;
-}
-
-.panel .panel_element_border {
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	position: absolute;
-	overflow: hidden;
-	
-	background-color: transparent;
-	
-	border-radius: 0.1em;
-	
-	pointer-events: none;
-}
-
-.panel .panel_element_border span {
-	display: inline-block;
-	position: absolute;
-	z-index: 1;
-	
-	background-color: #FAFAFA;
-}
-
-.panel .panel_element_border span:nth-of-type(1) {
-	max-width: 100%;
-	height: 0.0625em;
-	min-height: 1px;
-	top: 0;
-	left: 0;
-	
-	animation: panel_element_border_side_width 0.5s ease-in-out;
-	animation-fill-mode: forwards;
-	animation-play-state: paused;
-}
-
-.panel .panel_element_border span:nth-of-type(2) {
-	width: 0.0625em;
-	min-width: 1px;
-	max-height: 100%;
-	top: 0;
-	right: 0;
-	
-	animation: panel_element_border_side_height 0.5s ease-in-out;
-	animation-delay: 0.5s;
-	animation-fill-mode: forwards;
-	animation-play-state: paused;
-}
-
-.panel .panel_element_border span:nth-of-type(3) {
-	max-width: 100%;
-	height: 0.0625em;
-	min-height: 1px;
-	bottom: 0;
-	left: 0;
-	
-	animation: panel_element_border_side_width 0.5s ease-in-out;
-	animation-delay: 0.5s;
-	animation-fill-mode: forwards;
-	animation-play-state: paused;
-}
-
-.panel .panel_element_border span:nth-of-type(4) {
-	width: 0.0625em;
-	min-width: 1px;
-	max-height: 100%;
-	top: 0;
-	left: 0;
-
-	animation: panel_element_border_side_height 0.5s ease-in-out;
-	animation-fill-mode: forwards;
-	animation-play-state: paused;
-}
-
-@keyframes panel_element_border_side_width {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 100%;
-	}
-}
-
-@keyframes panel_element_border_side_height {
-	0% {
-		height: 0;
-	}
-	100% {
-		height: 100%;
-	}
 }
 
 .panel_hexagon {
@@ -577,7 +483,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form {
-	margin: 2.75em auto 3em auto;
+	margin: 2.5em auto 3em auto;
 }
 
 .panel_form .panel_form_button_right .panel_form_input_button {
@@ -593,7 +499,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_input_button {
-	width: 3em;
+	width: 2.25em;
 	height: 3em;
 	position: absolute;
 	top: 0;
@@ -626,7 +532,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 0.15em;
 	
-	transition: background-color 75ms ease-out, opacity 125ms ease-out;
+	transition: background-color 75ms ease-out, opacity 125ms ease;
 }
 
 .panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div:nth-child(1) {
@@ -645,7 +551,7 @@ button:focus, input:focus, textarea:focus {
 	display: inline-block;
 	position: absolute;
 	top: 0.8em;
-	left: 1em;
+	left: 0.5em;
 	
 	color: #FAFAFA;
 	font-size: 1em;
@@ -657,11 +563,11 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_label_top {
-	margin-top: 1.25em !important;
+	margin-top: 1.5em !important;
 }
 
 .panel_form .panel_form_label_top .panel_form_label {
-	top: -1.85em;
+	top: -1.25em;
 	left: 0;
 	
 	color: #fe9595;
@@ -672,7 +578,7 @@ button:focus, input:focus, textarea:focus {
 .panel_form .panel_form_input_wrapper {
 	width: 100%;
 	height: 3em;
-	margin: 0 0 1.25em 0;
+	margin: 0 0 1.5em 0;
 	position: relative;
 	float: left;
 	
@@ -680,13 +586,13 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_input_wrapper:nth-child(1) {
-	margin: 1.25em 0 1.25em 0;
+	margin: 1.5em 0 1.5em 0;
 }
 
 .panel_form .panel_form_input_wrapper .panel_form_input {
 	width: 100%;
 	height: 100%;
-	padding: 0 3em 0 1em;
+	padding: 0 2.5em 0 0.5em;
 	
 	background-color: transparent;
 	color: #FAFAFA;
@@ -695,17 +601,9 @@ button:focus, input:focus, textarea:focus {
 	border: none;
 }
 
-.panel_form .panel_form_input_wrapper .panel_form_input:hover {
-	transition: background-color 50ms ease-in-out;
-}
-
-.panel_form .panel_form_input_wrapper .panel_form_input:focus {
-	transition: background-color 75ms ease-out;
-}
-
 .panel_form .panel_form_textarea_wrapper {
 	width: 100%;
-	margin: 0 0 1.25em 0;
+	margin: 0 0 1.5em 0;
 	display: inline-block;
 	position: relative;
 	
@@ -714,24 +612,40 @@ button:focus, input:focus, textarea:focus {
 
 .panel_form .panel_form_textarea_wrapper .panel_form_textarea {
 	width: 100%;
-	min-height: 12.5em;
-	padding: 1em 3em 0.5em 1em;
+	min-height: 9.375em;
+	padding: 0.5em 2.5em 0 0.5em;
+	overflow-y: hidden;
 	
 	background-color: transparent;
 	color: #FAFAFA;
 	font-size: 1em;
+	line-height: 1.75em;
 	
 	border: none;
 
 	resize: none;
 }
 
-.panel_form .panel_form_textarea_wrapper .panel_form_textarea:hover {
-	transition: background-color 40ms ease-in-out;
+.panel_form .panel_form_input_border {
+	width: 0%;
+	height: 0.15em;
+	display: block;
+	content: "";
+
+	background-color: #4454ae;
+
+	border-radius: 2em;
+
+	animation: panel_form_input_border 725ms ease-out;
+	animation-delay: 0.25s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
 }
 
-.panel_form .panel_form_textarea_wrapper .panel_form_textarea:focus {
-	transition: background-color 75ms ease-out;
+@keyframes panel_form_input_border {
+	100% {
+		width: 100%;
+	}
 }
 
 .panel_form .panel_form_submit_wrapper {
@@ -748,10 +662,10 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_submit {
-	padding: 0.75em 1.5em;
+	padding: 0.85em 1.25em;
 	display: inline-block;
 	
-	background-color: #e74949;
+	background-color: #4154c1;
 	color: #FAFAFA;
 	font-size: 1em;
 	text-align: center;
@@ -766,7 +680,7 @@ button:focus, input:focus, textarea:focus {
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
 	cursor: pointer;
 	
-	background-color: #e23838;
+	background-color: #1c2247;
 	
 	transform: scale(0.9);
 }
@@ -775,27 +689,11 @@ button:focus, input:focus, textarea:focus {
 	.container {
 		max-width: 75em;
 	}
-
-	.panel .panel_element_border span:nth-of-type(1) {
-		height: 0.0675em;
-	}
-	
-	.panel .panel_element_border span:nth-of-type(2) {
-		width: 0.0675em;
-	}
-	
-	.panel .panel_element_border span:nth-of-type(3) {
-		height: 0.0675em;
-	}
-	
-	.panel .panel_element_border span:nth-of-type(4) {
-		width: 0.0675em;
-	}
 }
 
 @media (max-width: 991.98px) {
 	.panel_form {
-		width: 92.5%;
+		width: 75%;
 	}
 
 	.panel_qualities .col-4 .panel_quality h2 {
@@ -926,6 +824,7 @@ button:focus, input:focus, textarea:focus {
 	}
 	
 	.panel_form {
+		width: 95%;
 		margin: 2em auto 3em auto;
 	}
 	
@@ -935,10 +834,6 @@ button:focus, input:focus, textarea:focus {
 	
 	.panel_form .panel_form_textarea_wrapper {
 		margin: 0 0 1em 0;
-	}
-
-	.panel_form .panel_form_input_wrapper:nth-child(2n + 1) {
-		margin-right: 0;
 	}
 }
 
@@ -954,5 +849,27 @@ button:focus, input:focus, textarea:focus {
 	
 	.panel_qualities .row:nth-of-type(2)::after {
 		margin: 3em 0 0 0;
+	}
+
+	.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text,
+		.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
+		font-size: 1.15em;
+	}
+
+	.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
+		width: 80%;
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 370.98px) {
+	.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text,
+		.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
+		font-size: 0.95em;
+	}
+
+	.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
+		font-size: 0.75em;
+		font-weight: 500;
 	}
 }

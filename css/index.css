@@ -79,8 +79,11 @@ button:focus, input:focus, textarea:focus {
 	padding: 0 1em 2em 1em;
 	position: relative;
 
-	transition: 0.525s ease-out;
-	transition-property: transform, opacity;
+	transition: transform 525ms ease-out, opacity 275ms ease;
+}
+
+.panel_opaque .panel_animation {
+	animation-play-state: running !important;
 }
 
 .panel_transparent .panel_inner_wrapper {
@@ -145,16 +148,17 @@ button:focus, input:focus, textarea:focus {
 
 .panel_text_link {
 	display: inline-block;
-	padding: 0.5em 0.5em 0.5em 0;
-	margin-bottom: 1em;
+	margin: 0.5em 0;
 	
-	transition: transform 325ms ease-out;
+	transition: color 75ms ease-out;
 }
 
-.panel_text_link:hover, .panel_text_link:focus {
-	text-decoration: none !important;
-	
-	transform: scale(0.9);
+.panel_text_link i {
+	margin: 0 0 0 0.5em;
+	position: relative;
+	top: 0.1em;
+
+	font-size: 1.15em;
 }
 
 .panel .panel_element_transparent {
@@ -206,29 +210,7 @@ button:focus, input:focus, textarea:focus {
 	pointer-events: auto;
 }
 
-.panel_diamond {
-	overflow: hidden;
-	
-	transform: rotate(45deg);
-	
-	transition: transform 325ms ease-out;
-	
-	pointer-events: auto;
-}
-
-.panel_diamond:hover {
-	transform: rotate(45deg) scale(0.90);
-}
-
-.panel_diamond .panel_diamond_background {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	
-	transform: rotate(-45deg) scale(1.41);
-}
-
-.panel_hexagon .panel_hexagon_overlay, .panel_diamond .panel_diamond_overlay {
+.panel_hexagon .panel_hexagon_overlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -242,13 +224,11 @@ button:focus, input:focus, textarea:focus {
 	user-select: none;
 }
 
-.panel_hexagon:hover .panel_hexagon_background .panel_hexagon_overlay,
-	.panel_diamond:hover .panel_diamond_background .panel_diamond_overlay {
+.panel_hexagon:hover .panel_hexagon_background .panel_hexagon_overlay {
 	top: 0;
 }
 
-.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text,
-	.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
+.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text {
 	width: 100%;
 	display: inline-block;
 	position: absolute;
@@ -262,15 +242,11 @@ button:focus, input:focus, textarea:focus {
 	transform: translate(-50%, -50%);
 }
 
-.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-	font-size: 0.8em;
-}
-
-.panel_qualities .row:nth-of-type(2) {
+.panel_qualities .row:last-child {
 	margin: 0.5em 0 0 0;
 }
 
-.panel_qualities .row:nth-of-type(2)::after {
+.panel_qualities .row:last-child::after {
 	width: 100%;
 	height: 0.1em;
 	margin: 5em 0 0 0;
@@ -415,73 +391,6 @@ button:focus, input:focus, textarea:focus {
 	transform: translate(-50%, -50%);
 }
 
-.panel_links {
-	width: 100%;
-	padding: 3em 0 1.5em 0;
-}
-
-.panel_links .panel_links_inner_wrapper {
-	margin: 5em auto 2em auto;
-	display: table;
-	
-	text-align: center;
-	
-	pointer-events: none;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper {
-	display: inline-block;
-	position: relative;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link {
-	margin: -2.5em 2.25em;
-	position: relative;
-	
-	transition: 0.525s ease-out;
-	transition-property: transform, opacity;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_diamond {
-	width: 9em;
-	height: 9em;
-	display: inline-block;
-	
-	border-radius: 0.25em;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_diamond:hover {
-	cursor: pointer;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_diamond:hover .panel_link_text {
-	opacity: 0;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_link_background {
-	background-repeat: no-repeat !important;
-	background-position: top center !important;
-	background-size: cover !important;
-}
-
-.panel_links .panel_links_inner_wrapper .panel_link_wrapper .panel_link .panel_link_background .panel_link_text {
-	width: 100%;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	
-	font-family: "Aguafina Script", cursive;
-	color: #FAFAFA;
-	font-size: 1.25em;
-	text-align: center;
-	text-shadow: 0.05em 0.05em #404040;
-	
-	opacity: 1;
-	
-	transform: translate(-50%, -50%);
-}
-
 .panel_form {
 	margin: 2.5em auto 3em auto;
 }
@@ -535,11 +444,11 @@ button:focus, input:focus, textarea:focus {
 	transition: background-color 75ms ease-out, opacity 125ms ease;
 }
 
-.panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div:nth-child(1) {
+.panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div:nth-of-type(1) {
 	transform: rotate(45deg);
 }
 
-.panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div:nth-child(2) {
+.panel_form .panel_form_input_button .panel_form_input_button_inner_wrapper div:nth-of-type(2) {
 	transform: rotate(-45deg);
 }
 
@@ -815,7 +724,7 @@ button:focus, input:focus, textarea:focus {
 		margin: 0 0 3em 0;
 	}
 	
-	.panel_qualities .row:nth-of-type(2)::after {
+	.panel_qualities .row:last-child::after {
 		margin: 0.5em 0 0 0;
 	}
 	
@@ -847,29 +756,7 @@ button:focus, input:focus, textarea:focus {
 		left: -70%;
 	}
 	
-	.panel_qualities .row:nth-of-type(2)::after {
+	.panel_qualities .row:last-child::after {
 		margin: 3em 0 0 0;
-	}
-
-	.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text,
-		.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-		font-size: 1.15em;
-	}
-
-	.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-		width: 80%;
-		font-size: 0.8em;
-	}
-}
-
-@media (max-width: 370.98px) {
-	.panel_hexagon .panel_hexagon_overlay .panel_hexagon_overlay_text,
-		.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-		font-size: 0.95em;
-	}
-
-	.panel_diamond .panel_diamond_overlay .panel_diamond_overlay_text {
-		font-size: 0.75em;
-		font-weight: 500;
 	}
 }

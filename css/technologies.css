@@ -112,6 +112,11 @@
 	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon i {
 		font-size: 3.5em;
 	}
+
+	.panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon
+		.panel_hexagon_overlay .panel_hexagon_overlay_text {
+		font-size: 0.95em;
+	}
 }
 
 @media (max-width: 310.98px) {

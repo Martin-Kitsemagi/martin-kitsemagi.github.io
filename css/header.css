@@ -54,7 +54,7 @@
 
 #header .carousel .carousel-inner .carousel-item img {
 	height: 100%;
-
+	
 	transform: scaleX(-1);
 }
 

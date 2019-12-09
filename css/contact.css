@@ -32,10 +32,6 @@
 }
 
 @media (max-width: 767.98px) {
-	#contact {
-		background-size: cover;
-	}
-
 	#contact .panel_svg {
 		height: 25em;
 

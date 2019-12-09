@@ -8,9 +8,8 @@ function windowScrollListener() {
 	});
 	
 	function panelsSetStyle() {
-		$(".panel").each(function() {
-			if ($(this).hasClass("panel_transparent"))
-				if (isViewportPastPanel($(this)) || isPanelInViewport($(this))) panelSetStyle($(this));
+		$(".panel").find(".panel_transparent").each(function() {
+			if (isViewportPastPanel($(this)) || isPanelInViewport($(this))) panelSetStyle($(this));
 		});
 		
 		function isPanelInViewport(panel) {
@@ -51,12 +50,6 @@ function windowScrollListener() {
 			
 			$(panel).removeClass("panel_transparent");
 			$(panel).addClass("panel_opaque");
-			
-			$(panel).find(".panel_form_input_border").each(function() {
-				if ($(this).css("animation-play-state") === "paused") {
-					$(this).css("animation-play-state", "running");
-				}
-			});
 			
 			$(panel).find(".panel_element_transparent").each(function(index) {
 				$(this).delay(transparent_element_delay * index).queue(function() {
@@ -105,9 +98,9 @@ function windowScrollListener() {
 		var parallax_speed = 0.5;
 		
 		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $("#header").outerHeight()) {
-			$(".parallax").css("top", $(window).scrollTop() * parallax_speed);
+			$(".parallax").css("transform", "translate3d(0, " + $(window).scrollTop() * parallax_speed + "px, 0)");
 		} else if (/Mobi/.test(navigator.userAgent)) {
-			$(".parallax").css("top", 0);
+			$(".parallax").css("transform", "translate3d(0, 0, 0)");
 		}
 	}
 }

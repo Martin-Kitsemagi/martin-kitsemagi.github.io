@@ -97,11 +97,11 @@ function windowScrollListener() {
 	function parallaxScroll() {
 		var parallax_speed = 0.5;
 		
-		if (!/Mobi/.test(navigator.userAgent) && $(window).scrollTop() < $("#header").outerHeight()) {
+		if (/*!/Mobi/.test(navigator.userAgent) &&*/ $(window).scrollTop() < $("#header").outerHeight()) {
 			$(".parallax").css("transform", "translate3d(0, " + $(window).scrollTop() * parallax_speed + "px, 0)");
-		} else if (/Mobi/.test(navigator.userAgent)) {
+		} /*else if (/Mobi/.test(navigator.userAgent)) {
 			$(".parallax").css("transform", "translate3d(0, 0, 0)");
-		}
+		}*/
 	}
 }
 

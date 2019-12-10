@@ -5,13 +5,6 @@
 	background-color: #2c3772;
 }
 
-#about_me .panel_svg {
-	background-image: url("../images/svg/about_me_illustration.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 95%;
-}
-
 #about_me .panel_text {
 	color: #FAFAFA;
 	text-indent: 0.25em;
@@ -63,22 +56,23 @@
 	}
 
 	#about_me .panel_svg {
-		height: 25em;
+		width: 75%;
+		margin: 4em 0 3em 0;
+		top: 0;
 
-		background-size: 70%;
+		transform: none;
 	}
 }
 
 @media (max-width: 767.98px) {
 	#about_me .panel_svg {
-		height: 20em;
-
-		background-size: 75%;
+		width: 85%;
+		margin: 3em 0 2em 0;
 	}
 }
 
-@media (max-width: 475.98px) {
+@media (max-width: 575.98px) {
 	#about_me .panel_svg {
-		height: 15em;
+		margin: 2em 0 1em 0;
 	}
 }

@@ -281,7 +281,7 @@ button:focus, input:focus, textarea:focus {
 
 	border-radius: 0.1em;
 
-	transition: transform 425ms ease;
+	transition: transform 525ms ease;
 }
 
 .panel_qualities .col-4 .panel_inner_wrapper:hover {
@@ -621,7 +621,7 @@ button:focus, input:focus, textarea:focus {
 	
 	background-color: #1c2247;
 	
-	transform: scale(0.85);
+	transform: scale(0.87);
 }
 
 @media (min-width: 1920.98px) {

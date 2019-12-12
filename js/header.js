@@ -77,7 +77,7 @@ function scrollTo(top) {
 
 function setHeaderHeight() {
 	if (/Mobi/.test(navigator.userAgent)) {
-		var viewport_height = $("#header").outerHeight();
+		var viewport_height = $("#header").innerHeight();
 		$("#header").css("height", viewport_height);
 	}
 }

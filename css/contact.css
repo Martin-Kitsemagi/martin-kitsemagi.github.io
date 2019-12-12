@@ -1,43 +1,28 @@
 #contact {
-	padding: 4em 0 10em 0;
+	padding: 5em 0 10em 0;
 	
 	background-color: #323e81;
 }
 
-#contact .panel_svg {
-	width: 100%;
-	margin: 8em 0 0 0 ;
-	top: 0;
-
-	transform: none;
+#contact .row {
+	width: 80%;
+	margin: 0 auto;
 }
 
-#contact .panel_text_large {
+#contact .panel_title_large {
+	margin: 0 0 0.75em 0;
+}
+
+#contact .panel_title_large::before {
+	display: none;
+}
+
+#contact .panel_text {
 	color: #FAFAFA;
 }
 
 @media (max-width: 991.98px) {
-	#contact {
-		text-align: center;
-	}
-
-	#contact .panel_svg {
-		width: 75%;
-		margin: 0.5em 0 4em 0;
-		left: 5%;
-	}
-}
-
-@media (max-width: 767.98px) {
-	#contact .panel_svg {
-		width: 90%;
-		margin: 0 0 3em 0;
-	}
-}
-
-@media (max-width: 575.98px) {
-	#contact .panel_svg {
-		width: 95%;
-		margin: -0.5em 0 2em 0;
+	#contact .row {
+		width: 100%;
 	}
 }

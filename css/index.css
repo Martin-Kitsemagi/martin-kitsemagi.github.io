@@ -60,17 +60,6 @@ button:focus, input:focus, textarea:focus {
 	position: relative;
 }
 
-.panel_svg {
-	width: 95%;
-	height: auto;
-	position: relative;
-	top: 50%;
-
-	object-fit: contain;
-
-	transform: translate(0, -50%);
-}
-
 #page_nav {
 	position: fixed;
 	display: none;
@@ -111,30 +100,34 @@ button:focus, input:focus, textarea:focus {
 	color: #fe8b8b;
 	font-size: 1.5em;
 	line-height: 1.5em;
+	letter-spacing: 0.15em;
 }
 
 .panel_title_large {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 2.75em 0;
 	display: inline-block;
+	position: relative;
 	
-	font-size: 2.25em;
 	color: #fe8b8b;
-	text-align: left;
+	font-size: 2.5em;
+	text-align: center;
+	letter-spacing: 0.15em;
 }
 
 .panel_title_large::before {
 	width: 50%;
 	height: 0.15em;
 	display: inline-block;
-	position: relative;
-	top: 1.7em;
-	left: -0.15em;
-	
+	position: absolute;
+	top: 2.25em;
+	left: 50%;
 	content: "";
 	
-	background-color: #4454ae;
+	background-color: #fe8b8b;
 	
-	border-radius: 0.5em;
+	border-radius: 2em;
+
+	transform: translate(-50%, -50%);
 }
 
 .panel_text_center {
@@ -142,9 +135,26 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_text {
+	padding: 0 0 0 1.5em;
+	position: relative;
+
 	color: #595959;
 	line-height: 1.75em;
 	font-size: 1.05em;
+}
+
+.panel_text::before {
+	width: 0.15em;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0.15em;
+	content: "";
+
+	background-color: #4454ae;
+
+	border-radius: 2em;
 }
 
 .panel_text_large {
@@ -193,7 +203,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_hexagon:hover {
-	transform: rotate(120deg) scale(0.90);
+	transform: rotate(120deg) scale(0.85);
 }
 
 .panel_hexagon .panel_hexagon_inner_wrapper {
@@ -226,7 +236,7 @@ button:focus, input:focus, textarea:focus {
 	
 	background-color: rgba(50, 62, 129, 0.8);
 	
-	transition: top 0.325s ease-out;
+	transition: top 325ms ease;
 	
 	user-select: none;
 }
@@ -255,7 +265,7 @@ button:focus, input:focus, textarea:focus {
 
 .panel_qualities .row:last-child::after {
 	width: 100%;
-	height: 0.075em;
+	height: 0.0675em;
 	margin: 5em 0 0 0;
 	display: block;
 	content: "";
@@ -266,23 +276,33 @@ button:focus, input:focus, textarea:focus {
 .panel_qualities .col-4 .panel_inner_wrapper {
 	height: 100%;
 	display: inline-block;
+
+	background-color: #fcfcfc;
+
+	border-radius: 0.1em;
+
+	transition: transform 425ms ease;
 }
 
-.panel_qualities .col-4 .panel_quality {
-	padding: 0 1em;
-	
-	text-align: center;
+.panel_qualities .col-4 .panel_inner_wrapper:hover {
+	transform: scale(0.9);
 }
 
-.panel_qualities .col-4 .panel_quality ul {
-	margin: 2em 0 0 0;
+.panel_qualities .panel_quality {
+	padding: 1em;
+}
+
+.panel_qualities .panel_quality ul {
+	margin: 1em 0 0 0;
 	
+	text-align: left;
+
 	list-style: none;
 }
 
-.panel_qualities .col-4 .panel_quality ul li::before {
+.panel_qualities .panel_quality ul li::before {
 	width: 0.75em;
-	margin: 0 0 0 -0.75em;
+	margin: 0 0 0 0em;
 	position: relative;
 	display: inline-block;
 	top: 0.1em;
@@ -292,48 +312,52 @@ button:focus, input:focus, textarea:focus {
 	font-size: 1.4em;
 }
 
-.panel_qualities .col-4 .panel_quality ul li {
-	margin: 0 1em 0 0;
+.panel_qualities .panel_quality ul li {
+	margin: 0 0.5em 0 0;
 	display: inline-block;
 	
 	color: #737373;
 	font-size: 0.85em;
 }
 
-.panel_qualities .col-4 .panel_quality span {
+.panel_qualities .panel_quality span {
 	width: 7em;
 	height: 7em;
 	display: inline-block;
 	position: relative;
 	
-	border-radius: 50%;
-	
-	transition: transform 325ms ease-out;
+	border-bottom: 0.1em solid #283177;
 }
 
-.panel_qualities .col-4 .panel_quality span:hover {
-	transform: scale(0.85);
-}
-
-.panel_qualities .col-4 .panel_quality span i {
+.panel_qualities .panel_quality span i {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	
+	color: #283177;
 	font-size: 3em;
 	
 	transform: translate(-50%, -50%);
 }
 
-.panel_qualities .col-4 .panel_quality h2 {
+.panel_qualities .panel_quality .panel_title {
+	margin: 2em 0 2.5em;
 	display: block;
 	
-	color: #2828b1;
+	color: #283177;
 }
 
-.panel_qualities .col-4 .panel_quality p {
+.panel_qualities .panel_quality .panel_text {
 	font-size: 1em;
+	text-align: left;
+}
+
+.panel_qualities .panel_quality .panel_text::before {
+	width: 0.1em;
+	left: 0.1em;
+
+	background-color: #2828b1;
 }
 
 .panel_icons {
@@ -377,7 +401,7 @@ button:focus, input:focus, textarea:focus {
 	
 	text-align: center;
 	
-	transition: transform 525ms ease-out, opacity 275ms ease;
+	transition: transform 425ms ease, opacity 275ms ease;
 }
 
 .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon {
@@ -398,7 +422,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form {
-	margin: 2.5em auto 3em auto;
+	margin: 2.5em 0 3em 0;
 }
 
 .panel_form .panel_form_button_right .panel_form_input_button {
@@ -491,9 +515,9 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_input_wrapper {
-	width: 100%;
+	width: 48%;
 	height: 3em;
-	margin: 0 0 1.5em 0;
+	margin: 1.5em 0 1.5em 0;
 	position: relative;
 	float: left;
 	
@@ -501,7 +525,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_form .panel_form_input_wrapper:nth-child(1) {
-	margin: 1.5em 0 1.5em 0;
+	margin: 1.5em 4% 1.5em 0;
 }
 
 .panel_form .panel_form_input_wrapper .panel_form_input {
@@ -589,7 +613,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 2em;
 	
-	transition: transform 325ms ease-out, background-color 75ms ease-out;
+	transition: transform 425ms ease, background-color 75ms ease-out;
 }
 
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
@@ -597,7 +621,7 @@ button:focus, input:focus, textarea:focus {
 	
 	background-color: #1c2247;
 	
-	transform: scale(0.9);
+	transform: scale(0.85);
 }
 
 @media (min-width: 1920.98px) {
@@ -607,11 +631,15 @@ button:focus, input:focus, textarea:focus {
 }
 
 @media (max-width: 991.98px) {
-	.panel_form {
-		width: 75%;
+	.panel_qualities .col-4 {
+		padding: 0 0.75em;
 	}
 
-	.panel_qualities .col-4 .panel_quality h2 {
+	.panel_qualities .col-4 .panel_inner_wrapper {
+		padding: 0;
+	}
+
+	.panel_qualities .panel_quality .panel_title {
 		font-size: 1.25em;
 	}
 }
@@ -724,29 +752,37 @@ button:focus, input:focus, textarea:focus {
 	.panel .panel_inner_wrapper {
 		padding: 0 2.5% 2em 2.5%;
 	}
-
-	.panel_qualities .col-4 {
-		min-width: 100%;
-		margin: 0 0 3em 0;
-	}
 	
 	.panel_qualities .row:last-child::after {
 		margin: -1.5em 0 0 0;
 	}
 	
-	.panel_qualities .col-4 .panel_quality h2 {
+	.panel_qualities .col-4 {
+		min-width: 100%;
+		margin: 0 0 3em 0;
+	}
+
+	.panel_qualities .col-4 .panel_inner_wrapper {
+		padding: 0 2.5% 2em 2.5%;
+	}
+
+	.panel_qualities .panel_quality .panel_title {
 		font-size: 1.5em;
 	}
 	
 	.panel_form {
-		width: 95%;
-		margin: 2em auto 3em auto;
+		margin: 2em 0 3em 0;
 	}
-	
+
 	.panel_form .panel_form_input_wrapper {
+		width: 100%;
 		margin: 0 0 1.25em 0;
 	}
 	
+	.panel_form .panel_form_input_wrapper:nth-child(1) {
+		margin: 1.25em 0 1.25em 0;
+	}
+
 	.panel_form .panel_form_textarea_wrapper {
 		margin: 0 0 1em 0;
 	}

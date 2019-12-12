@@ -1,16 +1,11 @@
-
 #technologies {
-	padding: 2.5em 0 0 0;
+	padding: 5em 0 0 0;
 	
-	background-color: #FAFAFA;
+	background-color: #f8f8fc;
 }
 
 #technologies .panel_title_large {
 	color: #283177;
-}
-
-#technologies .panel_title_large::before {
-	background-color: #e0e0ff;
 }
 
 #html5_icon .panel_hexagon_background {

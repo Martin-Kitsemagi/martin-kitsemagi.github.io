@@ -50,7 +50,7 @@ button:focus, input:focus, textarea:focus {
 	position: relative;
 	left: 0;
 
-	transition: transform 0.425s ease-out;
+	transition: transform 425ms ease-out;
 }
 
 .panel_transition_svg {
@@ -197,7 +197,7 @@ button:focus, input:focus, textarea:focus {
 	
 	transform: rotate(120deg);
 	
-	transition: transform 325ms ease-out;
+	transition: transform 525ms ease;
 	
 	pointer-events: none;
 }
@@ -236,7 +236,7 @@ button:focus, input:focus, textarea:focus {
 	
 	background-color: rgba(50, 62, 129, 0.8);
 	
-	transition: top 325ms ease;
+	transition: top 425ms ease;
 	
 	user-select: none;
 }
@@ -613,7 +613,7 @@ button:focus, input:focus, textarea:focus {
 	
 	border-radius: 2em;
 	
-	transition: transform 425ms ease, background-color 75ms ease-out;
+	transition: transform 525ms ease, background-color 75ms ease-out;
 }
 
 .panel_form .panel_form_submit:hover, .panel_form .panel_form_submit:focus {
@@ -661,7 +661,7 @@ button:focus, input:focus, textarea:focus {
 		
 		background-color: #1c2247;
 		
-		transition: transform 0.425s ease-out;
+		transition: transform 425ms ease-out;
 	}
 	
 	.page_nav_scroll {

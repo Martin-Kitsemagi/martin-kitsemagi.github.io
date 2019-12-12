@@ -39,7 +39,7 @@
 	
 	border-radius: 2em;
 	
-	transition: transform 425ms ease, background-color 75ms ease-out, border-color 25ms ease-out;
+	transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out;
 }
 
 #about_me .panel_text_link i {

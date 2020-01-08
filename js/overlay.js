@@ -6,8 +6,8 @@ var page_wrapper_timeout_delay = 3750;
 page_wrapper.onload = pageOverlay();
 
 function pageOverlay() {
-    if (window.sessionStorage.getItem("session") !== "active") {
-        window.sessionStorage.setItem("session", "active");
+    if (window.sessionStorage.getItem("page_overlay") !== "active") {
+        window.sessionStorage.setItem("page_overlay", "active");
 
         page_overlay.className = page_overlay.className + " page_overlay_active";
         page_wrapper.className = page_wrapper.className + " page_wrapper_animation_delay";

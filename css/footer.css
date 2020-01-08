@@ -1,55 +1,52 @@
-#footer {
-	padding: 1em 0 1.5em 0;
-	
-	background-color: #242c5c;
+.footer {
+  padding: 0.5rem 0 0 0;
+  background-color: #242c5c;
 }
 
-#footer_transition_svg {
-	margin: -10em 0 0 0;
-	
-	background-color: #242c5c;
-	fill: #2b356e;
+.footer .footer_text {
+  width: 100%;
+  text-align: center;
 }
 
-#footer_transition_svg path:last-child {
-	fill: #323e81;
+.footer .footer_text span {
+  margin: 0 0.35rem;
+  position: relative;
+  top: 0.15rem;
+  font-family: "Aguafina Script", cursive;
+  font-size: 1.75rem;
+  color: #fe8b8b;
+  font-weight: 700;
 }
 
-#footer .footer_text {
-	width: 100%;
-	
-	text-align: center;
+.footer .footer_text p {
+  padding: 0.5rem 0;
+  color: #FAFAFA;
+  font-size: 0.85rem;
 }
 
-#footer .footer_text span {
-	margin: 0 0.35em;
-	position: relative;
-	top: 0.15em;
-	
-	font-family: "Aguafina Script", cursive;
-	font-size: 1.75em;
-	color: #fe8b8b;
-	font-weight: 700;
+.footer .footer_text p b {
+  color: #fe8b8b;
+  font-weight: 700;
 }
 
-#footer .footer_text p {
-	padding: 0.4em 0;
-
-	color: #FAFAFA;
-	font-size: 0.85em;
+.footer .footer_text i {
+  margin: 0 0.25rem;
+  display: inline-block;
+  position: relative;
+  top: 0.1rem;
+  font-size: 1.25rem;
+  color: #fe8b8b;
 }
 
-#footer .footer_text p b {
-	color: #fe8b8b;
-	font-weight: 700;
+.footer .footer_transition_svg {
+  height: 10rem;
+  top: -10rem;
+  left: 0;
+  background-color: inherit;
+  fill: #2b356e;
 }
 
-#footer .footer_text i {
-	margin: 0 0.25em;
-	display: inline-block;
-	position: relative;
-	top: 0.1em;
-	
-	font-size: 1.25em;
-	color: #fe8b8b;
+.footer .footer_transition_svg path:last-child {
+  fill: #323e81;
 }
+/*# sourceMappingURL=footer.css.map */

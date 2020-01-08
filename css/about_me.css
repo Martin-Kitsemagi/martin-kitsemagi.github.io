@@ -1,69 +1,68 @@
-#about_me {
-	padding: 7em 0 3em 0;
-	
-	background-color: #2c3772;
+.about_me {
+  padding: 7rem 0 0.5rem 0;
+  background-color: #2c3772;
 }
 
-#about_me .row {
-	width: 80%;
-	margin: 0 auto;
+.about_me .row {
+  width: 80%;
+  margin: 0 auto;
 }
 
-#about_me .panel_title_large {
-	margin: 0 0 0.75em 0;
+.about_me .panel_title_large {
+  margin: 0 0 1.75rem 0;
 }
 
-#about_me .panel_title_large::before {
-	display: none;
+.about_me .panel_title_large::before {
+  display: none;
 }
 
-#about_me .panel_text {
-	color: #FAFAFA;
+.about_me .panel_text {
+  color: #FAFAFA;
 }
 
-#about_me .panel_text b {
-	color: #fe8b8b;
-	font-weight: 700;
+.about_me .panel_text b {
+  color: #fe8b8b;
+  font-weight: 700;
 }
 
-#about_me .panel_text_link {
-	margin: 3em 0 0 0;
-	padding: 0.85em 1.25em;
-	position: relative;
-	
-	color: #FAFAFA;
-	font-size: 1em;
-	text-decoration: none;
-	
-	border: 0.1em solid #FAFAFA;
-	
-	border-radius: 2em;
-	
-	transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out;
+.about_me .panel_text_link {
+  margin: 3rem 0 0 0;
+  padding: 0.85rem 1.25rem;
+  position: relative;
+  color: #FAFAFA;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 0.1rem solid #FAFAFA;
+  border-radius: 2rem;
+  -webkit-transition: background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
+  transition: background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
+  transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out;
+  transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
 }
 
-#about_me .panel_text_link i {
-	margin: 0 0 0 0.75em;
+.about_me .panel_text_link i {
+  margin: 0 0 0 0.75rem;
 }
 
-#about_me .panel_text_link:hover, #about_me .panel_text_link:focus {
-	background-color: #1c2247;
-	text-decoration: none !important;
-
-	border-color: #1c2247;
-
-	transform: scale(0.87);
+.about_me .panel_text_link:hover, .about_me .panel_text_link:focus {
+  background-color: #1c2247;
+  text-decoration: none !important;
+  border-color: #1c2247;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
-#about_me_transition_svg {
-	height: 4em;
-	
-	background-color: #f8f8fc;
-	fill: #2c3772;
+.about_me .about_me_transition_svg {
+  height: 4rem;
+  bottom: -4rem;
+  left: 0;
+  background-color: transparent;
+  fill: #2c3772;
 }
 
 @media (max-width: 991.98px) {
-	#about_me .row {
-		width: 100%;
-	}
+  .about_me .row {
+    width: 100%;
+  }
 }
+/*# sourceMappingURL=about_me.css.map */

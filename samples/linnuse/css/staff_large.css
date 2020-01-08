@@ -1,0 +1,151 @@
+.staff_large {
+  padding: 4rem 0 0 0 !important;
+  background-color: #FAFAFA;
+}
+
+.staff_large .panel_row {
+  padding: 0 !important;
+}
+
+.staff_large .staff_large_staff_wrapper {
+  width: 100%;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image .page_gallery_image .page_gallery_image_overlay span {
+  font-size: 1.5rem;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image svg {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: transparent;
+  fill: #FAFAFA;
+  -webkit-transform: scaleX(-1) scale(1.15);
+          transform: scaleX(-1) scale(1.15);
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  padding: 7.5rem 12.75% 0 5.75%;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_name {
+  margin: 0 0 2.5rem 0;
+  color: #cc3473;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_text {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff_right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff_right .staff_large_staff_image svg {
+  right: initial !important;
+  left: 0;
+  -webkit-transform: scaleX(1) scaleY(-1) scale(1.15) !important;
+          transform: scaleX(1) scaleY(-1) scale(1.15) !important;
+}
+
+.staff_large .staff_large_staff_wrapper .staff_large_staff_right .staff_large_staff_text_wrapper {
+  padding: 7.5rem 5.75% 0 12.75%;
+}
+
+@media (max-width: 991.98px) {
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper {
+    padding: 4rem 3.75% 0 3.75%;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_name {
+    font-size: 1.5rem;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_text {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .staff_large .staff_large_staff_wrapper .staff_large_staff {
+    margin: 0 0 7.5rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image .page_gallery_image {
+    max-height: 30rem;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image svg {
+    width: 100%;
+    height: 2.5rem;
+    top: initial;
+    bottom: 0;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    padding: 4rem 2.5% 0 2.5%;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_name {
+    margin: 0 0 3.5rem 0;
+    text-align: center;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_text_wrapper .staff_large_staff_text {
+    padding: 0 2rem;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .staff_large .staff_large_staff_wrapper .staff_large_staff_right .staff_large_staff_image svg {
+    -webkit-transform: scaleX(-1) scale(1.15) !important;
+            transform: scaleX(-1) scale(1.15) !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .staff_large .staff_large_staff_wrapper .staff_large_staff .staff_large_staff_image .page_gallery_image {
+    max-height: 25rem;
+  }
+}
+/*# sourceMappingURL=staff_large.css.map */

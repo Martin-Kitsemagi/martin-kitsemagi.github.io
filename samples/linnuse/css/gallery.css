@@ -1,0 +1,90 @@
+.gallery {
+  padding: 10rem 0 4rem 0;
+}
+
+.gallery .gallery_images {
+  margin: 4rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.gallery .gallery_images .gallery_images_column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+}
+
+.gallery .gallery_images .gallery_images_column .gallery_image {
+  padding: 0.25rem;
+  -webkit-animation: gallery_image 725ms ease;
+          animation: gallery_image 725ms ease;
+}
+
+.gallery .gallery_images .gallery_images_column .gallery_image .page_gallery_image {
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
+          box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
+}
+
+.gallery .gallery_images .gallery_images_column .gallery_image .page_gallery_image .page_gallery_image_overlay span {
+  font-size: 1.25rem;
+}
+
+@-webkit-keyframes gallery_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes gallery_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .gallery .gallery_images .gallery_images_column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gallery .gallery_images .gallery_images_column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,7 +1,6 @@
-
 function navMobile() {
-	$(".header_nav_mobile").on("click", function(event) {
-		if ($("#page_nav").hasClass("page_nav_mobile")) {
+	$("#page_nav_mobile").on("click", function(event) {
+		if ($("#page_mobile_nav").hasClass("page_mobile_nav_active")) {
 			navMobileClose();
 		} else {
 			navMobileOpen();
@@ -9,24 +8,18 @@ function navMobile() {
 		
 		event.stopPropagation();
 	});
-	
-	$("#page_inner_wrapper").on("click", function() {
-		navMobileClose();
-	});
 }
 
 function navMobileOpen() {
-	$("#page_nav").addClass("page_nav_mobile");
-	$("#page_inner_wrapper").addClass("page_inner_wrapper_mobile");
-	$("#header_nav").addClass("header_nav_scroll_mobile");
-	$(".header_nav_mobile").addClass("header_nav_mobile_animate");
+	$("#page_mobile_nav").addClass("page_mobile_nav_active");
+	$("#page_nav").addClass("page_nav_active");
+	$("#page_nav_mobile").addClass("page_nav_mobile_animate");
 }
 
 function navMobileClose() {
-	$("#page_nav").removeClass("page_nav_mobile");
-	$("#page_inner_wrapper").removeClass("page_inner_wrapper_mobile");
-	$("#header_nav").removeClass("header_nav_scroll_mobile");
-	$(".header_nav_mobile").removeClass("header_nav_mobile_animate");
+	$("#page_mobile_nav").removeClass("page_mobile_nav_active");
+	$("#page_nav").removeClass("page_nav_active");
+	$("#page_nav_mobile").removeClass("page_nav_mobile_animate");
 }
 
 function navPage() {
@@ -48,7 +41,7 @@ function navPage() {
 				scrollToPanel(id);
 			}
 			
-			if ($(this).hasClass("page_nav_element") || $(this).hasClass("page_nav_element_icon")) {
+			if ($(this).hasClass("page_mobile_nav_element") || $(this).hasClass("page_nav_icon")) {
 				navMobileClose();
 			}
 		}
@@ -76,15 +69,10 @@ function scrollTo(top) {
 }
 
 function setHeaderHeight() {
-	if (/Mobi/.test(navigator.userAgent)) {
-		var viewport_height = $("#header").innerHeight();
-		$("#header").css("height", viewport_height);
-	}
+	$("#header").css("min-height", $(window).outerHeight);
 }
 
 $(document).ready(function() {
-	setHeaderHeight();
-	
 	navMobile();
 	navPage();
 });

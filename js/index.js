@@ -2,7 +2,7 @@
 function windowScrollListener() {
 	$(window).on("scroll", function() {
 		panelsSetStyle();
-		headerNavSetStyle();
+		pageNavSetStyle();
 		headerElementsSetStyle();
 		parallaxScroll();
 	});
@@ -17,8 +17,8 @@ function windowScrollListener() {
 			
 			var viewport_top = $(window).scrollTop();
 			var viewport_bottom = viewport_top + $(window).height();
-			var panel_top = $(panel).offset().top;
-			var panel_bottom = panel_top + $(panel).outerHeight();
+			var panel_top = panel.offset().top;
+			var panel_bottom = panel_top + panel.outerHeight();
 			
 			var panel_height_in_viewport = 0;
 			var panel_viewport_cover_percentage_required = 50;
@@ -40,7 +40,7 @@ function windowScrollListener() {
 		}
 		
 		function isViewportPastPanel(panel) {
-			if ($(window).scrollTop() >= $(panel).offset().top + $(panel).outerHeight()) return true;
+			if ($(window).scrollTop() >= panel.offset().top + panel.outerHeight()) return true;
 			
 			return false;
 		}
@@ -48,8 +48,8 @@ function windowScrollListener() {
 		function panelSetStyle(panel) {
 			var transparent_element_delay = 105;
 			
-			$(panel).removeClass("panel_transparent");
-			$(panel).addClass("panel_opaque");
+			panel.removeClass("panel_transparent");
+			panel.addClass("panel_opaque");
 			
 			$(panel).find(".panel_element_transparent").each(function(index) {
 				$(this).delay(transparent_element_delay * index).queue(function() {
@@ -60,13 +60,13 @@ function windowScrollListener() {
 		}
 	}
 	
-	function headerNavSetStyle() {
-		var scroll_from_top = 250;
+	function pageNavSetStyle() {
+		var scroll_from_top = 0;
 		
 		if ($(window).scrollTop() > scroll_from_top) {
-			$("#header_nav").addClass("header_nav_scroll");
+			$("#page_nav").addClass("page_nav_scroll");
 		} else {
-			$("#header_nav").removeClass("header_nav_scroll");
+			$("#page_nav").removeClass("page_nav_scroll");
 		}
 	}
 	
@@ -108,12 +108,9 @@ function windowScrollListener() {
 function windowResizeListener() {
 	$(window).on("resize", function() {
 		pageSetFontSize();
+		setHeaderHeight();
 
 		if (!/Mobi/.test(navigator.userAgent)) {
-			if ($("#header").outerHeight() !== $(window).outerHeight()) {
-				$("#header").css("height", "100vh");
-			}
-
 			if ($("#header_title").hasClass("header_element_transparent")) {
 				$("#header_title").removeClass("header_element_transparent");
 				$("#header_title").addClass("header_element_opaque");
@@ -140,7 +137,6 @@ function windowResizeListener() {
 		var container_width_large = 1200;
 		var page_width = 1920;
 		var width_per_pixel_change = 125;
-		var page = $("#page_wrapper");
 		
 		if ($(window).width() > page_width) {
 			font_size = font_size + ($(window).width() - page_width) / width_per_pixel_change;
@@ -150,7 +146,7 @@ function windowResizeListener() {
 		
 		if (font_size < 14) font_size = 14;
 
-		page.css("font-size", font_size);
+		$("html").css("font-size", font_size);
 	}
 }
 
@@ -199,45 +195,9 @@ function formInputListener() {
 	});
 }
 
-function samplesView() {
-	$("#samples").find(".panel_diamond").on("click", function() {
-		var id = $(this).parent().parent().attr("id");
-		
-		if (!$("#samples_view").hasClass("samples_view_display")) {
-			samplesViewOpen();
-			
-			$("#samples_view_wrapper").removeClass();
-			$("#samples_view_wrapper").addClass(id);
-			
-			$(".samples_view_text").removeClass("samples_view_text_display");
-			$("#" + id + "_view_text").addClass("samples_view_text_display");
-		}
-	});
-	
-	$("#samples_view_back_button").on("click", function() {
-		if ($("#samples_view").hasClass("samples_view_display")) {
-			samplesViewClose();
-		}
-	});
-	
-	function samplesViewOpen() {
-		$("#samples_view").addClass("samples_view_display");
-		$("#page_inner_wrapper").addClass("samples_view_page_display");
-		$("body").addClass("samples_view_body_display");
-	}
-	
-	function samplesViewClose() {
-		$("#samples_view").removeClass();
-		$("#page_inner_wrapper").removeClass("samples_view_page_display");
-		$("body").removeClass("samples_view_body_display");
-	}
-}
-
 $(document).ready(function() {
 	windowScrollListener();
 	windowResizeListener();
 	textareaInputListener();
 	formInputListener();
-	
-	samplesView();
 });

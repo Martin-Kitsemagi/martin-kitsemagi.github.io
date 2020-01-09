@@ -284,28 +284,39 @@ button:focus, input:focus, textarea:focus {
 }
 
 .page_nav .page_nav_mobile {
-  height: 100%;
-  padding: 0 0.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   display: none;
+  position: relative;
+  right: -1rem;
   float: right;
 }
 
 .page_nav .page_nav_mobile .page_nav_mobile_inner_wrapper {
   display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .page_nav .page_nav_mobile .page_nav_mobile_inner_wrapper div {
   width: 2.5rem;
-  height: 0.2rem;
-  margin: 0.5rem 0;
+  height: 0.15rem;
   position: relative;
+  top: 0;
   background-color: #212954;
   border-radius: 2rem;
+  -webkit-transition: opacity 425ms ease, background-color 75ms ease-out, width 425ms ease, left 425ms ease, top 425ms ease, -webkit-transform 425ms ease !important;
+  transition: opacity 425ms ease, background-color 75ms ease-out, width 425ms ease, left 425ms ease, top 425ms ease, -webkit-transform 425ms ease !important;
+  transition: transform 425ms ease, opacity 425ms ease, background-color 75ms ease-out, width 425ms ease, left 425ms ease, top 425ms ease !important;
+  transition: transform 425ms ease, opacity 425ms ease, background-color 75ms ease-out, width 425ms ease, left 425ms ease, top 425ms ease, -webkit-transform 425ms ease !important;
 }
 
 .page_nav .page_nav_mobile .page_nav_mobile_inner_wrapper .page_nav_mobile_middle {
   width: 50%;
+  margin: 0.5rem 0;
   left: 50%;
 }
 
@@ -861,7 +872,7 @@ button:focus, input:focus, textarea:focus {
   .page_mobile_nav .page_mobile_nav_elements_wrapper .page_mobile_nav_element {
     padding: 1rem 2.5rem;
     color: #fafafa;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
     -webkit-transition: color 75ms ease-out;
     transition: color 75ms ease-out;
@@ -890,22 +901,15 @@ button:focus, input:focus, textarea:focus {
   .page_nav .page_nav_mobile {
     display: inline-block;
   }
-  .page_nav .page_nav_mobile .page_nav_mobile_inner_wrapper div {
-    position: relative;
-    opacity: 1;
-    -webkit-transition: opacity 325ms ease, background-color 75ms ease-out, width 325ms ease, left 325ms ease, -webkit-transform 325ms ease !important;
-    transition: opacity 325ms ease, background-color 75ms ease-out, width 325ms ease, left 325ms ease, -webkit-transform 325ms ease !important;
-    transition: transform 325ms ease, opacity 325ms ease, background-color 75ms ease-out, width 325ms ease, left 325ms ease !important;
-    transition: transform 325ms ease, opacity 325ms ease, background-color 75ms ease-out, width 325ms ease, left 325ms ease, -webkit-transform 325ms ease !important;
-  }
   .page_nav .page_nav_mobile_animate .page_nav_mobile_inner_wrapper div {
     width: 2.5rem !important;
     left: 0 !important;
     background-color: #FAFAFA;
   }
   .page_nav .page_nav_mobile_animate .page_nav_mobile_inner_wrapper .page_nav_mobile_top {
-    -webkit-transform: rotateY(180deg) rotateZ(45deg) translate3d(0.5rem, 0.5rem, 0);
-            transform: rotateY(180deg) rotateZ(45deg) translate3d(0.5rem, 0.5rem, 0);
+    top: 0.65rem;
+    -webkit-transform: rotateY(180deg) rotateZ(45deg);
+            transform: rotateY(180deg) rotateZ(45deg);
   }
   .page_nav .page_nav_mobile_animate .page_nav_mobile_inner_wrapper .page_nav_mobile_middle {
     opacity: 0;
@@ -913,8 +917,9 @@ button:focus, input:focus, textarea:focus {
             transform: rotateY(90deg) !important;
   }
   .page_nav .page_nav_mobile_animate .page_nav_mobile_inner_wrapper .page_nav_mobile_bottom {
-    -webkit-transform: rotateY(180deg) rotateZ(-45deg) translate3d(0.5rem, -0.5rem, 0);
-            transform: rotateY(180deg) rotateZ(-45deg) translate3d(0.5rem, -0.5rem, 0);
+    top: -0.65rem;
+    -webkit-transform: rotateY(180deg) rotateZ(-45deg);
+            transform: rotateY(180deg) rotateZ(-45deg);
   }
   .panel_title_large {
     font-size: 1.95rem;

@@ -69,7 +69,8 @@ function scrollTo(top) {
 }
 
 function setHeaderHeight() {
-	$("#header").css("min-height", $(window).outerHeight);
+	var viewport_height = $("#header").outerHeight();
+	$("#header").css("height", viewport_height);
 }
 
 $(document).ready(function() {

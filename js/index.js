@@ -46,17 +46,8 @@ function windowScrollListener() {
 		}
 		
 		function panelSetStyle(panel) {
-			var transparent_element_delay = 105;
-			
 			panel.removeClass("panel_transparent");
 			panel.addClass("panel_opaque");
-			
-			$(panel).find(".panel_element_transparent").each(function(index) {
-				$(this).delay(transparent_element_delay * index).queue(function() {
-					$(this).removeClass("panel_element_transparent");
-					$(this).addClass("panel_element_opaque");
-				});
-			});
 		}
 	}
 	

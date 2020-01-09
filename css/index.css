@@ -248,7 +248,7 @@ button:focus, input:focus, textarea:focus {
 
 .page_nav .page_nav_icon span {
   position: relative;
-  top: 0.225rem;
+  top: 0.5rem;
   display: inline-block;
   font-family: "Aguafina Script", cursive;
   font-size: 2.15rem;
@@ -403,6 +403,11 @@ button:focus, input:focus, textarea:focus {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+
+.panel_transparent * {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
 }
 
 .panel_transparent .panel_inner_wrapper {

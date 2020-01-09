@@ -7,6 +7,73 @@
   color: #283177;
 }
 
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10rem, 0);
+          transform: translate3d(0, 10rem, 0);
+  -webkit-animation: panel_icon_animation 325ms ease-out;
+          animation: panel_icon_animation 325ms ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_top_wrapper .panel_icon_wrapper:nth-child(2) {
+  -webkit-animation-delay: 0.125s;
+          animation-delay: 0.125s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_top_wrapper .panel_icon_wrapper:nth-child(3) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper .panel_icon_wrapper:nth-child(1) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper .panel_icon_wrapper:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper .panel_icon_wrapper:nth-child(1) {
+  -webkit-animation-delay: 0.625s;
+          animation-delay: 0.625s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper .panel_icon_wrapper:nth-child(2) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.technologies .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper .panel_icon_wrapper:nth-child(3) {
+  -webkit-animation-delay: 0.875s;
+          animation-delay: 0.875s;
+}
+
+@-webkit-keyframes panel_icon_animation {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes panel_icon_animation {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 .html5_icon .panel_hexagon_background {
   background: -webkit-gradient(linear, left top, right bottom, from(#e75e3c), to(#e3441c));
   background: linear-gradient(to bottom right, #e75e3c, #e3441c);

@@ -1,0 +1,252 @@
+@import "variables.scss";
+
+.page_subpage_header {
+
+    .services_large_page_header {
+        background-image: url("../images/large/page_image_9.jpg");
+    }
+}
+
+.services_large {
+    padding: 0 !important;
+
+    .panel_row {
+        padding: 0 !important;
+    }
+
+    .services_types {
+
+        .services_type {
+            display: flex;
+            overflow: hidden;
+
+            .services_type_top_wrapper {
+                flex: 30%;
+                max-width: 30%;
+                position: relative;
+
+                background-color: color(highlight);
+                
+                .services_type_top_inner_wrapper {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    
+                    text-align: center;
+
+                    transform: translate(-50%, -50%);
+
+                    .services_type_icon {
+                        margin: 0 0 2.5rem 0;
+                        display: inline-block;
+
+                        i {
+                            color: color(light);
+                            font-size: 4.25rem;
+                        }
+                    }
+
+                    .services_type_name {
+                        color: color(light);
+                        font-size: 1.5rem;
+                        line-height: 2.25rem;
+                    }
+                }
+
+                svg {
+                    width: 5rem;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: -5rem;
+
+                    background-color: transparent;
+                    fill: color(highlight);
+
+                    transform: scaleY(-1) scale(1.15);
+                }
+            }
+
+            .services_type_text_wrapper {
+                flex: 70%;
+                max-width: 70%;
+        
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+        
+                .services_type_text_inner_wrapper {
+                    padding: 7.5rem 17.5%;
+        
+                    background-color: rgba(0, 0, 0, 0.75);
+        
+                    p {
+                        color: color(light);
+                        font-size: 1.05rem;
+                        line-height: 1.75rem;
+                    }
+        
+                    .services_type_text_button {
+                        margin: 2.5rem 0 1.5rem 0;
+                        padding: 0.75rem 1.25rem;
+                        display: inline-block;
+        
+                        color: color(light);
+                    }
+                }
+
+                .services_type_text_inner_wrapper * {
+                    animation: services_type_text_inner_wrapper 725ms ease;
+                }
+
+                @keyframes services_type_text_inner_wrapper {
+                    0% {
+                        opacity: 0;
+
+                        transform: translate3d(-5rem, 0, 0);
+                    }
+                    100% {
+                        opacity: 1;
+
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .services_type:nth-child(1) .services_type_text_wrapper {
+            background-image: url("../images/large/page_image_4.jpg");
+        }
+
+        .services_type:nth-child(2) .services_type_text_wrapper {
+            background-image: url("../images/large/page_image_8.jpg");
+        }
+
+        .services_type:nth-child(3) .services_type_text_wrapper {
+            background-image: url("../images/large/page_image_1.jpg");
+        }
+
+        .services_type_right {
+            flex-direction: row-reverse;
+
+            .services_type_top_wrapper {
+
+                svg {
+                    right: initial !important;
+                    left: -5rem;
+
+                    transform: scaleX(-1) scaleY(1) scale(1.15) !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .services_large {
+
+        .services_types {
+
+            .services_type {
+
+                .services_type_top_wrapper {
+                    flex: 35%;
+                    max-width: 35%;
+                }
+
+                .services_type_text_wrapper {
+                    flex: 65%;
+                    max-width: 65%;
+
+                    .services_type_text_inner_wrapper {
+                        padding: 7.5rem 12.5% 7.5rem 22.5%;
+                    }
+                }
+            }
+
+            .services_type_right {
+                
+                .services_type_text_wrapper {
+                   
+                    .services_type_text_inner_wrapper {
+                        padding: 7.5rem 20% 7.5rem 12.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services_large {
+
+        .services_types {
+
+            .services_type {
+                flex-direction: column !important;
+
+                .services_type_top_wrapper {
+                    flex: 100%;
+                    max-width: 100%;
+        
+                    .services_type_top_inner_wrapper {
+                        width: 100%;
+                        padding: 7.5rem 0;
+                        position: relative;
+                        top: 0; 
+                        left: 0;
+
+                        text-align: center;
+
+                        transform: none;
+                    }
+
+                    svg {
+                        width: 100%;
+                        height: 2.5rem;
+                        top: initial;
+                        bottom: -2.5rem;
+                        right: initial;
+                        left: 0;
+
+                        transform: scaleY(-1) scale(1.15) !important;
+                    }
+                }
+
+                .services_type_text_wrapper {
+                    flex: 100%;
+                    max-width: 100%;
+
+                    .services_type_text_inner_wrapper {
+                        padding: 7.5rem 3.75% 3.5rem 3.75%;
+
+                        text-align: center;
+
+                        p {
+                            padding: 0 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .services_large {
+
+        .services_types {
+
+            .services_type {
+
+                .services_type_text_wrapper {
+
+                    .services_type_text_inner_wrapper {
+                        padding: 5.5rem 2.5% 2.5rem 2.5%;
+                    }
+                }
+            }
+        }
+    }
+}

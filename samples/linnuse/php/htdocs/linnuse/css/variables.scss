@@ -1,0 +1,24 @@
+$page_font_family: "Rubik", sans-serif;
+$heading_font_family: "Great Vibes", cursive;
+
+$colors: (
+    primary: #262626,
+    light: #FAFAFA,
+    highlight: #cc3473,
+    highlight_effect: #92194c,
+    highlight_text: #c50a49,
+    highlight_text_light: #f554a7,
+
+    notification: #ccc234,
+    notification_text: #7c7010,
+    success: #57cc34,
+    success_text: #218b17,
+
+    background: #f9e9e0,
+    background_highlight: #c39982,
+    background_light: #f5d4c8
+);
+
+@function color($color_name) {
+    @return map-get($colors, $color_name);
+}

@@ -1,0 +1,255 @@
+@import "variables.scss";
+
+.page_subpage_header {
+
+    .menu_page_header {
+        background-image: url("../images/large/page_image_2.jpg");
+    }
+
+    .menu {
+        padding: 4rem 0 0 0;
+    
+        .menu_items_wrapper {  
+
+            .menu_items_name {
+                margin: 1.5rem 0 7rem 1.25%;
+                
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 0.75rem;
+
+                &::after {
+                    width: 3.25rem;
+                    height: 0.15rem;
+                    display: block;
+                    position: relative;
+                    top: 1.75rem;
+                    left: 50%;
+                    content: "";
+        
+                    background-color: color(highlight);
+        
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .menu_items {
+                margin: 0 0 4rem 0;
+                display: flex !important;
+            }
+        }
+    }
+}
+
+.menu {
+    background-color: color(background);
+    
+    .menu_selections {
+        height: 3rem;
+        margin: 0.5rem 0 4rem 0;
+
+        line-height: 3rem;
+
+        align-self: center;
+
+        .menu_selection {
+            height: 100%;
+            padding: 0 1rem;
+            float: left;
+
+            background-color: inherit;
+            font-size: 1.05rem;
+
+            border-radius: 1rem;
+
+            transition: background-color 225ms ease-out, color 50ms ease-out;
+            
+            &:hover {
+                cursor: pointer;
+
+                color: color(highlight_text);
+            }
+        }
+
+        .menu_selection_active {
+            color: color(highlight_text);
+            
+            background-color: rgba(color(background_light), 0.7);
+        }
+    }
+
+    .menu_items_wrapper {
+
+        .menu_items {
+            display: none;
+
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .menu_item {
+                flex: 22.5%;
+                max-width: 22.5%;
+                margin: 0 1.25% 2rem 1.25%;
+                padding: 0 1rem 1.5rem 1rem;
+
+                text-align: center;
+
+                border-radius: 1rem;
+
+                .page_gallery_image {
+                    border-radius: 1rem;
+
+                    box-shadow: 0 0.5rem 0.75rem rgba(color(primary), 0.15);
+
+                    .page_gallery_image_overlay {
+
+                        span {
+                            font-size: 1.15rem;
+                        }
+                    }
+
+                    .menu_item_image {
+                        width: 100%;
+                        height: 15rem;
+                        object-fit: cover;
+                    }
+                }
+
+                .menu_item_name {
+                    padding: 1.75rem 0 0.75rem 0;
+
+                    color: color(highlight);
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    font-weight: 700;
+                }
+
+                .menu_item_text {
+                    padding: 1rem 0 2.5rem 0;
+                }
+
+                .menu_item_price {
+                    font-family: $heading_font_family;
+                    font-size: 2rem;
+                    line-height: 2.75rem;
+                }
+            }
+        }
+
+        .menu_items_active {
+            display: flex !important;
+
+            .menu_item {
+                animation: menu_item 525ms ease;
+            }
+
+            @keyframes menu_item {
+                0% {
+                    opacity: 0;
+
+                    transform: translate3d(0, 15rem, 0) scale(0);
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
+
+                    transform: translate3d(0, 0, 0) scale(1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .menu {
+
+        .menu_items_wrapper {
+
+            .menu_items {
+
+                .menu_item {
+                    flex: 27.5%;
+                    max-width: 27.5%;
+
+                    .menu_item_name {
+                        font-size: 1.35rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .menu {
+
+        .menu_items_wrapper {
+
+            .menu_items {
+
+                .menu_item {
+                    flex: 30.75%;
+                    max-width: 30.75%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .menu {
+
+        .menu_items_wrapper {
+
+            .menu_items {
+                justify-content: initial;
+
+                .menu_item {
+                    flex: 47.5%;
+                    max-width: 47.5%;
+
+                    .menu_item_name {
+                        padding: 1.5rem 0 0.75rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .menu {
+
+        .panel_title_large {
+            margin: 1.5rem 0 2.25rem 0;
+        }
+
+        .menu_selections {
+            height: auto;
+            margin: 2.5rem 0 3.25rem 0;
+
+            line-height: 3.5rem;
+            text-align: center;
+
+            .menu_selection {
+                display: inline-block;
+                padding: 0 1.25rem;
+                float: none;
+            }
+        }
+
+        .menu_items_wrapper {
+
+            .menu_items {
+
+                .menu_item {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

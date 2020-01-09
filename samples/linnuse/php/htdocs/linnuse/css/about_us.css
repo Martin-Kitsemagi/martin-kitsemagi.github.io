@@ -1,0 +1,141 @@
+.page_subpage .about_us {
+  padding: 10rem 0 7.5rem 0;
+}
+
+.page_subpage .about_us .panel_title {
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.page_subpage .about_us .panel_column {
+  padding: 0 3.75%;
+}
+
+.page_subpage .about_us .about_us_text {
+  padding-left: 8.75%;
+}
+
+.page_subpage .about_us .about_us_images {
+  padding-top: 4.5rem;
+}
+
+.page_subpage .about_us .about_us_images .about_us_images_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page_subpage .about_us .about_us_images .panel_button_highlight {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about_us {
+  background-color: #f9e9e0;
+}
+
+.about_us .panel_button_highlight {
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  padding: 0.85rem 0;
+  display: block;
+}
+
+.about_us .panel_button_highlight i {
+  margin: 0 0 0 0.5rem;
+  top: 0.1rem;
+}
+
+.about_us .about_us_images {
+  padding: 0 0.25rem;
+}
+
+.about_us .about_us_images .about_us_images_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 0 0.5rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_us .about_us_images .about_us_images_wrapper .about_us_images_column_wrapper {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  padding: 0 0.5rem 0 0;
+}
+
+.about_us .about_us_images .about_us_images_wrapper .about_us_images_column_wrapper .page_gallery_image {
+  margin: 0.5rem 0 0 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
+          box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
+}
+
+@media (max-width: 1919.98px) {
+  .page_subpage .about_us .about_us_text {
+    padding-left: inherit;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .page_subpage .about_us .about_us_images .about_us_images_wrapper {
+    width: 95%;
+  }
+  .page_subpage .about_us .about_us_images .panel_button_highlight {
+    width: 95%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .page_subpage .about_us {
+    padding: 10rem 0 4rem 0;
+  }
+  .page_subpage .about_us .panel_row {
+    width: 100%;
+  }
+  .page_subpage .about_us .panel_column {
+    padding: 0 2.5% !important;
+  }
+  .page_subpage .about_us .about_us_images {
+    padding-top: 0;
+  }
+  .page_subpage .about_us .about_us_images .about_us_images_wrapper {
+    width: 100%;
+  }
+  .page_subpage .about_us .about_us_images .panel_button_highlight {
+    width: 100%;
+  }
+  .about_us .panel_row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about_us .about_us_images {
+    margin: 4rem 0 0 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page_subpage .about_us .about_us_images .panel_button_highlight {
+    margin-top: 0.5rem;
+  }
+  .about_us .panel_row {
+    width: 100%;
+  }
+  .about_us .panel_row .panel_column {
+    padding: 0;
+  }
+  .about_us .about_us_images {
+    margin: 3rem 0 0 0;
+  }
+  .about_us .about_us_images .about_us_images_wrapper {
+    padding: 0;
+  }
+  .about_us .about_us_images .about_us_images_wrapper .about_us_images_column_wrapper {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=about_us.css.map */

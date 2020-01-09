@@ -179,7 +179,8 @@ function formInputListener() {
 
 function setVhElementsHeight() {
 	$(".viewport_height").each(function() {
-		$(this).css("min-height", $(window).outerHeight());
+		var viewport_height = $(this).outerHeight;
+		$(this).css("height", viewport_height);
 	});
 }
 

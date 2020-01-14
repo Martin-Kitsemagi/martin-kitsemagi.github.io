@@ -176,6 +176,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .qualities .row:last-child {
+    padding: 0 2.5%;
+  }
   .qualities .row:last-child::after {
     margin: 1.25rem 0 0 0;
   }

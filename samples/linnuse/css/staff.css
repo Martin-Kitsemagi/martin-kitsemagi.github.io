@@ -242,10 +242,12 @@
 }
 
 .staff .staff_slider_button_previous {
-  left: 3.75%;
+  margin-top: 2rem;
+  right: 3.75%;
 }
 
 .staff .staff_slider_button_next {
+  margin-top: -2rem;
   right: 3.75%;
 }
 
@@ -351,7 +353,12 @@
     padding: 0 2rem;
   }
   .staff .staff_slider_button_previous, .staff .staff_slider_button_next {
+    margin-top: 0;
     top: 40.5rem;
+  }
+  .staff .staff_slider_button_previous {
+    right: initial;
+    left: 3.75%;
   }
 }
 
@@ -366,4 +373,3 @@
     min-height: 40rem;
   }
 }
-/*# sourceMappingURL=staff.css.map */

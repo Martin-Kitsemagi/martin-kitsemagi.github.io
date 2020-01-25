@@ -90,13 +90,13 @@ button:focus, input:focus, textarea:focus {
 }
 
 .page_overlay_active {
-  -webkit-animation: page_overlay 4s ease;
-          animation: page_overlay 4s ease;
+  -webkit-animation: page_overlay 3s ease-in-out;
+          animation: page_overlay 3s ease-in-out;
 }
 
 .page_overlay_active .page_overlay_icon_wrapper .page_overlay_icon {
-  -webkit-animation: page_overlay_icon 3.75s ease;
-          animation: page_overlay_icon 3.75s ease;
+  -webkit-animation: page_overlay_icon 2.75s ease-in-out;
+          animation: page_overlay_icon 2.75s ease-in-out;
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
@@ -1373,4 +1373,3 @@ button:focus, input:focus, textarea:focus {
     width: 100%;
   }
 }
-/*# sourceMappingURL=index.css.map */

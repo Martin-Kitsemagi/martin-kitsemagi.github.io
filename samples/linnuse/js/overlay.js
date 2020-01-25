@@ -1,7 +1,7 @@
 var page_overlay = document.getElementById("page_overlay");
 var page_wrapper = document.getElementById("page_wrapper");
 
-var page_wrapper_timeout_delay = 3750;
+var page_wrapper_timeout_delay = 2750;
 
 page_wrapper.onload = pageOverlay();
 

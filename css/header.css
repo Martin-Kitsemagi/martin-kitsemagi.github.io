@@ -18,8 +18,8 @@
   right: 2.5%;
   left: auto;
   opacity: 0;
-  -webkit-animation: header_element 525ms ease;
-          animation: header_element 525ms ease;
+  -webkit-animation: carousel-indicators 525ms ease;
+          animation: carousel-indicators 525ms ease;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
@@ -41,6 +41,18 @@
 .header .carousel .carousel-indicators li:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+}
+
+@-webkit-keyframes carousel-indicators {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes carousel-indicators {
+  100% {
+    opacity: 1;
+  }
 }
 
 .header .carousel .carousel-inner {
@@ -304,4 +316,3 @@
     line-height: 2.25rem;
   }
 }
-/*# sourceMappingURL=header.css.map */

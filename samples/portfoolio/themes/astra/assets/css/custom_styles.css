@@ -110,6 +110,11 @@ button:focus, input:focus, textarea:focus {
   font-size: 1.75rem;
 }
 
+.site-header .main-navigation {
+  position: relative;
+  right: -1.5em;
+}
+
 .site-header .main-navigation .current-menu-item a {
   color: #5F32E4 !important;
 }
@@ -289,6 +294,14 @@ svg path {
   background-image: linear-gradient(250deg, #5F32E4 50%, #4423A7 100%);
 }
 
+.about_me .elementor-row .elementor-column .elementor-column-wrap {
+  padding: 0 !important;
+}
+
+.about_me .elementor-row .elementor-column .elementor-inner-section .elementor-column:last-child .elementor-column-wrap {
+  padding: 2em 1.5em !important;
+}
+
 .services_icon_wrapper, .services_icon_wrapper_top, .services_icon_wrapper_bottom {
   position: relative;
 }
@@ -404,6 +417,15 @@ svg path {
   margin: 0 0 0 10px;
 }
 
+@media (max-width: 1199.98px) {
+  .site-header .ast-container {
+    padding: 0 !important;
+  }
+  .site-header .main-header-bar-wrap {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 1024.98px) {
   .header {
     padding-top: 0 !important;
@@ -433,6 +455,9 @@ svg path {
   }
   .site-header .main-header-bar .main-header-bar-navigation {
     display: block !important;
+  }
+  .site-header .main-header-bar .main-header-bar-navigation .main-navigation {
+    right: 0;
   }
   .site-header .main-header-bar .main-header-bar-navigation .main-navigation .main-header-menu {
     border: none;
@@ -585,6 +610,10 @@ svg path {
   }
   .site-header {
     position: fixed !important;
+    top: 0;
+  }
+  .site-header .main-header-bar-wrap {
+    padding: 0;
   }
   .site-header .main-header-bar {
     padding: 0;
@@ -593,7 +622,7 @@ svg path {
     padding: 0;
   }
   .site-header .main-header-bar .main-header-container {
-    padding: 0 1rem;
+    padding: 0 1.25rem;
   }
   .site-header .main-header-bar .site-branding {
     padding-left: 2.5%;
@@ -603,6 +632,9 @@ svg path {
     padding-right: 2.5%;
     position: absolute;
     right: 0;
+  }
+  .site-header .main-header-bar .ast-mobile-menu-buttons .ast-button-wrap {
+    padding-right: 1.25rem;
   }
   .site-header .main-header-bar .ast-mobile-menu-buttons .menu-toggle {
     background-color: #5F32E4;
@@ -674,6 +706,7 @@ svg path {
     margin-top: -4em !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    background-image: url("../../../../uploads/2020/01/jakob-owens-f3s0i96CRGQ-unsplash-1536x994.jpg");
   }
   .header .elementor-row .elementor-column:first-child * {
     text-align: center;
@@ -692,6 +725,9 @@ svg path {
   }
   .header h1 {
     font-size: 5rem !important;
+  }
+  .about_me {
+    padding-top: 4em !important;
   }
   .about_me .elementor-row {
     padding: 0 2.5%;
@@ -784,7 +820,7 @@ svg path {
     max-width: 75%;
   }
   .about_me .elementor-row .elementor-column:last-child .elementor-row .elementor-column:last-child .elementor-column-wrap {
-    padding: 1.5rem 0.75rem;
+    padding: 1.5rem 0.75rem !important;
   }
   .about_me .elementor-row .elementor-column:last-child .elementor-row .elementor-column:last-child .elementor-widget-wrap .elementor-widget-text-editor:first-child {
     font-size: 1.05rem;

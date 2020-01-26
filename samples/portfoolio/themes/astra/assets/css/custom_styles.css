@@ -703,7 +703,6 @@ svg path {
     color: #FC4EB7;
   }
   .header {
-    margin-top: -4em !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     background-image: url("../../../../uploads/2020/01/jakob-owens-f3s0i96CRGQ-unsplash-1536x994.jpg");
@@ -774,6 +773,12 @@ svg path {
   .error_code_container div p {
     font-size: 2.25rem;
     line-height: 3.5rem;
+  }
+  .site-header .main-header-bar .main-header-container {
+    padding: 0;
+  }
+  .site-header .main-header-bar .main-header-container .ast-mobile-menu-buttons .ast-button-wrap {
+    padding-right: 0;
   }
   .site-footer {
     padding: 4rem 0.25rem 0 0.25rem !important;

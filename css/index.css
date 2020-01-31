@@ -225,6 +225,7 @@ button:focus, input:focus, textarea:focus {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
   z-index: 10;
   background-color: transparent;
   line-height: 4.5rem;
@@ -288,7 +289,7 @@ button:focus, input:focus, textarea:focus {
   height: 4.5rem;
   display: none;
   position: relative;
-  right: -1rem;
+  right: -0.5rem;
   float: right;
 }
 
@@ -572,34 +573,25 @@ button:focus, input:focus, textarea:focus {
 }
 
 .panel_icons {
-  width: 100%;
-  height: 29rem;
+  margin: 0 0 -8rem 0;
 }
 
 .panel_icons .panel_icons_inner_wrapper {
-  width: 30rem;
   margin: 3rem auto 0 auto;
-  display: table;
-  text-align: center;
   pointer-events: none;
 }
 
-.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_top_wrapper {
+.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_top_wrapper, .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper, .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
   margin: 0 auto;
   display: table;
 }
 
 .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
-  width: 20rem;
-  margin: 0 auto;
-  display: table;
   position: relative;
   top: -4rem;
 }
 
 .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
-  margin: 0 auto;
-  display: table;
   position: relative;
   top: -8rem;
 }
@@ -859,6 +851,7 @@ button:focus, input:focus, textarea:focus {
     position: fixed;
     top: 0;
     right: -100%;
+    overflow: scroll;
     z-index: 10;
     background-color: #1c2247;
     -webkit-transition: -webkit-transform 425ms ease-out;
@@ -947,5 +940,14 @@ button:focus, input:focus, textarea:focus {
   }
   .panel_form .panel_form_textarea_wrapper {
     margin: 0 0 1rem 0;
+  }
+}
+
+@media (max-height: 349.98px) {
+  .page_mobile_nav .page_mobile_nav_elements_wrapper {
+    position: relative;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }

@@ -318,6 +318,7 @@
   }
   .staff .staff_slider_wrapper .staff_slider .staff_slide {
     height: auto;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -328,6 +329,7 @@
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+    min-height: 25rem;
   }
   .staff .staff_slider_wrapper .staff_slider .staff_slide .staff_slide_image_wrapper .page_gallery_image {
     height: 25rem;
@@ -335,7 +337,7 @@
   .staff .staff_slider_wrapper .staff_slider .staff_slide .staff_slide_image_wrapper svg {
     width: 100%;
     height: 2.5rem;
-    top: initial;
+    top: auto;
     bottom: 0;
   }
   .staff .staff_slider_wrapper .staff_slider .staff_slide .staff_slide_text_wrapper {
@@ -357,7 +359,7 @@
     top: 40.5rem;
   }
   .staff .staff_slider_button_previous {
-    right: initial;
+    right: auto;
     left: 3.75%;
   }
 }

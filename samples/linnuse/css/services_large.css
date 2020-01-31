@@ -143,7 +143,7 @@
 }
 
 .services_large .services_types .services_type_right .services_type_top_wrapper svg {
-  right: initial !important;
+  right: auto !important;
   left: -5rem;
   -webkit-transform: scaleX(-1) scaleY(1) scale(1.15) !important;
           transform: scaleX(-1) scaleY(1) scale(1.15) !important;
@@ -172,6 +172,7 @@
 
 @media (max-width: 767.98px) {
   .services_large .services_types .services_type {
+    display: block;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -196,9 +197,9 @@
   .services_large .services_types .services_type .services_type_top_wrapper svg {
     width: 100%;
     height: 2.5rem;
-    top: initial;
+    top: auto;
     bottom: -2.5rem;
-    right: initial;
+    right: auto;
     left: 0;
     -webkit-transform: scaleY(-1) scale(1.15) !important;
             transform: scaleY(-1) scale(1.15) !important;
@@ -223,4 +224,3 @@
     padding: 5.5rem 2.5% 2.5rem 2.5%;
   }
 }
-/*# sourceMappingURL=services_large.css.map */

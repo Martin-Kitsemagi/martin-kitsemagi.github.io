@@ -1007,6 +1007,7 @@ button:focus, input:focus, textarea:focus {
 .page_nav_mobile_active {
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate(-100%, 0);
 }
 
 .page_gallery_nav {
@@ -1329,7 +1330,7 @@ button:focus, input:focus, textarea:focus {
   .page_gallery_nav .page_gallery_nav_button {
     width: 22.5%;
     height: 4.5rem;
-    top: initial;
+    top: auto;
     bottom: 0;
     border-radius: 0;
   }
@@ -1349,21 +1350,21 @@ button:focus, input:focus, textarea:focus {
     line-height: 5rem;
   }
   .page_gallery_nav .page_gallery_nav_button_previous {
-    top: initial;
+    top: auto;
     bottom: 0;
     left: 0;
   }
   .page_gallery_nav .page_gallery_nav_button_next {
-    top: initial;
+    top: auto;
     bottom: 0;
     left: 22.5%;
   }
   .page_gallery_nav .page_gallery_nav_text {
     width: 32.5%;
     height: 4.5rem;
-    top: initial;
+    top: auto;
     bottom: 0;
-    left: initial;
+    left: auto;
     right: 22.5%;
     font-size: 2.5rem;
     line-height: 5rem;
@@ -1371,5 +1372,27 @@ button:focus, input:focus, textarea:focus {
   }
   .panel_form {
     width: 100%;
+  }
+}
+
+@media (max-height: 499.98px) {
+  .page_nav_mobile {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .page_nav_mobile .page_nav_mobile_elements {
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .page_nav_mobile .page_nav_mobile_social_media {
+    padding: 0 0 2rem 0;
+    position: relative;
+    top: 5.75rem;
+    bottom: auto;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }

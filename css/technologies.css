@@ -128,13 +128,13 @@
     width: 23rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
-    top: -3.75rem;
+    top: -3.825rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
-    top: -7.5rem;
+    top: -7.65rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
-    margin: 0 0.25rem;
+    margin: 0 0.325rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon {
     width: 7rem;
@@ -154,13 +154,10 @@
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
     width: 14rem;
-    top: -2.75rem;
+    top: -3.05rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_bottom_wrapper {
-    top: -5.5rem;
-  }
-  .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
-    margin: 0 0.25rem;
+    top: -6.1rem;
   }
   .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper .panel_icon .panel_hexagon {
     width: 5.5rem;
@@ -193,4 +190,3 @@
     margin: -1rem 0.5rem;
   }
 }
-/*# sourceMappingURL=technologies.css.map */

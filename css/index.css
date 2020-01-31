@@ -584,6 +584,11 @@ button:focus, input:focus, textarea:focus {
   pointer-events: none;
 }
 
+.panel_icons .panel_icons_inner_wrapper .panel_icons_inner_top_wrapper {
+  margin: 0 auto;
+  display: table;
+}
+
 .panel_icons .panel_icons_inner_wrapper .panel_icons_inner_middle_wrapper {
   width: 20rem;
   margin: 0 auto;

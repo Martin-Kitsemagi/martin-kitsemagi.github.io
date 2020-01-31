@@ -96,10 +96,10 @@
 
 .header .header_title h1 {
   width: 35rem;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 0.75rem 0;
   color: #2c3772;
   font-size: 3.5rem;
-  line-height: 4.75rem;
+  line-height: 5rem;
   opacity: 0;
   -webkit-animation: header_title_text 625ms ease;
           animation: header_title_text 625ms ease;

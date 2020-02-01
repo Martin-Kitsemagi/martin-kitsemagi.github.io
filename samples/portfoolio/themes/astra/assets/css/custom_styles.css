@@ -294,12 +294,24 @@ svg path {
   background-image: linear-gradient(250deg, #5F32E4 50%, #4423A7 100%);
 }
 
+.header .elementor-row {
+  min-height: 100vh;
+}
+
+.header .elementor-row .elementor-column:last-child .elementor-widget {
+  width: 100%;
+}
+
 .about_me .elementor-row .elementor-column .elementor-column-wrap {
   padding: 0 !important;
 }
 
 .about_me .elementor-row .elementor-column .elementor-inner-section .elementor-column:last-child .elementor-column-wrap {
   padding: 2em 1.5em !important;
+}
+
+.about_me_sub .elementor-row .elementor-column:last-child .elementor-widget {
+  width: 100%;
 }
 
 .services_icon_wrapper, .services_icon_wrapper_top, .services_icon_wrapper_bottom {
@@ -325,7 +337,7 @@ svg path {
 
 .services_icon_wrapper_bottom::after {
   height: 50%;
-  top: initial;
+  top: auto;
   bottom: 0;
 }
 
@@ -622,7 +634,7 @@ svg path {
     padding: 0;
   }
   .site-header .main-header-bar .main-header-container {
-    padding: 0 1.25rem;
+    padding: 0 0.5rem;
   }
   .site-header .main-header-bar .site-branding {
     padding-left: 2.5%;
@@ -631,10 +643,13 @@ svg path {
     display: block !important;
     padding-right: 2.5%;
     position: absolute;
+    top: 50%;
     right: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
   .site-header .main-header-bar .ast-mobile-menu-buttons .ast-button-wrap {
-    padding-right: 1.25rem;
+    padding-right: 0.5rem;
   }
   .site-header .main-header-bar .ast-mobile-menu-buttons .menu-toggle {
     background-color: #5F32E4;
@@ -773,12 +788,6 @@ svg path {
   .error_code_container div p {
     font-size: 2.25rem;
     line-height: 3.5rem;
-  }
-  .site-header .main-header-bar .main-header-container {
-    padding: 0;
-  }
-  .site-header .main-header-bar .main-header-container .ast-mobile-menu-buttons .ast-button-wrap {
-    padding-right: 0;
   }
   .site-footer {
     padding: 4rem 0.25rem 0 0.25rem !important;

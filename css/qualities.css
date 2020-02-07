@@ -21,11 +21,17 @@
   background: linear-gradient(to right, transparent, #cacade, transparent);
 }
 
+.qualities .col-4 {
+  padding: 0 1.25rem;
+}
+
 .qualities .col-4 .panel_inner_wrapper {
   height: 100%;
   display: inline-block;
   background-color: rgba(240, 240, 252, 0.75);
   border-radius: 0.75rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.5);
   -webkit-transition: -webkit-transform 525ms ease;
   transition: -webkit-transform 525ms ease;
   transition: transform 525ms ease;
@@ -183,4 +189,3 @@
     margin: 1.25rem 0 0 0;
   }
 }
-/*# sourceMappingURL=qualities.css.map */

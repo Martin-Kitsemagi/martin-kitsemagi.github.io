@@ -32,6 +32,7 @@
   margin: 0 0 1.25rem 0;
   background-color: #FAFAFA;
   border: none;
+  border-radius: 0.05rem;
   -webkit-transition: opacity 575ms ease, -webkit-transform 75ms ease !important;
   transition: opacity 575ms ease, -webkit-transform 75ms ease !important;
   transition: transform 75ms ease, opacity 575ms ease !important;

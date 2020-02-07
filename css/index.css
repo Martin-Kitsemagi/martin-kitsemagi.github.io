@@ -351,8 +351,8 @@ button:focus, input:focus, textarea:focus {
 .page_nav_scroll {
   position: fixed !important;
   background-color: rgba(39, 48, 99, 0.98) !important;
-  -webkit-box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .page_nav_scroll .page_nav_elements_wrapper .page_nav_element {

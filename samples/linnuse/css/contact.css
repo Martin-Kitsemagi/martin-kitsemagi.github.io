@@ -52,7 +52,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   opacity: 1;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   -webkit-transition: opacity 325ms ease;
   transition: opacity 325ms ease;
   -webkit-transform: translate(-50%, -50%);
@@ -154,4 +154,3 @@
     width: 90%;
   }
 }
-/*# sourceMappingURL=contact.css.map */

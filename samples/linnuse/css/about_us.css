@@ -67,7 +67,7 @@
 
 .about_us .about_us_images .about_us_images_wrapper .about_us_images_column_wrapper .page_gallery_image {
   margin: 0.5rem 0 0 0;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   -webkit-box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
           box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
 }
@@ -138,4 +138,3 @@
     max-width: 100%;
   }
 }
-/*# sourceMappingURL=about_us.css.map */

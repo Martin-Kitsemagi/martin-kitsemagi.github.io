@@ -85,11 +85,11 @@
   margin: 0 1.25% 2rem 1.25%;
   padding: 0 1rem 1.5rem 1rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
 }
 
 .menu .menu_items_wrapper .menu_items .menu_item .page_gallery_image {
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   -webkit-box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
           box-shadow: 0 0.5rem 0.75rem rgba(38, 38, 38, 0.15);
 }
@@ -226,4 +226,3 @@
     max-width: 100%;
   }
 }
-/*# sourceMappingURL=menu.css.map */

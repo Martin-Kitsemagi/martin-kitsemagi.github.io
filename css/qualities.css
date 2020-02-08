@@ -30,8 +30,8 @@
   display: inline-block;
   background-color: rgba(240, 240, 252, 0.75);
   border-radius: 0.75rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.5);
-          box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.4);
   -webkit-transition: -webkit-transform 525ms ease;
   transition: -webkit-transform 525ms ease;
   transition: transform 525ms ease;

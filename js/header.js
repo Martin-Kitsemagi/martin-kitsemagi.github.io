@@ -70,6 +70,11 @@ function scrollTo(top) {
 
 function setHeaderHeight() {
 	var viewport_height = $(window).outerHeight();
+
+	if (/Mobi/.test(navigator.userAgent)) {
+		viewport_height = $("#header").outerHeight();
+	}
+
 	$("#header").css("height", viewport_height);
 }
 

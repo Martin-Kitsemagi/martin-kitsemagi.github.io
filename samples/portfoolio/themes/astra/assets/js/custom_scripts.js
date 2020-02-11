@@ -1,6 +1,7 @@
 function windowResizeListener($) {
 	$(window).on("resize", function() {
         textareaResize($("textarea"));
+        setHeaderHeight();
 	});
 	
 	$(document).ready(function() {
@@ -65,6 +66,16 @@ function wpFormsOnSubmit(form) {
 function textareaResize(textarea) {
 	textarea.css("height", "auto");
 	textarea.css("height", textarea.prop("scrollHeight"));
+}
+
+function setHeaderHeight() {
+	var viewport_height = $(window).outerHeight();
+
+	if (/Mobi/.test(navigator.userAgent)) {
+		viewport_height = $(".header").outerHeight();
+	}
+
+	$(".header").css("height", viewport_height);
 }
 
 jQuery(document).ready(function($) {

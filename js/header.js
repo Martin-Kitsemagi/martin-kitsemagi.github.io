@@ -1,25 +1,27 @@
 function navMobile() {
-	$("#page_nav_mobile").on("click", function(event) {
-		if ($("#page_mobile_nav").hasClass("page_mobile_nav_active")) {
-			navMobileClose();
+	$("#page_nav_mobile").on("click", function() {
+		if ($("#page_nav").hasClass("page_nav_active")) {
+			$("#page_nav").removeClass("page_nav_active");
 		} else {
-			navMobileOpen();
+			$("#page_nav").addClass("page_nav_active");
 		}
-		
-		event.stopPropagation();
+	});
+
+	$("#page_nav_overlay").on("click", function() {
+		if ($("#page_nav").hasClass("page_nav_active")) {
+			$("#page_nav").removeClass("page_nav_active");
+		}
 	});
 }
 
-function navMobileOpen() {
-	$("#page_mobile_nav").addClass("page_mobile_nav_active");
-	$("#page_nav").addClass("page_nav_active");
-	$("#page_nav_mobile").addClass("page_nav_mobile_animate");
-}
-
-function navMobileClose() {
-	$("#page_mobile_nav").removeClass("page_mobile_nav_active");
-	$("#page_nav").removeClass("page_nav_active");
-	$("#page_nav_mobile").removeClass("page_nav_mobile_animate");
+function navTheme() {
+	$("#page_nav_theme").on("click", function() {
+		if ($("#page_wrapper").hasClass("page_wrapper_theme")) {
+			$("#page_wrapper").removeClass("page_wrapper_theme");
+		} else {
+			$("#page_wrapper").addClass("page_wrapper_theme");
+		}
+	});
 }
 
 function navPage() {
@@ -41,8 +43,8 @@ function navPage() {
 				scrollToPanel(id);
 			}
 			
-			if ($(this).hasClass("page_mobile_nav_element") || $(this).hasClass("page_nav_icon")) {
-				navMobileClose();
+			if ($("#page_nav").hasClass("page_nav_active")) {
+				$("#page_nav").removeClass("page_nav_active");
 			}
 		}
 	});
@@ -68,17 +70,8 @@ function scrollTo(top) {
 	}, scroll_delay);
 }
 
-function setHeaderHeight() {
-	var viewport_height = $(window).outerHeight();
-
-	if (/Mobi/.test(navigator.userAgent)) {
-		viewport_height = $("#header").outerHeight();
-	}
-
-	$("#header").css("height", viewport_height);
-}
-
 $(document).ready(function() {
 	navMobile();
+	navTheme();
 	navPage();
 });

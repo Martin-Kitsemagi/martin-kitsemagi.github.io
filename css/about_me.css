@@ -1,68 +1,93 @@
 .about_me {
-  padding: 7rem 0 0.5rem 0;
-  background-color: #2c3772;
+  padding: 4rem 0;
+  background-color: #FAFAFA;
 }
 
-.about_me .row {
-  width: 80%;
-  margin: 0 auto;
+.about_me .col-4 {
+  padding: 0;
 }
 
-.about_me .panel_title_large {
-  margin: 0 0 1.75rem 0;
+.about_me .col-4 .panel_title {
+  font-size: 2.75rem;
+  line-height: 3.75rem;
 }
 
-.about_me .panel_title_large::before {
-  display: none;
+.about_me .col-8 {
+  padding: 0;
+}
+
+.about_me .col-8 .panel_inner_wrapper {
+  width: 85%;
+  position: relative;
+  left: 15%;
 }
 
 .about_me .panel_text {
-  color: #FAFAFA;
+  padding: 0;
+  color: #404040;
 }
 
 .about_me .panel_text b {
-  color: #fe8b8b;
+  color: #283177;
   font-weight: 700;
 }
 
+.about_me .panel_text::before {
+  display: none;
+}
+
 .about_me .panel_text_link {
-  margin: 3rem 0 0 0;
+  margin: 2.25rem 0 0 0;
   padding: 0.85rem 1.25rem;
   position: relative;
+  background-color: #ff4747;
   color: #FAFAFA;
-  font-size: 1rem;
-  text-decoration: none;
-  border: 0.1rem solid #FAFAFA;
   border-radius: 2rem;
-  -webkit-transition: background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
-  transition: background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
-  transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out;
-  transition: transform 525ms ease, background-color 75ms ease-out, border-color 25ms ease-out, -webkit-transform 525ms ease;
+  -webkit-transition: background-color 75ms ease-out;
+  transition: background-color 75ms ease-out;
 }
 
 .about_me .panel_text_link i {
   margin: 0 0 0 0.75rem;
+  font-size: 1rem;
 }
 
 .about_me .panel_text_link:hover, .about_me .panel_text_link:focus {
-  background-color: #1c2247;
+  background-color: #ff1717;
   text-decoration: none !important;
-  border-color: #1c2247;
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
 }
 
 .about_me .about_me_transition_svg {
-  height: 4rem;
-  bottom: -4rem;
+  bottom: 0;
   left: 0;
-  background-color: transparent;
-  fill: #2c3772;
+  background-color: #FAFAFA;
+  fill: #ffe0e0;
+  -webkit-transform: translate(0, 75%);
+          transform: translate(0, 75%);
 }
 
 @media (max-width: 991.98px) {
-  .about_me .row {
+  .about_me .col-4 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .about_me .col-4 .panel_inner_wrapper {
+    padding: 0 2.5%;
+  }
+  .about_me .col-4 .panel_title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .about_me .col-8 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .about_me .col-8 .panel_inner_wrapper {
     width: 100%;
+    left: 0;
   }
 }
-/*# sourceMappingURL=about_me.css.map */

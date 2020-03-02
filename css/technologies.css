@@ -1,20 +1,15 @@
 .technologies {
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 1rem 0;
   overflow: hidden;
-  background-color: #f8f8fc;
+  background-color: #FAFAFA;
 }
 
 .technologies .panel_inner_wrapper {
   padding: 0 0 2rem 0;
 }
 
-.technologies .panel_title_large {
-  padding: 0 2.5%;
-  color: #283177;
-}
-
-.technologies .panel_text_large {
-  padding: 0 2.5%;
+.technologies .panel_icons .panel_inner_wrapper {
+  padding: 0;
 }
 
 .technologies .panel_icons .panel_icons_inner_wrapper .panel_icon_wrapper {
@@ -128,6 +123,9 @@
   .technologies {
     padding: 4rem 0 0 0;
   }
+  .technologies .col-lg {
+    padding: 0;
+  }
 }
 
 @media (max-width: 485.98px) {
@@ -152,7 +150,7 @@
   }
 }
 
-@media (max-width: 385.98px) {
+@media (max-width: 425.98px) {
   .panel_icons {
     margin: 0 0 -6rem 0;
   }

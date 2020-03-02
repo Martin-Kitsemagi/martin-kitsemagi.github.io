@@ -1,37 +1,42 @@
 .qualities {
-  padding: 7.5rem 0 0 0;
-  background-color: #f8f8fc;
-}
-
-.qualities .panel_title_large {
-  color: #283177;
+  padding: 4rem 0;
+  background-color: #f1f3ff;
 }
 
 .qualities .panel_text_large {
   margin: 3.5rem 0 0 0;
 }
 
-.qualities .row:last-child::after {
-  width: 100%;
-  height: 0.0675rem;
-  margin: 5.25rem 0 0 0;
+.qualities .row {
+  position: relative;
+  z-index: 2;
+}
+
+.qualities .row:nth-child(1) .panel_inner_wrapper {
+  padding: 0 1rem;
+}
+
+.qualities .row:nth-child(2) {
+  min-width: 960px;
+}
+
+.qualities .row:nth-child(3) {
   display: block;
-  content: "";
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#cacade), to(transparent));
-  background: linear-gradient(to right, transparent, #cacade, transparent);
+  text-align: center;
 }
 
 .qualities .col-4 {
   padding: 0 1.25rem;
+  z-index: 1;
 }
 
 .qualities .col-4 .panel_inner_wrapper {
   height: 100%;
   display: inline-block;
-  background-color: rgba(240, 240, 252, 0.75);
+  background-color: #f1f3ff;
   border-radius: 0.75rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.4);
-          box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.15);
+          box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.05), -0.25rem -0.25rem 0.5rem 0 rgba(255, 255, 255, 0.15);
   -webkit-transition: -webkit-transform 525ms ease;
   transition: -webkit-transform 525ms ease;
   transition: transform 525ms ease;
@@ -44,18 +49,22 @@
 }
 
 .qualities .col-4:nth-child(1) {
-  -webkit-animation: quality_animation 0.5s ease;
-          animation: quality_animation 0.5s ease;
+  -webkit-animation: quality_animation 1s ease;
+          animation: quality_animation 1s ease;
+}
+
+.qualities .col-4:nth-child(1) .panel_inner_wrapper {
+  background-color: #FAFAFA;
 }
 
 .qualities .col-4:nth-child(2) {
-  -webkit-animation: quality_animation 0.75s ease;
-          animation: quality_animation 0.75s ease;
+  -webkit-animation: quality_animation 1.25s ease;
+          animation: quality_animation 1.25s ease;
 }
 
 .qualities .col-4:nth-child(3) {
-  -webkit-animation: quality_animation 1s ease;
-          animation: quality_animation 1s ease;
+  -webkit-animation: quality_animation 1.5s ease;
+          animation: quality_animation 1.5s ease;
 }
 
 @-webkit-keyframes quality_animation {
@@ -90,6 +99,24 @@
   }
 }
 
+.qualities .qualities_slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.qualities .qualities_slides_active {
+  -webkit-transition: -webkit-transform 425ms ease;
+  transition: -webkit-transform 425ms ease;
+  transition: transform 425ms ease;
+  transition: transform 425ms ease, -webkit-transform 425ms ease;
+}
+
+.qualities .qualities_slides_scroll {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
 .qualities .quality {
   padding: 1rem;
 }
@@ -104,7 +131,7 @@
   margin: 0 0.5rem 0 0;
   display: inline-block;
   color: #283177;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .qualities .quality ul li::before {
@@ -113,8 +140,8 @@
   display: inline-block;
   top: 0.15rem;
   content: "\2022";
-  color: #2828b1;
-  font-size: 1.5rem;
+  color: #283177;
+  font-size: 1.75rem;
 }
 
 .qualities .quality span {
@@ -140,52 +167,85 @@
   margin: 2rem 0 2.5rem;
   display: block;
   color: #283177;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 .qualities .quality .panel_text {
+  padding: 0;
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
 }
 
 .qualities .quality .panel_text::before {
   width: 0.1rem;
   left: 0.1rem;
-  background-color: #2828b1;
+  background-color: transparent;
+}
+
+.qualities .qualities_slides_nav_wrapper {
+  margin: 3.25rem 0 0 0;
+  display: none;
+}
+
+.qualities .qualities_slides_nav_wrapper .panel_inner_wrapper {
+  padding: 0;
+}
+
+.qualities .qualities_slides_nav_wrapper .qualities_slides_nav {
+  padding: 0.25rem;
+  float: left;
+}
+
+.qualities .qualities_slides_nav_wrapper .qualities_slides_nav span {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  border: 0.15rem solid #283177;
+  border-radius: 50%;
+  -webkit-transition: background-color 75ms ease-out;
+  transition: background-color 75ms ease-out;
+}
+
+.qualities .qualities_slides_nav_wrapper .qualities_slides_nav:hover {
+  cursor: pointer;
+}
+
+.qualities .qualities_slides_nav_wrapper .qualities_slides_nav:hover span {
+  background-color: #283177;
+}
+
+.qualities .qualities_slides_nav_wrapper .qualities_slides_nav_active span {
+  background-color: #283177;
+}
+
+.qualities .qualities_transition_svg {
+  bottom: 0;
+  left: 0;
+  background-color: #ffe0e0;
+  fill: #FAFAFA;
+  -webkit-transform: translate(0, 75%);
+          transform: translate(0, 75%);
 }
 
 @media (max-width: 991.98px) {
-  .qualities .col-4 {
-    padding: 0 0.75rem;
+  .qualities .row:nth-child(2) {
+    left: 50%;
+    -webkit-transform: translate(-142.5px, 0);
+            transform: translate(-142.5px, 0);
   }
   .qualities .col-4 .panel_inner_wrapper {
-    padding: 0;
+    background-color: #FAFAFA;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
-  .qualities .quality .panel_title {
-    font-size: 1.25rem;
+  .qualities .col-4 .panel_inner_wrapper:hover {
+    -webkit-transform: none;
+            transform: none;
   }
-}
-
-@media (max-width: 767.98px) {
-  .qualities .row:last-child::after {
-    margin: 1.75rem 0 0 0;
-  }
-  .qualities .col-4 {
-    min-width: 100%;
-    margin: 0 0 3rem 0;
-  }
-  .qualities .col-4 .panel_inner_wrapper {
-    padding: 0 2.5% 2rem 2.5%;
-  }
-  .qualities .quality .panel_title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .qualities .row:last-child {
-    padding: 0 2.5%;
-  }
-  .qualities .row:last-child::after {
-    margin: 1.25rem 0 0 0;
+  .qualities .qualities_slides_nav_wrapper {
+    display: inline-block;
   }
 }

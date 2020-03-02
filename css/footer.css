@@ -1,51 +1,97 @@
 .footer {
-  padding: 0.5rem 0 0 0;
-  background-color: #242c5c;
+  padding: 0 0 1.25rem 0;
+  background-color: #f1f3ff;
 }
 
-.footer .footer_text {
-  width: 100%;
-  text-align: center;
+.footer .panel_inner_wrapper {
+  padding: 0 1rem;
 }
 
-.footer .footer_text span {
-  margin: 0 0.35rem;
-  position: relative;
-  top: 0.15rem;
-  font-family: "Aguafina Script", cursive;
-  font-size: 1.75rem;
-  color: #fe8b8b;
+.footer .col-2 {
+  padding: 0;
+}
+
+.footer .col-3 {
+  padding: 0;
+}
+
+.footer .col-5 {
+  padding: 0;
+}
+
+.footer .footer_icon {
+  color: #283177;
+  font-size: 1.45rem;
   font-weight: 700;
 }
 
-.footer .footer_text p {
-  padding: 0.5rem 0;
-  color: #FAFAFA;
+.footer .footer_icon:hover {
+  cursor: pointer;
+}
+
+.footer p {
+  color: #404040;
   font-size: 0.85rem;
+  line-height: 2.75rem;
 }
 
-.footer .footer_text p b {
-  color: #fe8b8b;
+.footer p i {
+  margin: 0 0.25rem;
+  color: #283177;
+}
+
+.footer p b {
+  color: #283177;
   font-weight: 700;
 }
 
-.footer .footer_text i {
-  margin: 0 0.25rem;
-  display: inline-block;
-  position: relative;
-  top: 0.1rem;
-  font-size: 1.15rem;
-  color: #fe8b8b;
+.footer .footer_year {
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  padding: 0.25rem 0 0 0;
+  text-align: center;
+  border-top: 0.05rem solid rgba(0, 0, 0, 0.15);
 }
 
-.footer .footer_transition_svg {
-  height: 10rem;
-  top: -10rem;
-  left: 0;
-  background-color: inherit;
-  fill: #2b356e;
+@media (max-width: 767.98px) {
+  .footer .col-2 {
+    -webkit-box-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+    max-width: 15%;
+  }
+  .footer .col-3 {
+    -webkit-box-flex: 32.5%;
+        -ms-flex: 32.5%;
+            flex: 32.5%;
+    max-width: 32.5%;
+  }
+  .footer .col-5 {
+    -webkit-box-flex: 52.5%;
+        -ms-flex: 52.5%;
+            flex: 52.5%;
+    max-width: 52.5%;
+  }
 }
 
-.footer .footer_transition_svg path:last-child {
-  fill: #323e81;
+@media (max-width: 575.98px) {
+  .footer .col-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    margin: 0 0 0.5rem 0;
+  }
+  .footer .col-3 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .footer .col-5 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }

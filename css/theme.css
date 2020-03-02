@@ -143,23 +143,7 @@
 }
 
 .page_wrapper_theme .qualities .col-4:nth-child(1) .panel_inner_wrapper {
-  background-color: #ff4747;
-}
-
-.page_wrapper_theme .qualities .col-4:nth-child(1) .quality ul li {
-  color: #FAFAFA;
-}
-
-.page_wrapper_theme .qualities .col-4:nth-child(1) .quality ul li::before {
-  color: #FAFAFA;
-}
-
-.page_wrapper_theme .qualities .col-4:nth-child(1) .quality span {
-  border-bottom-color: #FAFAFA;
-}
-
-.page_wrapper_theme .qualities .col-4:nth-child(1) .quality span i {
-  color: #FAFAFA;
+  background-color: #1b1919;
 }
 
 .page_wrapper_theme .qualities .quality ul li {
@@ -281,19 +265,7 @@
 
 @media (max-width: 991.98px) {
   .page_wrapper_theme .qualities .col-4 .panel_inner_wrapper {
-    background-color: #ff4747;
-  }
-  .page_wrapper_theme .qualities .quality ul li {
-    color: #FAFAFA;
-  }
-  .page_wrapper_theme .qualities .quality ul li::before {
-    color: #FAFAFA;
-  }
-  .page_wrapper_theme .qualities .quality span {
-    border-bottom-color: #FAFAFA;
-  }
-  .page_wrapper_theme .qualities .quality span i {
-    color: #FAFAFA;
+    background-color: #1b1919;
   }
 }
 

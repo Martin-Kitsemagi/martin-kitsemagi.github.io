@@ -58,6 +58,12 @@ function windowResizeListener() {
 			$(this).css("height", $(this).prop("scrollHeight"));
 		});
 
+		if (!/Mobi/.test(navigator.userAgent)) {
+			if ($("#header").outerHeight() < $(window).outerHeight()) {
+				$("#header").css("height", $(window).outerHeight());
+			}
+		}
+
 		if ($(window).outerWidth() < 991.98) {
 			$("#qualities_slides").addClass("qualities_slides_active");
 		} else {

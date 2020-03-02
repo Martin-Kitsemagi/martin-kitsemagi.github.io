@@ -70,8 +70,17 @@ function scrollTo(top) {
 	}, scroll_delay);
 }
 
+function setHeaderHeight() {
+	if (/Mobi/.test(navigator.userAgent)) {
+		viewport_height = $("#header").outerHeight();
+		$("#header").css("height", viewport_height);
+	}
+}
+
 $(document).ready(function() {
 	navMobile();
 	navTheme();
 	navPage();
+
+	setHeaderHeight();
 });

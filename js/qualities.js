@@ -1,7 +1,6 @@
 function qualitiesSlider() {
     
     var qualities_slides = $("#qualities_slides");
-    var qualities_slide_width = qualities_slides.outerWidth() / qualities_slides.find(".col-4").length;
 
     qualities_slides.current_slide = $(".qualities_slides_nav_active").index();
 
@@ -13,6 +12,8 @@ function qualitiesSlider() {
         if (event.type === "touchstart") {
             qualities_slides.x = event.touches[0].clientX;
         }
+
+        qualities_slides.slide_width = qualities_slides.outerWidth() / qualities_slides.find(".col-4").length;
     });
 
     $(document).on("mouseup touchend touchcancel", function(event) {
@@ -31,10 +32,10 @@ function qualitiesSlider() {
             var drag_speed = (x - qualities_slides.x) * 1.25;
             
             if (drag_speed < 0) {
-                if ((qualities_slides_position_left + qualities_slides.outerWidth() + drag_speed) > qualities_slide_width) {
+                if ((qualities_slides_position_left + qualities_slides.outerWidth() + drag_speed) > qualities_slides.slide_width) {
                     qualities_slides.css("transform", "translate3d(" + (qualities_slides_position_left + drag_speed) + "px, 0, 0)");
                 } else {
-                    qualities_slides.css("transform", "translate3d(" + (qualities_slide_width - qualities_slides.outerWidth()) + "px, 0, 0)");
+                    qualities_slides.css("transform", "translate3d(" + (qualities_slides.slide_width - qualities_slides.outerWidth()) + "px, 0, 0)");
                 }
             } else if (drag_speed > 0) {
                 if ((qualities_slides_position_left + drag_speed) < 0) {
@@ -44,7 +45,7 @@ function qualitiesSlider() {
                 }
             }
 
-            var qualities_slides_scroll_index = Math.round(Math.abs(qualities_slides_position_left) / qualities_slide_width);
+            var qualities_slides_scroll_index = Math.round(Math.abs(qualities_slides_position_left) / qualities_slides.slide_width);
 
             if (qualities_slides_scroll_index !== qualities_slides.current_slide) {
                 $(".qualities_slides_nav").removeClass("qualities_slides_nav_active");

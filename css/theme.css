@@ -124,7 +124,7 @@
   background-color: #FAFAFA;
 }
 
-.page_wrapper_theme .header .header_transition_svg {
+.page_wrapper_theme .header .header_transition_svg path {
   fill: #1b1919;
 }
 
@@ -236,7 +236,7 @@
   background-color: #ff4747;
 }
 
-.page_wrapper_theme .samples .samples_transition_svg {
+.page_wrapper_theme .samples .samples_transition_svg path {
   fill: #1b1919;
 }
 

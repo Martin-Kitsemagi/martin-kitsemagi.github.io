@@ -73,13 +73,16 @@ button:focus, input:focus, textarea:focus {
   overflow: hidden;
 }
 
+.page_wrapper * {
+  -webkit-transition: background-color 425ms ease, color 425ms ease, border-color 425ms ease, fill 425ms ease;
+  transition: background-color 425ms ease, color 425ms ease, border-color 425ms ease, fill 425ms ease;
+}
+
 .panel_transition_svg {
   width: 100%;
   display: block;
   position: absolute;
   z-index: 1;
-  -webkit-transition: fill 425ms ease;
-  transition: fill 425ms ease;
   pointer-events: none;
 }
 
@@ -234,10 +237,10 @@ button:focus, input:focus, textarea:focus {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
-  -webkit-transition: -webkit-transform 275ms ease;
-  transition: -webkit-transform 275ms ease;
-  transition: transform 275ms ease;
-  transition: transform 275ms ease, -webkit-transform 275ms ease;
+  -webkit-transition: background-color 75ms ease-out, -webkit-transform 275ms ease;
+  transition: background-color 75ms ease-out, -webkit-transform 275ms ease;
+  transition: transform 275ms ease, background-color 75ms ease-out;
+  transition: transform 275ms ease, background-color 75ms ease-out, -webkit-transform 275ms ease;
   -webkit-transform: translate3d(0.125rem, 0.125rem, 0);
           transform: translate3d(0.125rem, 0.125rem, 0);
 }
@@ -370,8 +373,6 @@ button:focus, input:focus, textarea:focus {
 
 .panel {
   position: relative;
-  -webkit-transition: background-color 425ms ease;
-  transition: background-color 425ms ease;
 }
 
 .panel .panel_inner_wrapper {

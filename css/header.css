@@ -364,9 +364,12 @@
   bottom: 0;
   left: 0;
   background-color: transparent;
-  fill: #FAFAFA;
   -webkit-transform: translate(0, 25%);
           transform: translate(0, 25%);
+}
+
+.header .header_transition_svg path {
+  fill: #FAFAFA;
 }
 
 .header_element_transparent {
@@ -396,6 +399,9 @@
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+  .header .col-6:nth-child(1) {
+    z-index: 1;
   }
   .header .col-6:nth-child(2) {
     position: absolute;

@@ -293,9 +293,12 @@
   bottom: 0;
   left: 0;
   background-color: transparent;
-  fill: #f1f3ff;
   -webkit-transform: translate(0, 40%);
           transform: translate(0, 40%);
+}
+
+.samples .samples_transition_svg path {
+  fill: #f1f3ff;
 }
 
 @media (max-width: 991.98px) {

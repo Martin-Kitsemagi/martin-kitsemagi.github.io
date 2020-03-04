@@ -18,8 +18,14 @@ function qualitiesSlider() {
         qualities_slides.slide_width = qualities_slides.outerWidth() / qualities_slides.find(".col-4").length;
     });
 
-    $(document).on("mouseup touchend touchcancel", function(event) {
+    $(document).on("mouseup touchend touchcancel", function() {
         qualities_slides.is_mousedown = false;
+
+        if (qualities_slides.position().left !== (-qualities_slides.slide_width * qualities_slides.current_slide)) {
+            qualities_slides.removeClass("qualities_slides_scroll");
+
+            qualities_slides.css("transform", "translate3d(" + (-qualities_slides.slide_width * qualities_slides.current_slide) + "px, 0, 0)");
+        }
     });
 
     $(document).on("mousemove touchmove", function(event) {

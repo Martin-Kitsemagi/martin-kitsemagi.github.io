@@ -351,7 +351,7 @@
     font-size: 1.5rem;
   }
   .samples .samples_text {
-    top: 0.5rem;
+    top: 0;
     -webkit-transform: none;
             transform: none;
   }
@@ -364,7 +364,7 @@
     text-align: left;
   }
   .samples .samples_text .panel_title {
-    margin: 2.25rem 0 1.5rem 0;
+    margin: 2.75rem 0 1.5rem 0;
   }
   .samples .samples_text .panel_text {
     margin: 0 0 1.25rem 0;
@@ -402,12 +402,12 @@
     font-size: 1.25rem;
   }
   .samples .samples_text .panel_title {
-    margin: 1.75rem 0 1.5rem 0;
+    margin: 2.25rem 0 1.5rem 0;
   }
 }
 
 @media (max-width: 425.98px) {
   .samples .samples_text .panel_title {
-    margin: 0.75rem 0 1.5rem 0;
+    margin: 1.25rem 0 1.5rem 0;
   }
 }

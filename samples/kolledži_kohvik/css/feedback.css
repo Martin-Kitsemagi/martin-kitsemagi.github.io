@@ -1,0 +1,147 @@
+.feedback_slider {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.feedback_slider .container {
+  position: relative;
+}
+
+.feedback_slider i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: rgba(38, 38, 38, 0.05);
+  font-size: 3.75rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.feedback_slider .feedback_slider_slides_wrapper {
+  width: 100%;
+  min-height: 10rem;
+  margin: 2.5rem auto;
+  position: relative;
+  top: 0;
+  left: 50%;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -13.75rem;
+  -webkit-transition: -webkit-transform 575ms ease;
+  transition: -webkit-transform 575ms ease;
+  transition: transform 575ms ease;
+  transition: transform 575ms ease, -webkit-transform 575ms ease;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide {
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_image {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  position: absolute;
+  background-color: #31b681;
+  color: #FAFAFA;
+  font-size: 1.75rem;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_text_wrapper {
+  width: 20rem;
+  margin: 0 0 0 7.5rem;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_text_wrapper .feedback_slider_slide_text {
+  display: block;
+  position: relative;
+  color: #727272;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  white-space: pre-wrap;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_text_wrapper .feedback_slider_slide_name {
+  margin: 1.5rem 0 0 0;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide_active {
+  opacity: 1;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper {
+  display: inline-block;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper .feedback_slider_slide_nav {
+  padding: 0.25rem;
+  float: left;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper .feedback_slider_slide_nav span {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  border: 0.15rem solid #262626;
+  border-radius: 50%;
+  -webkit-transition: background-color 125ms ease;
+  transition: background-color 125ms ease;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper .feedback_slider_slide_nav:hover {
+  cursor: pointer;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper .feedback_slider_slide_nav:hover span {
+  background-color: #262626;
+}
+
+.feedback_slider .feedback_slider_slides_nav_wrapper .feedback_slider_slide_nav_active span {
+  background-color: #262626;
+}
+
+@media (max-width: 767.98px) {
+  .feedback_slider .feedback_slider_slides_wrapper {
+    left: 50%;
+  }
+  .feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper {
+    left: -50vw;
+    -webkit-transition: -webkit-transform 525ms ease;
+    transition: -webkit-transform 525ms ease;
+    transition: transform 525ms ease;
+    transition: transform 525ms ease, -webkit-transform 525ms ease;
+  }
+  .feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide {
+    padding: 0 1.25rem;
+    display: block;
+    text-align: center;
+  }
+  .feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_image {
+    position: relative;
+  }
+  .feedback_slider .feedback_slider_slides_wrapper .feedback_slider_slides_inner_wrapper .feedback_slider_slide .feedback_slider_slide_text_wrapper {
+    max-width: 540px;
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+  }
+}

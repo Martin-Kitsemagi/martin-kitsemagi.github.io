@@ -1,0 +1,230 @@
+.header {
+    height: 750px;
+    display: flex;
+    position: relative;
+    
+    align-items: center;
+
+    .header_background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .container {
+        z-index: 1;
+
+        text-align: center;
+    }
+
+    .header_title {
+        color: #FAFAFA;
+        font-size: 3.75rem;
+        line-height: 4.75rem;
+        font-weight: 700;
+    }
+
+    .header_text_wrapper {
+        text-align: left;
+
+        .header_title {
+            font-size: 2.75rem;
+            line-height: 3.25rem;
+        }
+    
+        .header_text {
+            padding: 0.75rem 0;
+    
+            color: #FAFAFA;
+            font-size: 1.15rem;
+        }
+
+        .header_button {
+            margin: 2rem 0 0 0;
+            padding: 1rem 1.75rem;
+        }
+    }
+
+    .header_sub {
+        text-align: right;
+    }
+
+    .header_text_order_wrapper {
+        padding: 2.5rem;
+        display: inline-block;
+        position: relative;
+
+        background-color: #ad0917;
+        background-image: linear-gradient(75deg, #d90619 50%, #ad0917 100%);
+        text-align: left;
+
+        border-radius: 0.15rem 2.5rem 0.15rem 2.5rem;
+
+        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+
+        div {
+            display: inline-block;
+
+            color: #FAFAFA;
+            font-size: 1.15rem;
+
+            span {
+                float: left;
+                
+                i {
+                    margin: 0 0.75rem 0 0;
+                }
+            }
+            
+            p {
+                margin: 0 0 0.5rem 1rem;
+                float: left;
+
+                line-height: 1.75rem;
+                white-space: pre-wrap;
+            }
+        }
+
+        .header_text_order_wrapper_icon {
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+
+            background-color: #FAFAFA;
+            color: #d90619;
+            font-size: 1.75rem;
+            text-align: center;
+            line-height: 4rem;
+
+            border-radius: 50%;
+
+            box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .header_scroll {
+        width: 0.15rem;
+        height: 17.5%;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        z-index: 1;
+
+        background-color: #FAFAFA;
+
+        border-radius: 0.15rem;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .header_svg_wrapper {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        svg {
+            width: 100%;
+            height: 100%;
+
+            path {
+                background-color: transparent;
+                fill: #FAFAFA;
+            }
+        }
+    }
+
+    .header_svg_wrapper_sub {
+
+        svg {
+
+            path {
+                fill: #F3F0EB;
+            }
+        }
+    }
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+
+        background-color: rgba(0, 0, 0, 0.25);
+        background-image: url("../images/pattern.png");
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header {
+
+        .col-6 {
+            flex: 100%;
+            max-width: 100%;
+
+            &:nth-child(2) {
+                margin: 4rem 0 0 0;
+
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header {
+
+        .col-6 {
+    
+            &:nth-child(2) {
+                margin: 3rem 0 0 0;
+            }
+        }
+
+        .header_text_order_wrapper {
+            padding: 2rem;
+        }
+    }
+}
+
+@media (max-width: 425.98px) {
+    .header {
+
+        .header_text_wrapper {
+
+            .header_title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .header_text_order_wrapper {
+            width: 92.5%;
+            padding: 1.75rem;
+
+            div {
+
+                span {
+                    
+                    i {
+                        margin: 0 0.5rem 0 0;
+                    }
+                }
+
+                p {
+                    margin: 0 0 0 1.5rem;
+                }
+            }
+        }
+    }
+}

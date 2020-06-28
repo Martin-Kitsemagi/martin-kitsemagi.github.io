@@ -1,6 +1,6 @@
 function windowResizeListener($) {
 	$(window).on("resize", function() {
-		feedbackSliderSetHeight($);
+		setHeaderHeight($);
 	});
 	
 	$(document).ready(function() {
@@ -18,8 +18,37 @@ function pageNav($) {
 	});
 }
 
+function setHeaderHeight($) {
+	var max_height = 750;
+	var viewport_height = $(window).outerHeight();
+	var viewport_width = $(window).outerWidth();
+
+	if (viewport_width > viewport_height) {
+		viewport_height = viewport_width;
+	}
+
+	if (viewport_height < max_height) {
+		$(".header").css("height", viewport_height);
+	} else {
+		$(".header").css("height", max_height);
+	}
+}
+
+function touchEventListeners($) {
+    $.event.special.touchstart = {
+        setup: function(_, ns, handle) {
+            if (ns.includes("noPreventDefault")) {
+                this.addEventListener("touchstart", handle, {passive: false});
+            } else {
+                this.addEventListener("touchstart", handle, {passive: true});
+            }
+        }
+    };
+}
+
 jQuery(document).ready(function($) {
 	windowResizeListener($);
+	touchEventListeners($);
 	
 	pageNav($);
 });

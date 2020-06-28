@@ -153,6 +153,10 @@
   background-image: url("../images/pattern.png");
 }
 
+.header_large {
+  height: 750px !important;
+}
+
 @media (max-width: 991.98px) {
   .header .col-6 {
     -webkit-box-flex: 100%;

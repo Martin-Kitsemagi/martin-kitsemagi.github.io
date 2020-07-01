@@ -40,27 +40,27 @@ function menuItems($) {
             }
             
             if (fetch_type !== undefined) {
-				for (var i = 0; i < menu_items_fetched.length; i++) {
-					if (menu_items_fetched[i] == ".fetched_" + fetch_type) {
-						updateMenuItems(".fetched_" + fetch_type);
-						updateMenuSelections(".fetch_" + fetch_type);
-						return;
-					}
-				}
+		updateMenuSelections(".fetch_" + fetch_type);    
+		
+		for (var i = 0; i < menu_items_fetched.length; i++) {
+			if (menu_items_fetched[i] == ".fetched_" + fetch_type) {
+				updateMenuItems(".fetched_" + fetch_type);
+				return;
+			}
+		}
 
-				menu_items_loading.removeClass("panel_loading_transparent");
-				menu_items_loading.html("<div class=\"panel_loading_animation\">Laeb</div>");
+		menu_items_loading.removeClass("panel_loading_transparent");
+		menu_items_loading.html("<div class=\"panel_loading_animation\">Laeb</div>");
 
-				menu_items_wrapper.find(".menu_items").removeClass("menu_items_active");
+		menu_items_wrapper.find(".menu_items").removeClass("menu_items_active");
 
-				setTimeout(function() {
-					menu_items_loading.addClass("panel_loading_transparent");
+		setTimeout(function() {
+			menu_items_loading.addClass("panel_loading_transparent");
 
-					updateMenuItems(".fetched_" + fetch_type);
-				}, 325);
+			updateMenuItems(".fetched_" + fetch_type);
+		}, 325);
 
-				menu_items_fetched.push(".fetched_" + fetch_type);
-                updateMenuSelections(".fetch_" + fetch_type);
+		menu_items_fetched.push(".fetched_" + fetch_type);
             }
         }
     });

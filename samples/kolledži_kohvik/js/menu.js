@@ -7,36 +7,6 @@ function menuItems($) {
 
     var menu_items_animation_delay = 50;
 
-    function fetchMenuItems(fetch_type) {
-        /*menu_items_loading.removeClass("panel_loading_transparent");
-        menu_items_loading.html("<div class=\"panel_loading_animation\">Laeb</div>");
-
-        menu_items_wrapper.find(".menu_items").removeClass("menu_items_active");
-
-        $.ajax({
-            url: ajax_vars.ajaxurl,
-            type: "GET",
-            data: {
-                type: fetch_type,
-                action: "fetchmenuitems",
-                nonce_field: ajax_vars.nonce
-            }, 
-            dataType: "json",
-            
-            success: function(result) {
-                if (result.success) {
-                    menu_items_loading.addClass("panel_loading_transparent");
-
-                    menu_items_wrapper.html(menu_items_wrapper.html() + result.data);
-                } else {
-                    menu_items_loading.html("<p>" + result.data + "</p>");
-                }
-
-                updateMenuItems(".fetched_" + fetch_type);
-            }
-        });*/
-    }
-
     function updateMenuSelections(fetch_class) {
         menu_selections.find(".menu_selection").removeClass("menu_selection_active");
         menu_selections.find(fetch_class).addClass("menu_selection_active");
@@ -70,31 +40,26 @@ function menuItems($) {
             }
             
             if (fetch_type !== undefined) {
-                if (menu_items_wrapper.find(".fetched_" + fetch_type).length === 0) {
-                    //fetchMenuItems(fetch_type);
-                } else {
-                    for (var i = 0; i < menu_items_fetched.length; i++) {
-                        if (menu_items_fetched[i] == ".fetched_" + fetch_type) {
-                            updateMenuItems(".fetched_" + fetch_type);
-                            updateMenuSelections(".fetch_" + fetch_type);
-                            return;
-                        }
-                    }
+				for (var i = 0; i < menu_items_fetched.length; i++) {
+					if (menu_items_fetched[i] == ".fetched_" + fetch_type) {
+						updateMenuItems(".fetched_" + fetch_type);
+						updateMenuSelections(".fetch_" + fetch_type);
+						return;
+					}
+				}
 
-                    menu_items_loading.removeClass("panel_loading_transparent");
-                    menu_items_loading.html("<div class=\"panel_loading_animation\">Laeb</div>");
-                    
-                    menu_items_wrapper.find(".menu_items").removeClass("menu_items_active");
+				menu_items_loading.removeClass("panel_loading_transparent");
+				menu_items_loading.html("<div class=\"panel_loading_animation\">Laeb</div>");
 
-                    setTimeout(function() {
-                        menu_items_loading.addClass("panel_loading_transparent");
+				menu_items_wrapper.find(".menu_items").removeClass("menu_items_active");
 
-                        updateMenuItems(".fetched_" + fetch_type);
-                    }, 325);
+				setTimeout(function() {
+					menu_items_loading.addClass("panel_loading_transparent");
 
-                    menu_items_fetched.push(".fetched_" + fetch_type);
-                }
+					updateMenuItems(".fetched_" + fetch_type);
+				}, 325);
 
+				menu_items_fetched.push(".fetched_" + fetch_type);
                 updateMenuSelections(".fetch_" + fetch_type);
             }
         }

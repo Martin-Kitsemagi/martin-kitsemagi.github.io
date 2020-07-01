@@ -1,6 +1,5 @@
 function windowResizeListener($) {
 	$(window).on("resize", function() {
-		setHeaderHeight($);
 	});
 	
 	$(document).ready(function() {
@@ -19,18 +18,9 @@ function pageNav($) {
 }
 
 function setHeaderHeight($) {
-	var max_height = 750;
-	var viewport_height = $(window).outerHeight();
-	var viewport_width = $(window).outerWidth();
-
-	if (viewport_width > viewport_height) {
-		viewport_height = viewport_width;
-	}
-
-	if (viewport_height < max_height) {
+	if (/Mobi/.test(navigator.userAgent)) {
+		var viewport_height = $(window).outerHeight();
 		$(".header").css("height", viewport_height);
-	} else {
-		$(".header").css("height", max_height);
 	}
 }
 
@@ -51,4 +41,5 @@ jQuery(document).ready(function($) {
 	touchEventListeners($);
 	
 	pageNav($);
+	setHeaderHeight($);
 });

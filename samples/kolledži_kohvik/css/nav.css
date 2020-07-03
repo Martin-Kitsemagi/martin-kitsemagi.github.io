@@ -66,7 +66,7 @@
   text-decoration: none;
 }
 
-.page_nav .page_nav_elements_wrapper li a[aria-current="page"] {
+.page_nav .page_nav_elements_wrapper li[class*=" current_page_item"] a {
   font-weight: 700;
 }
 

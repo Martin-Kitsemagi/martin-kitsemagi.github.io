@@ -1,0 +1,54 @@
+.feedback {
+  padding: 4rem 0;
+}
+
+.feedback .feedback_wrapper {
+  padding: 2rem;
+}
+
+.feedback .feedback_wrapper i {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.75rem;
+}
+
+.feedback .feedback_wrapper .feedback_text {
+  margin: 0 0 1.25rem 0;
+}
+
+.feedback .feedback_wrapper .feedback_name {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.feedback .feedback_wrapper .feedback_description {
+  color: #ed8422;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media (max-width: 1399.98px) {
+  .feedback .feedback_wrapper {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .feedback .feedback_wrapper {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .feedback .col-lg-4 {
+    margin: 0 0 2rem 0;
+  }
+  .feedback .col-lg-4:last-child {
+    margin: 0;
+  }
+  .feedback .feedback_wrapper {
+    padding: 0.5rem;
+  }
+}

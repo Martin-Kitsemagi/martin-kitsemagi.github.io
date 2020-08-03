@@ -1,0 +1,180 @@
+.header {
+  margin-top: 4.75rem;
+}
+
+.header .header_notification {
+  height: 3rem;
+  background-color: #ed8422;
+  color: white;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.header .header_notification a {
+  color: #292c43;
+}
+
+.header .header_notification a:hover {
+  text-decoration: underline;
+}
+
+.header .header_content {
+  padding: 8rem 0;
+  background-color: #292c43;
+  background-image: url("https://vits.ee/static/2018/09/saas-icons-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .header_content .header_title {
+  margin: 0 0 1.5rem 0;
+  color: white;
+  font-size: 3.25rem;
+  line-height: 4.25rem;
+  font-weight: 500;
+}
+
+.header .header_content span {
+  margin: 0 0.75rem 0.75rem 0;
+  display: inline-block;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.header .header_content span i {
+  margin: 0 0.5rem 0 0;
+  color: #ed8422;
+}
+
+.header .header_content .header_buttons_wrapper {
+  margin: 1.5rem 0 0 0;
+}
+
+.header .header_content .header_buttons_wrapper .header_button {
+  height: 3rem;
+  margin: 0 0.75rem 0 0;
+  padding: 0 1.75rem;
+  display: inline-block;
+  background-color: #ed8422;
+  color: white;
+  font-size: 0.85rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.header .header_content .header_buttons_wrapper .header_button:hover {
+  background-color: #bc6117;
+}
+
+.header .header_content .header_buttons_wrapper .header_button_alt {
+  background-color: transparent !important;
+  border: 2px solid #ed8422;
+  -webkit-transition: color 75ms linear;
+  transition: color 75ms linear;
+}
+
+.header .header_content .header_buttons_wrapper .header_button_alt:hover {
+  color: #ed8422;
+}
+
+.header .header_content img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1399.98px) {
+  .header .header_notification {
+    font-size: 0.95rem;
+  }
+  .header .header_content .header_title {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+  }
+  .header .header_content span {
+    font-size: 1.05rem;
+  }
+  .header .header_content .header_buttons_wrapper .header_button {
+    height: 2.75rem;
+    font-size: 0.8rem;
+    line-height: 2.75rem;
+  }
+  .header .header_content img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header .header_content .header_title {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  .header .header_content span {
+    font-size: 1rem;
+  }
+  .header .header_content .header_buttons_wrapper .header_button {
+    height: 2.75rem;
+    font-size: 0.8rem;
+    line-height: 2.75rem;
+  }
+  .header .header_content img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header .header_content {
+    padding: 4rem 0 0 0;
+  }
+  .header .header_content .header_title {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  .header .header_content span {
+    font-size: 1rem;
+  }
+  .header .header_content .header_buttons_wrapper .header_button {
+    height: 2.75rem;
+    font-size: 0.8rem;
+    line-height: 2.75rem;
+  }
+  .header .header_content img {
+    position: relative;
+    top: 25%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header .header_notification {
+    height: auto;
+    padding: 0.75rem 0;
+    line-height: 1.5rem;
+  }
+  .header .header_content .header_title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .header .header_content .header_buttons_wrapper {
+    text-align: center;
+  }
+  .header .header_content .header_buttons_wrapper .header_button {
+    margin: 0 0.75rem 1.25rem 0;
+    padding: 0 2.75rem;
+  }
+}

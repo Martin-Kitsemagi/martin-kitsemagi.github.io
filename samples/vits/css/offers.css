@@ -1,0 +1,191 @@
+.offers {
+  padding: 4rem 0;
+  background-color: #f8faff;
+}
+
+.offers .col-12 {
+  padding: 0;
+}
+
+.offers .col-lg-6:nth-child(1) {
+  padding: 0 15px 0 0;
+}
+
+.offers .col-lg-6:nth-child(2) {
+  padding: 0 0 0 15px;
+}
+
+.offers .row {
+  margin: 0 0 2rem 0;
+}
+
+.offers .row .col-12 .offer {
+  padding: 4rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offers .row:last-child {
+  margin: 0;
+}
+
+.offers .offer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #292c43;
+  background-image: url("https://vits.ee/static/2018/09/saas-icons-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.offers .offer i {
+  margin: 0 2.5rem 0 0;
+  color: white;
+  font-size: 3.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.offers .offer .offer_content .offer_title {
+  margin: 0 0 0.75rem 0;
+  color: white;
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+  font-weight: 500;
+}
+
+.offers .offer .offer_content .offer_text {
+  margin: 0 0 1.75rem 0;
+  color: white;
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+}
+
+.offers .offer .offer_content .offer_button {
+  height: 3rem;
+  padding: 0 1.75rem;
+  display: inline-block;
+  background-color: #ed8422;
+  color: white;
+  font-size: 0.85rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.offers .offer .offer_content .offer_button i {
+  margin: 0 0 0 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.offers .offer .offer_content .offer_button:hover {
+  background-color: #bc6117;
+}
+
+.offers .offer_alt {
+  background-color: white;
+}
+
+.offers .offer_alt i {
+  color: #ed8422;
+}
+
+.offers .offer_alt .offer_content .offer_title {
+  color: #292c43;
+}
+
+.offers .offer_alt .offer_content .offer_text {
+  color: #292c43;
+}
+
+.offers .offer_alt .offer_content .offer_button {
+  background-color: #292c43;
+}
+
+.offers .offer_alt .offer_content .offer_button:hover {
+  background-color: #1c1d2e;
+}
+
+@media (max-width: 1399.98px) {
+  .offers .offer {
+    height: 100%;
+    padding: 1.5rem 1.25rem;
+  }
+  .offers .offer .offer_content .offer_title {
+    font-size: 1.4rem;
+    line-height: 2.25rem;
+  }
+  .offers .offer .offer_content .offer_text {
+    font-size: 1rem;
+  }
+  .offers .offer .offer_content .offer_button {
+    height: 2.75rem;
+    font-size: 0.8rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .offers .offer {
+    padding: 1.5rem 1.25rem;
+  }
+  .offers .offer i {
+    margin: 0 1.5rem 0 0;
+  }
+  .offers .offer .offer_content .offer_title {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offers .col-lg-6 {
+    margin: 0 0 2rem 0;
+    padding: 0 !important;
+  }
+  .offers .col-lg-6:last-child {
+    margin: 0;
+  }
+  .offers .offer {
+    height: auto;
+    padding: 4rem;
+    text-align: center;
+  }
+  .offers .offer i {
+    margin: 0 2.5rem 0 0;
+  }
+  .offers .offer .offer_content .offer_title {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offers .offer {
+    padding: 2rem !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offers .offer i {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offers .offer {
+    padding: 2rem 1rem !important;
+  }
+}

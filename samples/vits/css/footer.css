@@ -1,0 +1,197 @@
+.footer {
+  padding: 4rem 0;
+}
+
+.footer .row {
+  margin: 0 0 1.75rem 0;
+  padding: 0 0 1.75rem 0;
+  border-bottom: 1px solid #dae4f3;
+}
+
+.footer .footer_logo {
+  height: 2.75rem;
+  display: inline-block;
+}
+
+.footer .footer_logo img {
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer p {
+  color: #707478;
+  line-height: 2.75rem;
+}
+
+.footer .newsletter_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .newsletter_wrapper .newsletter_text {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  margin: 0 1rem 0 0;
+}
+
+.footer .newsletter_wrapper .newsletter_text h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.footer .newsletter_wrapper .newsletter_text p {
+  color: #707478;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+.footer .newsletter_wrapper .newsletter_form {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+}
+
+.footer .newsletter_wrapper .newsletter_form label {
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.footer .newsletter_wrapper .newsletter_form input {
+  height: 2.25rem;
+  margin: 0 0.25rem 0 0;
+  padding: 0 1rem;
+  background-color: #f7f7f7;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.footer .newsletter_wrapper .newsletter_form button {
+  height: 2.25rem;
+  padding: 0 1.25rem;
+  display: inline-block;
+  background-color: #292c43;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.footer .newsletter_wrapper .newsletter_form button i {
+  margin: 0 0 0 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer .newsletter_wrapper .newsletter_form button:hover {
+  cursor: pointer;
+  background-color: #1c1d2e;
+}
+
+.footer .footer_social_media_link {
+  margin: 0 0.5rem 0 0;
+  float: left;
+  line-height: 2.75rem;
+}
+
+.footer .footer_social_media_link i {
+  color: #292c43;
+  font-size: 1.15rem;
+  -webkit-transition: color 75ms linear;
+  transition: color 75ms linear;
+}
+
+.footer .footer_social_media_link:hover i {
+  color: #ed8422;
+}
+
+.footer span {
+  width: 100%;
+  display: inline-block;
+  color: #707478;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 1399.98px) {
+  .footer .newsletter_wrapper .newsletter_form input {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer .col-md-4 {
+    position: relative;
+    left: 25%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer .col-md-9 {
+    margin: 0 0 1.25rem 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer .newsletter_wrapper .newsletter_text {
+    margin: 0 1.5rem 0 0;
+  }
+  .footer .newsletter_wrapper .newsletter_form input {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer .col-12 {
+    margin: 0 0 1.25rem 0;
+    padding: 0;
+  }
+  .footer .col-sm-6 {
+    margin: 0 0 0.5rem 0;
+    left: 0;
+  }
+  .footer .col-sm-6:last-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer .newsletter_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .newsletter_wrapper .newsletter_text {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem 0;
+  }
+  .footer .newsletter_wrapper .newsletter_form {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .footer .newsletter_wrapper .newsletter_form input {
+    margin: 0 0.25rem 0.5rem 0;
+  }
+}

@@ -181,6 +181,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .contact .contact_text_wrapper .contact_text {
+    margin: 0 0 2rem 0;
+  }
   .contact .contact_text_wrapper i {
     font-size: 7.5rem;
   }

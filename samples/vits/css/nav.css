@@ -257,6 +257,7 @@
     left: 100%;
     float: none;
     overflow: scroll;
+    overflow-x: hidden;
     z-index: 15;
     background-color: white;
     -webkit-transition: -webkit-transform 0.675s ease;

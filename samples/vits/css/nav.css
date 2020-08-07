@@ -256,7 +256,7 @@
     top: 0;
     left: 100%;
     float: none;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     z-index: 15;
     background-color: white;
@@ -271,6 +271,7 @@
   }
   .page_nav .page_nav_links .page_nav_link {
     width: 100%;
+    min-height: 2.75rem;
     height: 2.75rem;
     padding: 0;
     font-size: 0.8rem;

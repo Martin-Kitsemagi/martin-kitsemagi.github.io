@@ -38,7 +38,7 @@
 }
 
 .product img {
-  width: 75%;
+  max-width: 490px;
   position: relative;
   left: 50%;
   -o-object-position: center;

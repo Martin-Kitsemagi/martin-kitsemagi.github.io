@@ -137,9 +137,6 @@
   .footer .newsletter_wrapper .newsletter_form input {
     margin: 0 0 0.5rem 0;
   }
-  .footer .footer_social_media_links_wrapper {
-    padding: 0 0 0 1rem;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -175,6 +172,9 @@
   }
   .footer .col-sm-6:last-child {
     margin: 0;
+  }
+  .footer .footer_social_media_links_wrapper {
+    padding: 0 0 0 1rem;
   }
 }
 

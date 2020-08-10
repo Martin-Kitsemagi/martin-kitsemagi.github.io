@@ -135,6 +135,7 @@
 
 @media (max-width: 1399.98px) {
   .footer .newsletter_wrapper .newsletter_form input {
+    width: 100%;
     margin: 0 0 0.5rem 0;
   }
 }
@@ -199,6 +200,7 @@
     max-width: 100%;
   }
   .footer .newsletter_wrapper .newsletter_form input {
+    width: auto;
     margin: 0 0.25rem 0.5rem 0;
   }
   .footer .footer_social_media_links_wrapper {

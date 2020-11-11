@@ -24,10 +24,6 @@ button:focus, input:focus, textarea:focus, a:focus {
   text-decoration: underline;
 }
 
-* p {
-  margin: 0;
-}
-
 .no_text_select {
   -webkit-user-select: none;
      -moz-user-select: none;

@@ -126,6 +126,7 @@
 
 @media (max-width: 575.98px) {
   .projects .projects_wrapper .project {
+    margin: 1.25rem 0 1.5rem 0;
     background-color: transparent;
     border-radius: 0;
     -webkit-box-shadow: none;
@@ -147,5 +148,8 @@
     max-width: 25rem;
     width: 100%;
     padding: 2.75rem 0;
+  }
+  .projects .projects_wrapper .project:last-child .project_content_wrapper {
+    padding: 2.75rem 0 0 0;
   }
 }

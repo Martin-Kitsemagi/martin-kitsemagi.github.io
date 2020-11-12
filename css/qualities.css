@@ -48,3 +48,12 @@
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
+
+@media (max-width: 767.98px) {
+  .qualities .col-lg-4:last-child .quality {
+    margin: 0;
+  }
+  .qualities .quality {
+    margin: 0 0 1.75rem 0;
+  }
+}

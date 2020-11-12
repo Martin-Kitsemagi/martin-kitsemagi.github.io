@@ -16,7 +16,7 @@
 }
 
 .header .col-lg-6 {
-  min-height: 100vh;
+  height: 100vh;
   margin: -4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,9 +53,7 @@
 
 @media (max-width: 991.98px) {
   .header .col-lg-6 {
-    min-height: 0;
-    max-height: 45rem;
-    height: 100vh;
+    height: 45rem;
   }
   .header .col-lg-6:last-child {
     height: auto;

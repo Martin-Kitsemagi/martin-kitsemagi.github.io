@@ -59,6 +59,7 @@
 }
 
 .contact .contact_form textarea {
+  max-width: 100%;
   width: 100%;
   min-height: 9.5rem;
   padding: 0.75rem 1.25rem;
@@ -72,6 +73,7 @@
           box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 32, 133, 0.05);
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
+  resize: vertical;
 }
 
 .contact .contact_form textarea:hover {

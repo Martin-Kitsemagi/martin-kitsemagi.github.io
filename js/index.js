@@ -117,6 +117,18 @@ function iconsSlider() {
 	});
 }
 
+function textareaInputListener() {
+	$("textarea").css({
+		"overflow": "hidden",
+		"resize": "none"
+	});
+
+	$("textarea").on("input change", function() {
+		$(this).css("height", "auto");
+		$(this).css("height", $(this).prop("scrollHeight"));
+	});
+}
+
 function touchEventListeners() {
     $.event.special.touchstart = {
         setup: function(_, ns, handle) {
@@ -136,5 +148,6 @@ $(document).ready(function() {
 	smoothScroll();
 	pageNav();
 	iconsSlider();
+	textareaInputListener();
 	touchEventListeners();
 });

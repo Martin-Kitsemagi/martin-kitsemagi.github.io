@@ -76,6 +76,8 @@ button:focus, input:focus, textarea:focus, a:focus {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .page_wrapper .page_nav .page_nav_overlay:hover {
@@ -99,6 +101,10 @@ button:focus, input:focus, textarea:focus, a:focus {
 
 .page_wrapper .page_nav .page_nav_links {
   float: right;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .page_wrapper .page_nav .page_nav_links .page_nav_menu_close_button {
@@ -370,25 +376,15 @@ button:focus, input:focus, textarea:focus, a:focus {
   html {
     font-size: 14px;
   }
-  .page_wrapper .page_nav .page_nav_overlay {
-    -webkit-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
-  }
   .page_wrapper .page_nav .page_nav_links {
     max-width: 20rem;
     width: 75%;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 100vw;
     float: none;
     background-color: #002085;
-    -webkit-transition: -webkit-transform 0.4s ease;
-    transition: -webkit-transform 0.4s ease;
-    transition: transform 0.4s ease;
-    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
   }
   .page_wrapper .page_nav .page_nav_links .page_nav_menu_close_button {
     display: -webkit-box;

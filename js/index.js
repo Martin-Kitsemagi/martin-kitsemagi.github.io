@@ -63,6 +63,12 @@ function iconsSlider() {
 	$(".technologies_icons_inner_wrapper").each(function() {
 		var icons_slider = $(this);
 
+		icons_slider.speed_modifier = 1;
+
+		if (/Mobi/.test(navigator.userAgent)) {
+			icons_slider.speed_modifier = 1.25;
+		}
+
 		icons_slider.on("mousedown touchstart", function(event) {
 			if (icons_slider.outerWidth() > $(".container").outerWidth()) {
 				icons_slider.is_mousedown = true;
@@ -107,7 +113,7 @@ function iconsSlider() {
 				}
 	
 				var icons_slider_position_left = icons_slider.position().left;
-				var drag_speed = x - icons_slider.x;
+				var drag_speed = (x - icons_slider.x) * icons_slider.speed_modifier;
 
 				icons_slider.css("transform", "translate3d(" + (icons_slider_position_left + drag_speed) + "px, 0, 0)");
 

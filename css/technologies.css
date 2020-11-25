@@ -77,3 +77,10 @@
 .technologies .technologies_icons .sql_icon {
   color: #e7880c;
 }
+
+@media (min-width: 767.98px) {
+  .technologies .technologies_icons .technologies_icons_inner_wrapper {
+    -webkit-transform: none;
+            transform: none;
+  }
+}

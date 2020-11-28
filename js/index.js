@@ -1,7 +1,7 @@
-
 function windowScrollListener() {
 	$(document).on("scroll", function() {
 		panelAnimationPaused();
+		headerScrollPaused();
 	});
 
 	function panelAnimationPaused() {
@@ -27,7 +27,20 @@ function windowScrollListener() {
 		});
 	}
 
+	function headerScrollPaused() {
+		if ($(window).scrollTop() > 0) {
+			if (!$(".header_scroll").hasClass("header_scroll_paused")) {
+				$(".header_scroll").addClass("header_scroll_paused");
+			}
+		} else {
+			if ($(".header_scroll").hasClass("header_scroll_paused")) {
+				$(".header_scroll").removeClass("header_scroll_paused");
+			}
+		}
+	}
+
 	panelAnimationPaused();
+	headerScrollPaused();
 }
 
 function windowResizeListener() {

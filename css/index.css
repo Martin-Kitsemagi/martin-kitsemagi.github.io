@@ -310,6 +310,7 @@ button:focus, input:focus, textarea:focus, a:focus {
 }
 
 .page_wrapper .panel .panel_button:hover {
+  cursor: pointer;
   text-decoration: none;
   -webkit-box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
           box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
@@ -341,6 +342,7 @@ button:focus, input:focus, textarea:focus, a:focus {
 }
 
 .page_wrapper .panel .panel_button_alt:hover {
+  cursor: pointer;
   text-decoration: none;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

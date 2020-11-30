@@ -44,6 +44,21 @@ function windowScrollListener() {
 }
 
 function windowResizeListener() {
+	var window_width = $(window).width();
+
+	$(window).on("resize", function() {
+		if (window_width !== $(window).width()) {
+			window_width = $(window).width();
+
+			setHeaderHeight();
+		}
+	});
+	
+	function setHeaderHeight() {
+		$("#header").css("height", $(window).height());
+	}
+
+	setHeaderHeight();
 }
 
 function smoothScroll() {

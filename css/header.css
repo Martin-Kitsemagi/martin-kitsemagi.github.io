@@ -1,17 +1,50 @@
 .header {
+  height: 100vh;
+  margin: 0 0 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .container {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#002085), to(#2828c1));
+  background-image: linear-gradient(to bottom, #002085, #2828c1);
+  opacity: 0.5;
 }
 
 .header .header_pattern {
-  height: 47rem;
+  min-width: 1920px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: -4rem;
-  right: -27.5rem;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   pointer-events: none;
 }
 
@@ -21,7 +54,8 @@
   display: inline-block;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 4rem;
+  z-index: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   -webkit-transform: translate(-50%, 0);
@@ -66,40 +100,66 @@
           animation-play-state: paused;
 }
 
-.header .col-lg-6 {
-  height: 100vh;
-  margin: -4rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.header .header_content {
+  z-index: 1;
 }
 
-.header .header_title {
+.header .header_content span {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 2rem, 0);
+          transform: translate3d(0, 2rem, 0);
+  -webkit-animation: header_content 0.6s ease;
+          animation: header_content 0.6s ease;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header .header_content .header_title {
   max-width: 40rem;
   margin: 0 0 2.25rem 0;
-  color: #002085;
-  font-size: 2.25rem;
+  color: white;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 2.75rem;
+  line-height: 3rem;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 2rem, 0);
+          transform: translate3d(0, 2rem, 0);
+  -webkit-animation: header_content 0.6s ease;
+          animation: header_content 0.6s ease;
+  -webkit-animation-delay: 0.275s;
+          animation-delay: 0.275s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.header .header_illustration {
-  max-width: 27.5rem;
-  width: 75%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.header .header_content .header_buttons_wrapper {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 2rem, 0);
+          transform: translate3d(0, 2rem, 0);
+  -webkit-animation: header_content 0.6s ease;
+          animation: header_content 0.6s ease;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes header_content {
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes header_content {
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -108,24 +168,11 @@
     -webkit-animation: none;
             animation: none;
   }
-  .header .col-lg-6 {
-    height: 45rem;
-  }
-  .header .col-lg-6:last-child {
-    height: auto;
-    margin: 0;
-  }
 }
 
 @media (max-width: 767.98px) {
-  .header .header_title {
+  .header .header_content .header_title {
     font-size: 2rem;
     line-height: 2.5rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .header .col-lg-6 {
-    height: 40rem;
   }
 }

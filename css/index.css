@@ -239,12 +239,18 @@ button:focus, input:focus, textarea:focus, a:focus {
 }
 
 @-webkit-keyframes page_nav {
+  25% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
 
 @keyframes page_nav {
+  25% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }

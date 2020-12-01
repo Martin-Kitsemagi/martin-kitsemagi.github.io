@@ -108,8 +108,6 @@
 
 .projects .projects_wrapper .project_animation {
   opacity: 0;
-  -webkit-transform: translate3d(0, 2.5rem, 0);
-          transform: translate3d(0, 2.5rem, 0);
   -webkit-animation: project_animation 0.4s ease;
           animation: project_animation 0.4s ease;
   -webkit-animation-fill-mode: forwards;
@@ -117,6 +115,10 @@
 }
 
 @-webkit-keyframes project_animation {
+  0% {
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+            transform: translate3d(0, 2.5rem, 0);
+  }
   50% {
     opacity: 1;
   }
@@ -128,6 +130,10 @@
 }
 
 @keyframes project_animation {
+  0% {
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+            transform: translate3d(0, 2.5rem, 0);
+  }
   50% {
     opacity: 1;
   }

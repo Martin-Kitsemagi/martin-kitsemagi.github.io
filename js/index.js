@@ -28,7 +28,13 @@ function windowScrollListener() {
 	}
 
 	function headerScrollPaused() {
-		if ($(window).scrollTop() > 0) {
+		var top = 0;
+
+		if (($("#header").outerHeight() - $(window).height()) > 0) {
+			top = $("#header").outerHeight() - $(window).height();
+		}
+
+		if ($(window).scrollTop() > top) {
 			if (!$(".header_scroll").hasClass("header_scroll_paused")) {
 				$(".header_scroll").addClass("header_scroll_paused");
 			}

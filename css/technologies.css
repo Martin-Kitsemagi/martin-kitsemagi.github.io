@@ -101,7 +101,7 @@
 }
 
 .technologies .technologies_icons_nav .technologies_icons_nav_scroll:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 .technologies .technologies_icons_nav div {
@@ -118,7 +118,7 @@
 }
 
 .technologies .technologies_icons_nav div:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 @media (min-width: 767.98px) {

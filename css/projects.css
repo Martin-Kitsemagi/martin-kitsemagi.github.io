@@ -14,6 +14,7 @@
 }
 
 .projects .projects_wrapper .project {
+  width: 50rem;
   margin: 1.25rem 0 2.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +146,9 @@
 }
 
 @media (max-width: 991.98px) {
+  .projects .projects_wrapper .project {
+    width: 100%;
+  }
   .projects .projects_wrapper .project a {
     width: 50%;
   }

@@ -94,10 +94,15 @@ function pageNav() {
 }
 
 function iconsSlider() {
-	$(".technologies_icons_inner_wrapper").each(function() {
-		var icons_slider = $(this);
+	$(".technologies_icons").each(function() {
+		var icons_slider = $(this).find(".technologies_icons_inner_wrapper").first();
+
+		icons_slider.nav = $(this).siblings(".technologies_icons_nav").first();
+
+		icons_slider.icons = icons_slider.find(".technologies_icon");
 
 		icons_slider.speed_modifier = 1;
+		icons_slider.pos_left = 0;
 
 		if (/Mobi/.test(navigator.userAgent)) {
 			icons_slider.speed_modifier = 1.25;
@@ -119,21 +124,14 @@ function iconsSlider() {
 			if (icons_slider.is_mousedown === true) {
 				icons_slider.is_mousedown = false;
 
-				var icons_slider_position_left = icons_slider.position().left;
+				if (icons_slider.pos_left > 0 || (icons_slider.pos_left + icons_slider.outerWidth()) < $(".container").outerWidth()) {
+					setIconsSliderTransition();
 
-				if (icons_slider_position_left > 0 || (icons_slider_position_left + icons_slider.outerWidth()) < $(".container").outerWidth()) {
-					if (icons_slider_position_left > 0) {
-						icons_slider.css("transform", "translate3d(0, 0, 0)");
+					if (icons_slider.pos_left > 0) {
+						setIconsSliderPosition(0);
 					} else {
-						icons_slider.css("transform", "translate3d(" + ($(".container").outerWidth() - icons_slider.outerWidth()) + "px, 0, 0)");
+						setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
 					}
-
-					icons_slider.css("transition", "transform 0.3s ease");
-
-					icons_slider.timeout = setTimeout(function() {
-						icons_slider.css("transition", "none");
-						icons_slider.timeout = undefined;
-					}, 300);
 				}
 			}
 		});
@@ -146,12 +144,92 @@ function iconsSlider() {
 					x = event.touches[0].clientX;
 				}
 	
-				var icons_slider_position_left = icons_slider.position().left;
 				var drag_speed = (x - icons_slider.x) * icons_slider.speed_modifier;
 
-				icons_slider.css("transform", "translate3d(" + (icons_slider_position_left + drag_speed) + "px, 0, 0)");
+				setIconsSliderPosition(icons_slider.pos_left + drag_speed);
+				setIconsSliderNavScroll();
 
 				icons_slider.x = x;
+			}
+		});
+
+		function setIconsSliderPosition(pos_left) {
+			icons_slider.css("transform", "translate3d(" + pos_left + "px, 0, 0)");
+	
+			icons_slider.pos_left = pos_left;
+		}
+	
+		function setIconsSliderTransition() {
+			if (icons_slider.timeout === undefined) {
+				icons_slider.css("transition", "transform 0.3s ease");
+	
+				icons_slider.timeout = setTimeout(function() {
+					icons_slider.css("transition", "none");
+					icons_slider.timeout = undefined;
+				}, 300);
+			}
+		}
+	
+		function setIconsSliderNavScroll() {
+			if (icons_slider.nav !== undefined) {
+				if (icons_slider.pos_left >= 0) {
+					icons_slider.nav.find(".technologies_icons_nav_left").removeClass("technologies_icons_nav_scroll");
+				} else if ((icons_slider.pos_left + icons_slider.outerWidth()) <= $(".container").outerWidth()) {
+					icons_slider.nav.find(".technologies_icons_nav_right").removeClass("technologies_icons_nav_scroll");
+				} else {
+					icons_slider.nav.find(".technologies_icons_nav_left, .technologies_icons_nav_right").addClass("technologies_icons_nav_scroll");
+				}
+			}
+		}
+
+		if (icons_slider.nav !== undefined) {
+			icons_slider.nav.find(".technologies_icons_nav_left").on("click", function() {
+				if (icons_slider.icons !== undefined && $(this).hasClass("technologies_icons_nav_scroll")) {
+					for (var i = icons_slider.icons.length - 1; i >= 0; i--) {
+						if ((icons_slider.pos_left + icons_slider.icons.eq(i).position().left) < 0) {
+							setIconsSliderTransition();
+							setIconsSliderPosition(-icons_slider.icons.eq(i).position().left);
+							setIconsSliderNavScroll();
+
+							break;
+						} 
+					}
+				}
+			});
+
+			icons_slider.nav.find(".technologies_icons_nav_right").on("click", function() {
+				if (icons_slider.icons !== undefined && $(this).hasClass("technologies_icons_nav_scroll")) {
+					for (var i = 0; i < icons_slider.icons.length; i++) {
+						if ((icons_slider.pos_left + icons_slider.icons.eq(i).position().left + icons_slider.icons.eq(i).outerWidth()) > $(".container").outerWidth()) {
+							setIconsSliderTransition();
+							setIconsSliderPosition(-(icons_slider.icons.eq(i).position().left + icons_slider.icons.eq(i).outerWidth() - $(".container").outerWidth()));
+							setIconsSliderNavScroll();
+
+							break;
+						} 
+					}
+				}
+			});
+		}
+
+		$(window).on("resize", function() {
+			if (icons_slider.outerWidth() > $(".container").outerWidth()) {
+				if (icons_slider.pos_left > 0 || (icons_slider.pos_left + icons_slider.outerWidth()) < $(".container").outerWidth()) {
+					if (icons_slider.pos_left > 0) {
+						setIconsSliderPosition(0);
+					} else {
+						setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
+					}
+
+					setIconsSliderNavScroll();
+				}
+			} else {
+				if (icons_slider.pos_left !== 0) {
+					setIconsSliderPosition(0);
+					
+					icons_slider.nav.find(".technologies_icons_nav_left").removeClass("technologies_icons_nav_scroll");
+					icons_slider.nav.find(".technologies_icons_nav_right").addClass("technologies_icons_nav_scroll");
+				}
 			}
 		});
 	});

@@ -1,3 +1,7 @@
+.about_me {
+  position: relative;
+}
+
 .about_me p {
   margin: 0 0 1.75rem 0;
   color: #212121;

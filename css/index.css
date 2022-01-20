@@ -307,7 +307,7 @@ button:focus, input:focus, textarea:focus, a:focus {
 }
 
 .page_wrapper .panel .panel_button {
-  padding: 0.5rem 1rem;
+  padding: 0.65rem 1.15rem;
   display: inline-block;
   background-color: #e3441c;
   color: white;
@@ -316,12 +316,8 @@ button:focus, input:focus, textarea:focus, a:focus {
   line-height: 1.5rem;
   border: none;
   border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 32, 133, 0.15);
-          box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 32, 133, 0.15);
-  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .page_wrapper .panel .panel_button i {
@@ -332,19 +328,13 @@ button:focus, input:focus, textarea:focus, a:focus {
 
 .page_wrapper .panel .panel_button:hover {
   cursor: pointer;
+  background-color: #cc2900;
   text-decoration: none;
-  -webkit-box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
-          box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .page_wrapper .panel .panel_button:focus {
+  background-color: #cc2900;
   text-decoration: none;
-  -webkit-box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
-          box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 32, 133, 0.15);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .page_wrapper .panel .panel_button_alt {
@@ -356,23 +346,19 @@ button:focus, input:focus, textarea:focus, a:focus {
   font-weight: 700;
   line-height: 1.5rem;
   border: none;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .page_wrapper .panel .panel_button_alt:hover {
   cursor: pointer;
+  color: #cc2900;
   text-decoration: none;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .page_wrapper .panel .panel_button_alt:focus {
+  color: #cc2900;
   text-decoration: none;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .page_wrapper .panel .panel_animation_paused {

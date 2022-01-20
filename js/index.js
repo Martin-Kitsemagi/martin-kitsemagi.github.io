@@ -1,7 +1,6 @@
 function windowScrollListener() {
 	$(document).on("scroll", function() {
 		panelAnimationPaused();
-		headerScrollPaused();
 	});
 
 	function panelAnimationPaused() {
@@ -27,44 +26,10 @@ function windowScrollListener() {
 		});
 	}
 
-	function headerScrollPaused() {
-		var top = 0;
-
-		if (($("#header").outerHeight() - $(window).height()) > 0) {
-			top = $("#header").outerHeight() - $(window).height();
-		}
-
-		if ($(window).scrollTop() > top) {
-			if (!$(".header_scroll").hasClass("header_scroll_paused")) {
-				$(".header_scroll").addClass("header_scroll_paused");
-			}
-		} else {
-			if ($(".header_scroll").hasClass("header_scroll_paused")) {
-				$(".header_scroll").removeClass("header_scroll_paused");
-			}
-		}
-	}
-
 	panelAnimationPaused();
-	headerScrollPaused();
 }
 
 function windowResizeListener() {
-	var window_width = $(window).width();
-
-	$(window).on("resize", function() {
-		if (window_width !== $(window).width()) {
-			window_width = $(window).width();
-
-			setHeaderHeight();
-		}
-	});
-	
-	function setHeaderHeight() {
-		$("#header").css("height", $(window).height());
-	}
-
-	setHeaderHeight();
 }
 
 function smoothScroll() {
@@ -102,6 +67,7 @@ function iconsSlider() {
 		icons_slider.icons = icons_slider.find(".technologies_icon");
 
 		icons_slider.speed_modifier = 1;
+		icons_slider.speed = 0;
 		icons_slider.pos_left = 0;
 
 		if (/Mobi/.test(navigator.userAgent)) {
@@ -116,6 +82,11 @@ function iconsSlider() {
 
 				if (event.type === "touchstart") {
 					icons_slider.x = event.touches[0].clientX;
+				}
+
+				if (icons_slider.drag_interval !== undefined) {
+					clearInterval(icons_slider.drag_interval);
+					icons_slider.drag_interval = undefined;
 				}
 			}
 		});
@@ -132,6 +103,26 @@ function iconsSlider() {
 					} else {
 						setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
 					}
+				} else if (Math.abs(icons_slider.speed) > 0.5 && icons_slider.drag_interval === undefined) {
+					icons_slider.drag_interval = setInterval(function() {
+						icons_slider.speed -= icons_slider.speed * 0.1;
+						
+						if (Math.abs(icons_slider.speed) >= 0.5) {
+							if (icons_slider.pos_left + icons_slider.speed > 0) {
+								icons_slider.speed = 0;
+								setIconsSliderPosition(0);
+							} else if (icons_slider.pos_left + icons_slider.outerWidth() + icons_slider.speed < $(".container").outerWidth()) {
+								icons_slider.speed = 0;
+								setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
+							} else {
+								setIconsSliderPosition(icons_slider.pos_left + icons_slider.speed);
+							}
+							setIconsSliderNavScroll();
+						} else {
+							clearInterval(icons_slider.drag_interval);
+							icons_slider.drag_interval = undefined;
+						}
+					}, 1000 / 60)
 				}
 			}
 		});
@@ -143,8 +134,10 @@ function iconsSlider() {
 				if (event.type === "touchmove") {
 					x = event.touches[0].clientX;
 				}
-	
+
 				var drag_speed = (x - icons_slider.x) * icons_slider.speed_modifier;
+
+				icons_slider.speed = drag_speed
 
 				setIconsSliderPosition(icons_slider.pos_left + drag_speed);
 				setIconsSliderNavScroll();

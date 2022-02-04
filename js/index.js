@@ -84,10 +84,7 @@ function iconsSlider() {
 					icons_slider.x = event.touches[0].clientX;
 				}
 
-				if (icons_slider.drag_interval !== undefined) {
-					clearInterval(icons_slider.drag_interval);
-					icons_slider.drag_interval = undefined;
-				}
+				clearIconsSliderInterval();
 			}
 		});
 	
@@ -103,26 +100,24 @@ function iconsSlider() {
 					} else {
 						setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
 					}
-				} else if (Math.abs(icons_slider.speed) > 0.5 && icons_slider.drag_interval === undefined) {
+				} else if (Math.abs(icons_slider.speed) > 1.25 && icons_slider.drag_interval === undefined) {
 					icons_slider.drag_interval = setInterval(function() {
-						icons_slider.speed -= icons_slider.speed * 0.1;
+						icons_slider.speed -= icons_slider.speed * 0.125;
 						
-						if (Math.abs(icons_slider.speed) >= 0.5) {
+						if (Math.abs(icons_slider.speed) >= 1.25) {
 							if (icons_slider.pos_left + icons_slider.speed > 0) {
-								icons_slider.speed = 0;
 								setIconsSliderPosition(0);
+								clearIconsSliderInterval();
 							} else if (icons_slider.pos_left + icons_slider.outerWidth() + icons_slider.speed < $(".container").outerWidth()) {
-								icons_slider.speed = 0;
 								setIconsSliderPosition($(".container").outerWidth() - icons_slider.outerWidth());
+								clearIconsSliderInterval();
 							} else {
 								setIconsSliderPosition(icons_slider.pos_left + icons_slider.speed);
 							}
-							setIconsSliderNavScroll();
 						} else {
-							clearInterval(icons_slider.drag_interval);
-							icons_slider.drag_interval = undefined;
+							clearIconsSliderInterval();
 						}
-					}, 1000 / 60)
+					}, 1000 / 60);
 				}
 			}
 		});
@@ -152,6 +147,15 @@ function iconsSlider() {
 			icons_slider.pos_left = pos_left;
 		}
 	
+		function clearIconsSliderInterval() {
+			if (icons_slider.drag_interval !== undefined) {
+				clearInterval(icons_slider.drag_interval);
+				icons_slider.drag_interval = undefined;
+
+				setIconsSliderNavScroll();
+			}
+		}
+
 		function setIconsSliderTransition() {
 			if (icons_slider.timeout === undefined) {
 				icons_slider.css("transition", "transform 0.3s ease");
@@ -240,6 +244,20 @@ function textareaInputListener() {
 	});
 }
 
+function contactFormSubmit() {
+	$(".contact_form_submit").on("click", function() {
+		if ($(".contact_form")[0].checkValidity()) {
+			$(".contact_form")[0].submit();
+
+			$(".contact_form").find("input, textarea").val("");
+
+			return false
+		}
+
+		return true
+	});
+}
+
 function touchEventListeners() {
     $.event.special.touchstart = {
         setup: function(_, ns, handle) {
@@ -260,5 +278,6 @@ $(document).ready(function() {
 	pageNav();
 	iconsSlider();
 	textareaInputListener();
+	contactFormSubmit();
 	touchEventListeners();
 });

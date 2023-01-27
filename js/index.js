@@ -44,14 +44,10 @@ function smoothScroll() {
 
         if ($(".page_nav_overlay").hasClass("page_nav_overlay_active")) {
 			$(".page_nav_overlay").removeClass("page_nav_overlay_active");
-		} else {
-			$(".page_nav_overlay").addClass("page_nav_overlay_active");
 		}
 
 		if ($(".page_nav_alt").hasClass("page_nav_alt_active")) {
 			$(".page_nav_alt").removeClass("page_nav_alt_active");
-		} else {
-			$(".page_nav_alt").addClass("page_nav_alt_active");
 		}
     });
 }

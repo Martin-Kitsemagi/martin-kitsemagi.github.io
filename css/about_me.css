@@ -1,15 +1,176 @@
 .about_me {
-  position: relative;
+  padding: 4rem 0 8rem 0;
 }
 
-.about_me p {
-  margin: 0 0 1.75rem 0;
-  color: #212121;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.about_me p b {
-  color: #009ce9;
+.about_me .about_me_button_alt {
+  margin-top: 1rem;
+  padding: 0.75rem 1.15rem;
+  display: inline-block;
+  color: #ed0233;
   font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #ed0233;
+  border-radius: 0.35rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.about_me .about_me_button_alt i {
+  margin-left: 0.35rem;
+  position: relative;
+  left: 0.1rem;
+}
+
+.about_me .about_me_button_alt:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.about_me .icons {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about_me .icons div {
+  width: 5.35rem;
+  height: 5.35rem;
+  margin: 0.25rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.35rem;
+}
+
+.about_me .icons div i {
+  font-size: 3.75rem;
+  line-height: 5.35rem;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.about_me .icons div span {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 125%;
+  left: 0;
+  z-index: 1;
+  word-wrap: break-word;
+  vertical-align: middle;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 500;
+  opacity: 0.15;
+  -webkit-transition: all 0.225s ease-out;
+  transition: all 0.225s ease-out;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.about_me .icons div:hover {
+  cursor: default;
+}
+
+.about_me .icons div:hover i {
+  opacity: 0;
+}
+
+.about_me .icons div:hover span {
+  top: 50%;
+  opacity: 1;
+}
+
+.about_me .icons .html_icon {
+  background-color: rgba(227, 68, 28, 0.1);
+  color: #e3441c;
+}
+
+.about_me .icons .css_icon {
+  background-color: rgba(14, 78, 225, 0.1);
+  color: #0e4ee1;
+}
+
+.about_me .icons .js_icon {
+  background-color: rgba(235, 206, 20, 0.1);
+  color: #ebce14;
+}
+
+.about_me .icons .sass_icon {
+  background-color: rgba(187, 62, 123, 0.1);
+  color: #bb3e7b;
+}
+
+.about_me .icons .bootstrap_icon {
+  background-color: rgba(119, 84, 171, 0.1);
+  color: #7754ab;
+}
+
+.about_me .icons .wordpress_icon {
+  background-color: rgba(0, 120, 161, 0.1);
+  color: #0078a1;
+}
+
+.about_me .icons .php_icon {
+  background-color: rgba(85, 89, 155, 0.1);
+  color: #55599b;
+}
+
+.about_me .icons .sql_icon {
+  background-color: rgba(231, 136, 12, 0.1);
+  color: #e7880c;
+}
+
+.about_me .icons_text {
+  width: auto;
+  position: relative;
+  top: 2.5rem;
+  left: 7rem;
+}
+
+.about_me .icons_text span {
+  color: #2828c1;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.45rem;
+}
+
+.about_me .icons_text svg {
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  top: -1.35rem;
+  left: -0.5rem;
+  fill: #2828c1;
+  -webkit-transform: scaleX(-1) rotate(-90deg);
+          transform: scaleX(-1) rotate(-90deg);
+}
+
+@media (max-width: 1199px) {
+  .about_me .icons_text {
+    left: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .about_me .icons {
+    margin-top: 6rem;
+  }
+  .about_me .icons_text {
+    left: 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_me .icons {
+    width: 100%;
+    text-align: left;
+  }
+  .about_me .icons_text {
+    left: 2rem;
+  }
 }

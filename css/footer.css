@@ -1,73 +1,70 @@
-.footer {
-  position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#002085), to(#2828c1));
-  background-image: linear-gradient(to right, #002085, #2828c1);
+footer {
+  padding: 4rem 0 2rem 0;
 }
 
-.footer .container .row {
-  margin: inherit;
+footer h2 {
+  margin-bottom: 1.5rem;
+  color: #2828c1;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-.footer .container .row div {
-  padding: 0;
-}
-
-.footer .footer_logo {
-  color: white;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 2.25rem;
-}
-
-.footer .footer_logo:hover {
+footer a {
+  color: #2828c1;
+  font-size: 0.9rem;
+  font-weight: 500;
   text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.footer .footer_logo:focus {
-  text-decoration: none;
+footer a i {
+  margin-right: 0.35rem;
 }
 
-.footer p {
-  color: white;
-  font-size: 1rem;
-  line-height: 2.25rem;
+footer a:hover {
+  cursor: pointer;
+  color: #ed0233;
 }
 
-.footer p i {
-  margin: 0 0.5rem;
-  color: #009ce9;
-  font-size: 1rem;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+footer p {
+  font-size: 0.9rem;
 }
 
-.footer p i:hover {
-  color: #e3441c;
+footer p i {
+  margin-right: 0.35rem;
 }
 
-.footer .footer_bottom {
+footer span {
   width: 100%;
-  margin: 1.25rem 0 0 0;
-  padding: 1rem 0 0 0;
-  position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  text-align: center;
-}
-
-.footer .footer_bottom span {
-  color: white;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  display: inline-block;
   font-size: 0.85rem;
-  line-height: 1.25rem;
+  text-align: center;
+  border-top: 1px solid rgba(114, 114, 114, 0.15);
 }
 
-@media (max-width: 767.98px) {
-  .footer .container .row div {
-    margin: 0 0 0.5rem 0;
+@media (max-width: 1199px) {
+  footer .col-lg-3 {
+    width: 33%;
   }
-  .footer .container .row div:last-child i {
-    margin: 0 0.5rem 0 0;
+}
+
+@media (max-width: 991px) {
+  footer .col-lg-3 {
+    width: 50%;
   }
-  .footer .footer_bottom {
-    text-align: left;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 1.25rem 0 4rem 0;
+  }
+  footer .col-lg-3 {
+    width: 100%;
+  }
+  footer h2 {
+    margin-top: 2.75rem;
   }
 }

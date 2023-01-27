@@ -4,7 +4,7 @@
 	<title>Martin Kitsemägi portfoolio</title>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Martin Kitsemägi, vabakutseline front-end, PHP arendaja & kujundaja">
 	<meta name="keywords" content="Vabakutseline, veebiarendaja, veebilehekülgede kujundaja, veebileheküljed, front-end,
 		HTML, CSS, Javascript, Sass, Bootstrap, Wordpress, PHP, SQL">
@@ -14,319 +14,252 @@
 	
 	<link href="images/icon.png" rel="icon" type="image/png">
 	
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,500,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 	
-	<link href="css/fontawesome_free_5.9.0/css/all.min.css" rel="stylesheet" type="text/css">
-	<link href="css/bootstrap_4.3.1/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/fontawesome_free_5.9.0/css/all.min.css" rel="stylesheet" type="text/css">
 	
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/header.css" rel="stylesheet" type="text/css">
-	<link href="css/about_me.css" rel="stylesheet" type="text/css">
-	<link href="css/qualities.css" rel="stylesheet" type="text/css">
-	<link href="css/technologies.css" rel="stylesheet" type="text/css">
-	<link href="css/projects.css" rel="stylesheet" type="text/css">
-	<link href="css/contact.css" rel="stylesheet" type="text/css">
-	<link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/about_me.css" rel="stylesheet" type="text/css">
+    <link href="css/qualities.css" rel="stylesheet" type="text/css">
+    <link href="css/projects.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
 	
-	<script src="js/jquery/jquery-3.4.1.min.js" defer></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
 	<script src="js/index.js" defer></script>
 </head>
 <body>
-	<div class="page_wrapper">
-		<nav class="page_nav">
-			<div class="page_nav_overlay"></div>
+    <nav>
+        <div class="container text-center">
+            <span class="nav_log">MK</span>
 
-			<div class="container">
-				<a class="page_nav_logo" href="#header">Mk.</a>
+            <a href="#about_me">Minust</a>
+            <a href="#qualities">Oskused</a>
+            <a href="#projects">Projektid</a>
+            <a href="#contact">Kontakt</a>
 
-				<div class="page_nav_links">
-					<div class="page_nav_menu_close_button">
-						<span></span><span></span>
+            <i class="bi bi-list page_nav_menu_button"></i>
+        </div>
+    </nav>
+
+    <div class="page_nav_overlay"></div>
+    <div class="page_nav_alt">
+        <i class="bi bi-x page_nav_menu_close_button"></i>
+
+        <a href="#about_me">Minust</a>
+        <a href="#qualities">Oskused</a>
+        <a href="#projects">Projektid</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 header_text">
+                    <span class="header_span">Hei, olen Martin Kitsemägi</span>
+                    <h1 class="header_title">Vabakutseline front-end, PHP arendaja & disainer</h1>
+
+                    <div>
+						<a class="header_button" href="#projects">Vaata projekte<i class="bi bi-arrow-right"></i></a>
+						<a class="header_button_alt" href="#contact">Võta ühendust<i class="bi bi-chat-square-quote"></i></a>
 					</div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="header_animation">
+                        <span>MK</span>
+                    </div>
+                </div>
+            </row>
+        </div>
+    </header>
 
-					<a href="#about_me">Minust</a>
-					<a href="#qualities">Oskused</a>
-					<a href="#technologies">Tehnoloogiad</a>
-					<a href="#projects">Projektid</a>
-					<a href="#contact">Kontakt</a>
-				</div>
+    <div id="about_me" class="about_me">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="page_span">Minust</span>
+                    <h1 class="page_title">Arendan & kujundan responsiivseid veebilehekülgi</h1>
+                    <p>
+                        Olen lõpetanud 2016. aastal Tallinna Tehnikaülikooli informaatika erialal. Hetkel otsin tööd pisiprojektide näol vabakutselise arendajana või jäädavat tööd mõnes Eesti IT-ettevõttes.</br></br>
+                        Minu peamine fookus on <span>veebilehekülgede/kasutajaliideste</span> kujundamisel ning nende välja arendamisel. Seoses hobidega ning ülikooliga, olen teostanud mitmeid andmebaaside ja veebirakendustega seotud projekte. Püüan ennast alati arendada ja kursis olla parimate lahendustega oma valdkonnas.
+                    </p>
 
-				<div class="page_nav_menu_button">
-					<span></span><span></span><span></span>
-				</div>
-			</div>
-		</nav>
-		
-		<header id="header" class="header panel">
-			<div class="container">
-				<div class="header_content">
-					<span class="panel_subtitle">Martin Kitsemägi</span>
-					<h1 class="header_title">Vabakutseline front-end, PHP arendaja & disainer</h1>
-					<div class="header_buttons_wrapper">
-						<a class="panel_button" href="#projects">Vaata projekte<i class="fas fa-angle-right"></i></a>
-						<a class="panel_button_alt" href="#contact">Võta ühendust</a>
-					</div>
-				</div>
-			</div>
+                    <a class="about_me_button_alt" href="#contact">Vaata CV-d<i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="icons">
+                        <div class="html_icon">
+                            <i class="fab fa-html5 fa-fw"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="css_icon">
+                            <i class="fab fa-css3-alt fa-fw"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="js_icon">
+                            <i class="fab fa-js-square fa-fw"></i>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="sass_icon">
+                            <i class="fab fa-sass fa-fw"></i>
+                            <span>Sass</span>
+                        </div>
+                        <div class="bootstrap_icon">
+                            <i class="fab fa-bootstrap fa-fw"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="wordpress_icon">
+                            <i class="fab fa-wordpress-simple fa-fw"></i>
+                            <span>Wordpress</span>
+                        </div>
+                        <div class="php_icon">
+                            <i class="fab fa-php fa-fw"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="sql_icon">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
 
-			<img class="header_pattern no_text_select" src="images/pattern.svg" alt="Header_pattern">
-		</header>
+                    <div class="icons_text">
+                        <span>Tech Stack</span>
 
-		<div id="about_me" class="about_me panel">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<span class="panel_subtitle">Minust</span>
-						<h2 class="panel_title_large">Arendan & kujundan<br>responsiivseid lehekülgi</h2>
-					</div>
-					<div class="col-lg-6">
-						<p>
-							Hei, Martin siinpool. Olen lõpetanud 2016. aastal Tallinna Tehnikaülikooli informaatika erialal.
-							Hetkel otsin tööd pisiprojektide näol vabakutselise arendajana või jäädavat tööd mõnes Eesti IT-ettevõttes.
-							<br><br>
-							Minu peamine fookus on <b>veebilehekülgede/kasutajaliideste</b> kujundamisel ning nende välja arendamisel.
-							Seoses hobidega ning ülikooliga, olen teostanud mitmeid andmebaaside ja veebirakendustega seotud projekte.
-							Püüan ennast alati arendada ja kursis olla parimate lahendustega oma valdkonnas.
-						</p>
-						<a class="panel_button" href="https://www.cv.ee/CVC/5800327.html" target="_blank" rel="noopener noreferrer">Vaata CV-d<i class="fas fa-external-link-alt"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 20.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div id="qualities" class="qualities panel">
-			<div class="container">
-				<h2 class="panel_title"><span>Oskused</span></h2>
+    <div id="qualities" class="qualities">
+        <div class="container">
+            <div class="row">
+                <span class="page_span_center">Oskused</span>
+                <h1 class="page_title_center">Peamised valdkonnad millega tegelen</h1>
 
-				<div class="row">
-					<div class="col-lg-4 col-md-6">
-						<div class="quality">
-							<div class="quality_icon">
-								<i class="fas fa-code-branch"></i>
-							</div>
+                <div class="col-lg-4">
+                    <div>
+                        <i class="bi bi-braces"></i>
+                        <h2>Veebilehekülgede arendamine</h2>
+                        <p>
+                            Loon lahendusi, mis töötavad ja näevad head välja erinevates brauserites ning platvormidel.
+                        </p> 
+                        <span>Responsiivne, SEO sõbralik</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <i class="bi bi-brush-fill"></i>
+                        <h2>Kasutajaliideste kujundamine</h2>
+                        <p>
+                            Kujundan kasutajaliideseid, mida on lihtne kasutada ning mõista.
+                        </p>
+                        <span>Kasutajasõbralik, minimalistlik</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                        <h2>Jõudluse optimiseerimine</h2>
+                        <p>
+                            Hoian leheküljed müravabad ja kiired.
+                        </p>
+                        <span>Mobiilile kohandatud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-							<div class="quality_content">
-								<h3>Veebilehekülgede arendamine</h3>
-								<p>
-									Loon lahendusi, mis töötavad ja näevad head välja erinevates brauserites ning platvormidel.
-								</p>
-								<span>Responsiivne, SEO sõbralik</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="quality">
-							<div class="quality_icon">
-								<i class="fas fa-paint-brush"></i>
-							</div>
+    <div id="projects" class="projects panel_animation_paused">
+        <div class="container">
+            <div class="row">
+                <span class="page_span_center">Projektid</span>
+                <h1 class="page_title_center">Staatiliste lehekülgede näidised</h1>
 
-							<div class="quality_content">
-								<h3>Kasutajaliideste kujundamine</h3>
-								<p>
-									Kujundan kasutajaliideseid, mida on lihtne kasutada ning mõista.
-								</p>
-								<span>Kasutajasõbralik, minimalistlik</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="quality">
-							<div class="quality_icon">
-								<i class="fas fa-feather-alt"></i>
-							</div>
+                <div class="project_samples">
+                    <a href="https://martin-kitsemagi.github.io/samples/portfoolio" target="_blank">
+                        <img src="images/samples/sample_portfoolio_background.jpg" alt="portfoolio_image"/>
+                    </a>
+                    <a href="https://martin-kitsemagi.github.io/samples/kolledži_kohvik" target="_blank" rel="noreferrer">
+                        <img src="images/samples/sample_pizza_background.jpg" alt="kolledži_kohvik_image"/>
+                    </a>
+                    <a href="https://martin-kitsemagi.github.io/samples/linnuse" target="_blank">
+                        <img src="images/samples/sample_linnuse_background.jpg" alt="linnuse_image"/>
+                    </a>
+                    <a href="https://martin-kitsemagi.github.io/samples/animal_park" target="_blank">
+                        <img src="images/samples/sample_animal_park_background.jpg" alt="animal_park_image"/>
+                    </a>
+                    <a href="https://martin-kitsemagi.github.io/samples/the_cube" target="_blank">
+                        <img src="images/samples/sample_the_cube_background.jpg" alt="the_cube_image"/>
+                    </a>
+                    <a href="https://martin-kitsemagi.github.io/samples/gallery" target="_blank">
+                        <img src="images/samples/sample_gallery_background.jpg" alt="gallery_image"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-							<div class="quality_content">
-								<h3>Jõudluse optimiseerimine</h3>
-								<p>
-									Hoian leheküljed müravabad ja kiired.
-								</p>
-								<span>Mobiilile kohandatud</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <span class="page_span_center">Kontakt</span>
+                <h1 class="page_title_center">Võta minuga ühendust</h1>
 
-		<div id="technologies" class="technologies panel">
-			<div class="container">
-				<span class="panel_subtitle">Tehnoloogiad</span>
-				<h2 class="panel_title_large">Peamised tehnoloogiad mida oma projektides kasutan</h2>
+                <form class="contact_form" action="https://formspree.io/mk.webmessages@gmail.com" method="post">
+                    <div class="contact_form_input_wrapper">
+                        <label for="contact_form_email">Teie email</label>
+                        <input id="contact_form_email" type="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+                    </div>
+                    <div class="contact_form_input_wrapper">
+                        <label for="contact_form_subject">Teema</label>
+                        <input id="contact_form_subject" type="text" name="subject" required>
+                    </div>
+                    <div class="contact_form_textarea_wrapper">
+                        <label for="contact_form_message">Sõnum</label>
+                        <textarea id="contact_form_message" name="message" required></textarea>
+                    </div>
 
-				<div class="technologies_icons">
-					<div class="technologies_icons_inner_wrapper no_text_select">
-						<div class="technologies_icon">
-							<i class="fab fa-html5 fa-fw html5_icon"></i>
-							<span>HTML5</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-css3-alt fa-fw css3_icon"></i>
-							<span>CSS3</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-js-square fa-fw js_icon"></i>
-							<span>Javascript</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-sass fa-fw sass_icon"></i>
-							<span>Sass</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-bootstrap fa-fw bootstrap_icon"></i>
-							<span>Bootstrap</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-wordpress-simple fa-fw wordpress_icon"></i>
-							<span>Wordpress</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fab fa-php fa-fw php_icon"></i>
-							<span>PHP</span>
-						</div>
-						<div class="technologies_icon">
-							<i class="fas fa-database sql_icon"></i>
-							<span>SQL</span>
-						</div>
-					</div>
-				</div>
+                    <button class="contact_form_submit panel_button" type="submit">Saada<i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-				<div class="technologies_icons_nav">
-					<div class="technologies_icons_nav_left">
-						<i class="fas fa-chevron-left"></i>
-					</div>
-					<div class="technologies_icons_nav_right technologies_icons_nav_scroll">
-						<i class="fas fa-chevron-right"></i>
-					</div>
-				</div>
-			</div>
-		</div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>Github</h2>
+                    <a href="https://github.com/Martin-Kitsemagi/martin-kitsemagi.github.io/tree/master/samples" target="_blank" rel="noreferrer"><i class="bi bi-github"></i>Projektide näidiste lähtekood</a>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Kontakt</h2>
 
-		<div id="projects" class="projects panel">
-			<div class="container">
-				<h2 class="panel_title"><span>Projektid</span></h2>
+                    <p><i class="bi bi-envelope"></i>martin.kitsemagi@gmail.com</p>
+                </div>
+                <div class="col-lg-3">
 
-				<div class="projects_wrapper">
-					<div class="project project_animation panel_animation_paused">
-						<a href="/samples/linnuse" target="_blank"><img src="images/samples/sample_linnuse_background.jpg" alt="Linnuse_background"></a>
-						<div class="project_content_wrapper">
-							<div class="project_content">
-								<h3>Linnuse kohvik</h3>
-								<p>Kohviku/restorani jaoks sobiv veebilehekülg.</p>
-								<a class="panel_button" href="/samples/linnuse" target="_blank">Külasta lehekülge<i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="col-lg-3">
 
-								<div class="project_content_links">
-									<a href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/linnuse/php" target="_blank" rel="noreferrer" title="Github">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project project_animation panel_animation_paused">
-						<a href="/samples/portfoolio" target="_blank"><img src="images/samples/sample_portfoolio_background.jpg" alt="Portfoolio_background"></a>
-						<div class="project_content_wrapper">
-							<div class="project_content">
-								<h3>Fotograafi Portfoolio</h3>
-								<p>Fotograafi tutvustav veebilehekülg.</p>
-								<a class="panel_button" href="/samples/portfoolio" target="_blank">Külasta lehekülge<i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
 
-								<div class="project_content_links">
-									<a href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/portfoolio" target="_blank" rel="noreferrer" title="Github">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="projects_wrapper">
-					<div class="project project_animation panel_animation_paused">
-						<a href="/samples/the_cube" target="_blank"><img src="images/samples/sample_the_cube_background.jpg" alt="The_cube_background"></a>
-						<div class="project_content_wrapper">
-							<div class="project_content">
-								<h3>The cube</h3>
-								<p>CSS-iga loodud 3D elemente tutvustav lehekülg.</p>
-								<a class="panel_button" href="/samples/the_cube" target="_blank">Külasta lehekülge<i class="fas fa-external-link-alt"></i></a>
-
-								<div class="project_content_links">
-									<a href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/the_cube" target="_blank" rel="noreferrer" title="Github">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project project_animation panel_animation_paused">
-						<a href="/samples/animal_park" target="_blank"><img src="images/samples/sample_animal_park_background.jpg" alt="Animal_park_background"></a>
-						<div class="project_content_wrapper">
-							<div class="project_content">
-								<h3>Ursa loomapark</h3>
-								<p>Loomapargi maandumisleht.</p>
-								<a class="panel_button" href="/samples/animal_park" target="_blank">Külasta lehekülge<i class="fas fa-external-link-alt"></i></a>
-
-								<div class="project_content_links">
-									<a href="https://github.com/martin-kitsemagi/martin-kitsemagi.github.io/tree/master/samples/animal_park" target="_blank" rel="noreferrer" title="Github">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="contact" class="contact panel">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<span class="panel_subtitle">Kontakt</span>
-						<h2 class="panel_title_large">Võta minuga ühendust</h2>
-					</div>
-					<div class="col-lg-6">
-						<form class="contact_form" action="https://formspree.io/mk.webmessages@gmail.com" method="post">
-							<div class="contact_form_input_wrapper">
-								<label for="contact_form_email">Teie email</label>
-								<input id="contact_form_email" type="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
-							</div>
-							<div class="contact_form_input_wrapper">
-								<label for="contact_form_subject">Teema</label>
-								<input id="contact_form_subject" type="text" name="subject" required>
-							</div>
-							<div class="contact_form_textarea_wrapper">
-								<label for="contact_form_message">Sõnum</label>
-								<textarea id="contact_form_message" name="message" required></textarea>
-							</div>
-
-							<button class="contact_form_submit panel_button" type="submit">Saada sõnum<i class="fas fa-paper-plane"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
-
-			<img class="contact_pattern no_text_select" src="images/pattern.svg" alt="Contact_pattern">
-		</div>
-
-		<footer id="footer" class="footer panel">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 col-md-2">
-						<a class="footer_logo" href="#header">Mk.</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<p>Tehtud<i class="fas fa-coffee"></i>ja<i class="fas fa-heart"></i>Eestis</p>
-					</div>
-					<div class="col-lg-7 col-md-6">
-						<p><i class="far fa-envelope"></i><b>martin.kitsemagi@gmail.com</b></p>
-					</div>
-				</div>
-
-				<div class="footer_bottom">
-					<span>Martin Kitsemägi 2022</span>
-				</div>
-			</div>
-		</footer>
-	</div>
+            <span>Martin Kitsemägi 2023</span>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .header_text {
-  background-image: url(../images/header.svg);
+  background-image: url(../images/svg/header.svg);
   background-position: 12rem -3.5rem;
   background-repeat: no-repeat;
   background-size: 38rem auto;
@@ -189,14 +189,28 @@
 
 @media (max-width: 991px) {
   header {
-    padding: 4rem 0;
+    padding: 4rem 0 !important;
+    background-color: #2828c1;
+    border-radius: 0 0 50% 0;
+  }
+  .header_span {
+    color: #00d4ff;
+  }
+  .header_span::after {
+    background-color: #2828c1;
   }
   .header_text {
+    background-image: url(../images/svg/header2.svg);
     background-position: 10.75rem -3.25rem;
     background-size: 36rem auto;
   }
   .header_title {
+    color: #ffffff;
     font-size: 2.75rem;
+  }
+  .header_button_alt {
+    color: #ffffff;
+    border: 1px solid #ffffff;
   }
   .header_animation {
     display: none;
@@ -218,7 +232,13 @@
     padding: 4rem 0 2rem 0;
   }
   .header_button {
+    width: 11.5rem;
     margin: 0 0.5rem 1rem 0;
+    display: block;
+  }
+  .header_button_alt {
+    width: 11.5rem;
+    display: block;
   }
 }
 

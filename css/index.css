@@ -30,6 +30,7 @@ body, html {
 
 nav {
   height: 4rem;
+  margin-bottom: -1px;
   line-height: 4rem;
 }
 
@@ -130,9 +131,12 @@ p span {
 }
 
 @media (max-width: 991px) {
+  nav {
+    background-color: #2828c1;
+  }
   nav div::after {
-    background-image: none;
-    background-color: rgba(114, 114, 114, 0.15);
+    background-image: -webkit-gradient(linear, left top, right top, from(#2828c1), color-stop(#ffffff), to(#2828c1));
+    background-image: linear-gradient(to right, #2828c1, #ffffff, #2828c1);
   }
   nav a {
     display: none;
@@ -140,16 +144,16 @@ p span {
   nav span {
     display: block;
     float: left;
-    color: #2828c1;
+    color: #ffffff;
     font-size: 2.25rem;
     letter-spacing: -0.05rem;
     font-weight: 500;
-    text-shadow: 0.125rem 0.125rem 0 #ee4266;
+    text-shadow: 0.125rem 0.125rem 0 #5656dc;
   }
   nav i {
     display: block;
     float: right;
-    color: #2828c1;
+    color: #ffffff;
     font-size: 2.5rem;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;

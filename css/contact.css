@@ -3,7 +3,7 @@
 }
 
 .contact .row {
-  background-image: url(../images/contact.svg), url(../images/contact2.svg), url(../images/contact3.svg), url(../images/contact4.svg), url(../images/contact5.svg);
+  background-image: url(../images/svg/contact.svg), url(../images/svg/contact2.svg), url(../images/svg/contact3.svg), url(../images/svg/contact4.svg), url(../images/svg/contact5.svg);
   background-size: 15% 15%, 20% 20%, 20% 20%, 25% 25%, 15% 15%;
   background-position: 15% 10%, 85% 0%, 0% 65%, 55% 55%, 75% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;

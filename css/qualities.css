@@ -5,7 +5,7 @@
 
 .qualities .row {
   padding: 0 2.5rem;
-  background-image: url(../images/qualities.svg), url(../images/qualities2.svg), url(../images/qualities3.svg), url(../images/qualities4.svg), url(../images/qualities5.svg);
+  background-image: url(../images/svg/qualities.svg), url(../images/svg/qualities2.svg), url(../images/svg/qualities3.svg), url(../images/svg/qualities4.svg), url(../images/svg/qualities5.svg);
   background-size: 25% 25%, 20% 20%, 15% 15%, 20% 20%, 15% 15%;
   background-position: 0% 10%, 70% 15%, 30% 100%, 105% 65%, 35% 45%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;

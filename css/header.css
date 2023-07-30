@@ -5,6 +5,14 @@
   background-size: 38rem auto;
 }
 
+.header_text br {
+  display: none;
+}
+
+.header_text_en {
+  background-position: 4.75rem -3.5rem;
+}
+
 .header_span {
   margin-bottom: 1rem;
   display: inline-block;
@@ -166,6 +174,9 @@
     background-position: 10.75rem -2.75rem;
     background-size: 33.5rem auto;
   }
+  .header_text_en {
+    background-position: 4.5rem -2.75rem;
+  }
   .header_title {
     font-size: 2.65rem;
   }
@@ -178,6 +189,9 @@
   .header_text {
     background-position: 8.75rem -1.75rem;
     background-size: 28rem auto;
+  }
+  .header_text_en {
+    background-position: 3.35rem -1.75rem;
   }
   .header_title {
     font-size: 2.15rem;
@@ -204,6 +218,9 @@
     background-position: 10.75rem -3.25rem;
     background-size: 36rem auto;
   }
+  .header_text_en {
+    background-position: 3.85rem -3.25rem;
+  }
   .header_title {
     color: #ffffff;
     font-size: 2.75rem;
@@ -222,6 +239,9 @@
     background-position: 10rem -2.5rem;
     background-size: 32rem auto;
   }
+  .header_text_en {
+    background-position: 4rem -2.5rem;
+  }
   .header_title {
     font-size: 2.5rem;
   }
@@ -231,29 +251,28 @@
   header {
     padding: 4rem 0 2rem 0;
   }
+  .header_text {
+    background-position: -8.95rem 0.5rem;
+  }
+  .header_text br {
+    display: inline;
+  }
+  .header_text_en {
+    background-position: -8.95rem 0.5rem;
+  }
   .header_button {
     width: 11.5rem;
     margin: 0 0.5rem 1rem 0;
     display: block;
   }
+  .header_button_en {
+    width: 13rem;
+  }
   .header_button_alt {
     width: 11.5rem;
     display: block;
   }
-}
-
-@media (max-width: 538px) {
-  .header_text {
-    background-position: -8.95rem 0.5rem;
-    background-size: 32rem auto;
-  }
-  .header_title {
-    padding-right: 6rem;
-  }
-}
-
-@media (max-width: 448px) {
-  .header_title {
-    padding-right: 0;
+  .header_button_alt_en {
+    width: 13rem;
   }
 }

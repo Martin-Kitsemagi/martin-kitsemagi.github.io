@@ -66,6 +66,14 @@ function pageNav() {
 			$(".page_nav_alt").addClass("page_nav_alt_active");
 		}
 	});
+
+	$(".page_nav_alt_lang_select_button").on("click", function() {
+		if ($(".page_nav_alt_lang_select").hasClass("page_nav_alt_lang_select_active")) {
+			$(".page_nav_alt_lang_select").removeClass("page_nav_alt_lang_select_active");
+		} else {
+			$(".page_nav_alt_lang_select").addClass("page_nav_alt_lang_select_active");
+		}
+	});	
 }
 
 function textareaInputListener() {

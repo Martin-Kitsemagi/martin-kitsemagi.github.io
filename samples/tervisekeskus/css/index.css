@@ -51,7 +51,8 @@ body, html {
 }
 
 .page_nav .page_nav_top {
-  height: 2.25rem;
+  height: auto;
+  min-height: 2.25rem;
   background-color: #1c0099;
   line-height: 2.25rem;
 }
@@ -91,7 +92,7 @@ body, html {
   height: 3rem;
   position: relative;
   display: none;
-  top: 0.75rem;
+  top: 0.45rem;
   right: 0;
   background-color: transparent;
   line-height: 3rem;
@@ -112,7 +113,7 @@ body, html {
 .page_nav .page_nav_mobile .page_nav_mobile_nav {
   width: 280px;
   height: 100vh;
-  padding: 3.25rem 1.5rem 1.5rem 1.5rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
   display: none;
   position: fixed;
   top: 0;
@@ -592,6 +593,9 @@ body, html {
   }
   .page_table {
     margin: 6rem 0 4rem 0;
+  }
+  .page_table table td::after {
+    width: 95%;
   }
   .page_contact .page_contact_map {
     padding-right: 12px;

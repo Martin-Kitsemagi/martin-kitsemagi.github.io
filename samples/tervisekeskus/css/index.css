@@ -155,7 +155,7 @@ body, html {
   color: #9b0b22;
 }
 
-.page_nav_subpage .container {
+.page_nav_subpage .container .row {
   border-bottom: 1px solid #ece8ff;
 }
 

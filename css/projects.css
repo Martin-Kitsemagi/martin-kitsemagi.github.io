@@ -3,22 +3,20 @@
 }
 
 .projects .project_samples {
-  width: 73rem;
+  width: 72rem;
   max-width: 100%;
-  margin: 2.25rem auto 0 auto;
+  margin: 3.5rem auto 0 auto;
   padding: 0;
 }
 
 .projects .project_samples a {
-  width: 16.75rem;
-  height: 16.75rem;
+  width: 22.5rem;
+  height: 26rem;
   margin: 0.75rem;
   float: left;
   position: relative;
   overflow: hidden;
-  border-radius: 1.75rem;
-  -webkit-box-shadow: 0 0.75rem 0.75rem rgba(29, 29, 126, 0.1);
-          box-shadow: 0 0.75rem 0.75rem rgba(29, 29, 126, 0.1);
+  border-radius: 0.35rem;
   opacity: 0;
   -webkit-animation: project_animation 0.5s ease-out;
           animation: project_animation 0.5s ease-out;
@@ -33,8 +31,8 @@
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.275s ease;
+  transition: all 0.275s ease;
 }
 
 .projects .project_samples a:hover img {
@@ -73,40 +71,41 @@
 }
 
 @media (max-width: 1399px) {
-  .projects .project_samples {
-    width: 100%;
-  }
   .projects .project_samples a {
-    width: 16.5rem;
-    height: 16.5rem;
-    margin: 0.65rem;
+    width: 22.25rem;
   }
 }
 
 @media (max-width: 1199px) {
+  .projects .project_samples {
+    width: 100%;
+  }
   .projects .project_samples a {
-    width: 14rem;
-    height: 14rem;
-    margin: 0.5rem;
+    width: 18.5rem;
+    height: 22.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .projects .project_samples a {
+    width: 21rem;
+    height: 24.5rem;
   }
 }
 
 @media (max-width: 767px) {
-  .projects .project_samples {
-    text-align: center;
-  }
   .projects .project_samples a {
-    width: 15.75rem;
-    height: 15.75rem;
-    margin: 0.25rem;
-    display: inline-block;
-    float: none;
+    width: 17.75rem;
+    height: 21rem;
   }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 575px) {
   .projects .project_samples a {
-    width: 45%;
+    width: calc(50% - 0.85rem);
     height: auto;
+    margin: 0.35rem;
+    display: inline-block;
+    float: none;
   }
 }

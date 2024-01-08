@@ -2,15 +2,20 @@
   padding: 4rem 0 8rem 0;
 }
 
+.about_me .col-lg-6 {
+  padding-right: 10rem;
+}
+
 .about_me .about_me_button_alt {
   margin-top: 1rem;
   padding: 0.75rem 1.15rem;
   display: inline-block;
-  color: #ed0233;
-  font-weight: 500;
+  position: relative;
+  top: -0.75rem;
+  left: -1.15rem;
+  color: #1A9BD6;
+  font-size: 1.25rem;
   text-decoration: none;
-  border: 1px solid #ed0233;
-  border-radius: 0.35rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -23,14 +28,7 @@
 
 .about_me .about_me_button_alt:hover {
   cursor: pointer;
-  color: #ffffff;
-  background-color: #ed0233;
-}
-
-.about_me .icons {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+  color: #F5EE5D;
 }
 
 .about_me .icons div {
@@ -39,9 +37,11 @@
   margin: 0.25rem;
   display: inline-block;
   position: relative;
+  top: 0;
+  left: -0.25rem;
   overflow: hidden;
   text-align: center;
-  border-radius: 0.35rem;
+  border-radius: 0.3rem;
 }
 
 .about_me .icons div i {
@@ -61,7 +61,7 @@
   word-wrap: break-word;
   vertical-align: middle;
   color: inherit;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   line-height: 1rem;
   font-weight: 500;
   opacity: 0.15;
@@ -124,53 +124,21 @@
   color: #e7880c;
 }
 
-.about_me .icons_text {
-  width: auto;
-  position: relative;
-  top: 2.5rem;
-  left: 7rem;
-}
-
-.about_me .icons_text span {
-  color: #2828c1;
-  font-family: "Permanent Marker", cursive;
-  font-style: italic;
-  text-align: center;
-  font-size: 1.45rem;
-}
-
-.about_me .icons_text svg {
-  width: 2.75rem;
-  height: 2.75rem;
-  position: relative;
-  top: -1.35rem;
-  left: -0.5rem;
-  fill: #2828c1;
-  -webkit-transform: scaleX(-1) rotate(-90deg);
-          transform: scaleX(-1) rotate(-90deg);
+@media (max-width: 1399px) {
+  .about_me .col-lg-6 {
+    padding-right: 8rem;
+  }
 }
 
 @media (max-width: 1199px) {
-  .about_me .icons_text {
-    left: 4rem;
+  .about_me .col-lg-6 {
+    padding-right: 4rem;
   }
 }
 
 @media (max-width: 991px) {
-  .about_me .icons {
-    margin-top: 6rem;
-  }
-  .about_me .icons_text {
-    left: 8rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .about_me .icons {
-    width: 100%;
-    text-align: left;
-  }
-  .about_me .icons_text {
-    left: 2rem;
+  .about_me .col-lg-6 {
+    width: 90%;
+    padding-right: inherit;
   }
 }

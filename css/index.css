@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
@@ -13,24 +13,29 @@ body, html {
   height: auto;
   margin: 0;
   padding: 0;
-  color: #212121;
-  background-color: #ffffff;
+  position: relative;
+  color: #ffffff;
+  background-color: #06060F;
   font-size: 16px;
 }
 
 ::-moz-selection {
-  background-color: #ee4266;
-  color: #ffffff;
+  background-color: #F5EE5D;
+  color: #06060F;
 }
 
 ::selection {
-  background-color: #ee4266;
-  color: #ffffff;
+  background-color: #F5EE5D;
+  color: #06060F;
 }
 
 nav {
+  width: 100%;
   height: 4rem;
-  margin-bottom: -1px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  background-color: transparent;
   line-height: 4rem;
 }
 
@@ -38,21 +43,10 @@ nav div {
   position: relative;
 }
 
-nav div::after {
-  width: 100%;
-  height: 1px;
-  content: "";
-  display: inline-block;
-  position: relative;
-  top: -2.25rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(rgba(114, 114, 114, 0.15)), to(#ffffff));
-  background-image: linear-gradient(to right, #ffffff, rgba(114, 114, 114, 0.15), #ffffff);
-}
-
 nav a {
-  padding: 0 0.75rem;
-  color: #2828c1;
-  font-weight: 500;
+  padding: 0 1.05rem;
+  color: #ffffff;
+  font-size: 1.15rem;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -60,11 +54,20 @@ nav a {
 
 nav a:hover {
   cursor: pointer;
-  color: #ed0233;
+  color: #F5EE5D;
 }
 
-nav span {
-  display: none;
+nav .nav_logo {
+  padding: 0;
+  display: block;
+  float: left;
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+nav .nav_logo:hover {
+  cursor: pointer;
+  color: #ffffff;
 }
 
 nav i {
@@ -82,6 +85,7 @@ nav ul {
           user-select: none;
   top: 0;
   right: 0;
+  font-size: 1.15rem;
   text-transform: uppercase;
 }
 
@@ -96,15 +100,14 @@ nav ul:hover ul {
 
 nav ul li {
   padding: 0 0.75rem;
-  color: #2828c1;
-  font-weight: 500;
+  color: #ffffff;
 }
 
 nav ul li i {
   margin-right: 0.75rem;
   display: inline-block;
   position: relative;
-  top: 0.1rem;
+  top: 0.05rem;
   font-size: 1.15rem;
 }
 
@@ -116,19 +119,15 @@ nav ul ul {
   left: 0;
   z-index: 1;
   pointer-events: none;
-  border-radius: 0.35rem;
-  -webkit-box-shadow: 0 0.35rem 0.75rem rgba(29, 29, 126, 0.1);
-          box-shadow: 0 0.35rem 0.75rem rgba(29, 29, 126, 0.1);
+  background-color: #0F0F26;
+  border-radius: 0.25rem;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
 nav ul ul li {
-  border-radius: 0.35rem;
-  background-color: #ffffff;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  padding: 0.05rem;
 }
 
 nav ul ul li a {
@@ -137,12 +136,8 @@ nav ul ul li a {
   display: inline-block;
 }
 
-nav ul ul li:hover {
-  background-color: #ed0233;
-}
-
 nav ul ul li:hover a {
-  color: #ffffff;
+  color: #F5EE5D;
 }
 
 .page_nav_alt {
@@ -150,48 +145,37 @@ nav ul ul li:hover a {
 }
 
 .page_span {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: inline-block;
-  color: #ed0233;
-  font-size: 1.05rem;
-  font-weight: 500;
+  color: #1A9BD6;
+  font-size: 1.25rem;
 }
 
 .page_span_center {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   display: inline-block;
-  color: #ed0233;
+  color: #1A9BD6;
   font-size: 1.25rem;
   text-align: center;
-  font-weight: 500;
 }
 
 .page_title {
-  margin-bottom: 2rem;
-  color: #2828c1;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  font-weight: 600;
+  margin-bottom: 1.75rem;
+  color: #F5EE5D;
+  font-size: 2.25rem;
 }
 
 .page_title_center {
   width: 100%;
-  margin-bottom: 2rem;
-  color: #2828c1;
-  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+  color: #F5EE5D;
+  font-size: 2.25rem;
   text-align: center;
-  line-height: 2.25rem;
-  font-weight: 600;
 }
 
-p span {
-  padding: 0.15rem 0.35rem;
-  background-color: rgba(244, 180, 168, 0.2);
-  color: #ed0233;
-  font-size: 0.95rem;
-  font-weight: 500;
-  border-radius: 0.35rem;
+p {
+  font-size: 1.25rem;
 }
 
 .panel_animation_paused * {
@@ -209,24 +193,8 @@ p span {
 }
 
 @media (max-width: 991px) {
-  nav {
-    background-color: #2828c1;
-  }
-  nav div::after {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2828c1), color-stop(#ffffff), to(#2828c1));
-    background-image: linear-gradient(to right, #2828c1, #ffffff, #2828c1);
-  }
   nav a {
     display: none;
-  }
-  nav span {
-    display: block;
-    float: left;
-    color: #ffffff;
-    font-size: 2.25rem;
-    letter-spacing: -0.05rem;
-    font-weight: 500;
-    text-shadow: 0.125rem 0.125rem 0 #5656dc;
   }
   nav i {
     display: block;
@@ -238,7 +206,7 @@ p span {
   }
   nav i:hover {
     cursor: pointer;
-    color: #ed0233;
+    color: #F5EE5D;
   }
   nav ul {
     display: none;
@@ -251,7 +219,7 @@ p span {
     left: 0;
     z-index: 1;
     pointer-events: none;
-    background-color: rgba(33, 33, 33, 0.65);
+    background-color: rgba(3, 3, 3, 0.65);
     opacity: 0;
     -webkit-transition: opacity 0.25s ease-out;
     transition: opacity 0.25s ease-out;
@@ -260,47 +228,47 @@ p span {
     width: 65%;
     max-width: 20rem;
     height: 100%;
-    padding-top: 4rem;
+    padding-top: 6rem;
     display: block;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
-    background-color: #2828c1;
+    background-color: #0F0F26;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+    -webkit-transition: all 0.365s ease;
+    transition: all 0.365s ease;
   }
   .page_nav_alt i {
     display: block;
     position: absolute;
-    top: 0;
+    top: 1.5rem;
     left: 1.5rem;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.35rem;
     line-height: 4rem;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
   .page_nav_alt i:hover {
     cursor: pointer;
-    color: #ed0233;
+    color: #F5EE5D;
   }
   .page_nav_alt a {
     width: 100%;
-    padding: 0.5rem 2rem;
+    padding: 0.65rem 2rem;
     display: block;
     float: left;
     color: #ffffff;
-    font-weight: 500;
+    font-size: 1.25rem;
     text-decoration: none;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
   .page_nav_alt a:hover {
     cursor: pointer;
-    color: #ed0233;
+    color: #F5EE5D;
   }
   .page_nav_alt ul {
     width: 100%;
@@ -323,7 +291,7 @@ p span {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     color: #ffffff;
-    font-weight: 500;
+    font-size: 1.25rem;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -338,13 +306,13 @@ p span {
   }
   .page_nav_alt ul li:hover {
     cursor: pointer;
-    color: #ed0233;
+    color: #F5EE5D;
   }
   .page_nav_alt ul li:hover i {
-    color: #ed0233;
+    color: #F5EE5D;
   }
   .page_nav_alt ul li:hover a {
-    color: #ed0233;
+    color: #F5EE5D;
   }
   .page_nav_alt ul ul {
     height: 0;
@@ -385,7 +353,7 @@ p span {
 }
 
 @media (max-width: 767px) {
-  .page_title {
-    font-size: 1.65rem;
+  body, html {
+    font-size: 14px;
   }
 }

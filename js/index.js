@@ -97,6 +97,16 @@ function contactFormSubmit() {
 	});
 }
 
+function qualtiesAnimationDelay() {
+	var counter = -1;
+
+    $(".qualities").find("i").each(function() {
+        $(this).css({
+			"animation-delay": counter++ * 0.08 + "s"
+		});
+    });
+}
+
 function projectsAnimationDelay() {
     $(".projects").find("a").each(function() {
         $(this).css({
@@ -124,7 +134,8 @@ $(document).ready(function() {
 	smoothScroll();
 	pageNav();
 	textareaInputListener();
-    contactFormSubmit();
+	contactFormSubmit();
+	qualtiesAnimationDelay();
     projectsAnimationDelay();
 	touchEventListeners();
 });

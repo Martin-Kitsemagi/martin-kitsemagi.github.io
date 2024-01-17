@@ -192,6 +192,12 @@ p {
   }
 }
 
+@media (max-width: 1199px) {
+  .page_title br {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   nav a {
     display: none;

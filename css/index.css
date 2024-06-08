@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
 }
 
@@ -46,7 +47,9 @@ nav div {
 nav a {
   padding: 0 1.05rem;
   color: #ffffff;
-  font-size: 1.15rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -62,6 +65,7 @@ nav .nav_logo {
   display: block;
   float: left;
   color: #ffffff;
+  font-family: inherit;
   font-size: 1.75rem;
 }
 
@@ -85,7 +89,9 @@ nav ul {
           user-select: none;
   top: 0;
   right: 0;
-  font-size: 1.15rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -134,6 +140,9 @@ nav ul ul li a {
   width: 100%;
   height: 100%;
   display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 nav ul ul li:hover a {
@@ -148,7 +157,9 @@ nav ul ul li:hover a {
   margin-bottom: 1.25rem;
   display: inline-block;
   color: #1A9BD6;
-  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 500;
 }
 
 .page_span_center {
@@ -156,8 +167,10 @@ nav ul ul li:hover a {
   margin-bottom: 1.75rem;
   display: inline-block;
   color: #1A9BD6;
-  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.45rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .page_title {
@@ -175,7 +188,8 @@ nav ul ul li:hover a {
 }
 
 p {
-  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.35rem;
 }
 
 .panel_animation_paused * {
@@ -267,7 +281,9 @@ p {
     display: block;
     float: left;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
     text-decoration: none;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
@@ -297,7 +313,9 @@ p {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -337,6 +355,9 @@ p {
     padding: 0;
     display: inline-block;
     float: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
   .page_nav_overlay_active {
     opacity: 1;

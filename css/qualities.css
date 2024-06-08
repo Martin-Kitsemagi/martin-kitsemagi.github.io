@@ -50,11 +50,14 @@
 
 .qualities .col-lg-4 div p {
   margin-bottom: 2.5rem;
+  font-size: 1.25rem;
 }
 
 .qualities .col-lg-4 div span {
   color: #1A9BD6;
-  font-size: 0.95rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
 @-webkit-keyframes qualities_animation {

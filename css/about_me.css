@@ -14,7 +14,9 @@
   top: -0.75rem;
   left: -1.15rem;
   color: #1A9BD6;
-  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.165rem;
+  font-weight: 600;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -61,9 +63,9 @@
   word-wrap: break-word;
   vertical-align: middle;
   color: inherit;
-  font-size: 1.15rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.35rem;
   line-height: 1rem;
-  font-weight: 500;
   opacity: 0.15;
   -webkit-transition: all 0.225s ease-out;
   transition: all 0.225s ease-out;

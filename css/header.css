@@ -20,7 +20,8 @@
   position: relative;
   top: 1rem;
   color: #F5EE5D;
-  font-size: 1.45rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.465rem;
   opacity: 0;
   -webkit-animation: header_animation 0.5s ease-out;
           animation: header_animation 0.5s ease-out;
@@ -46,14 +47,16 @@
 }
 
 .header_button {
-  margin: -0.75rem 1rem 0 0;
+  margin: -0.9rem 1rem 0 0;
   padding: 0.75rem 1.15rem;
   display: inline-block;
   position: relative;
   top: 1rem;
   left: -1.15rem;
   color: #1A9BD6;
-  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.365rem;
+  font-weight: 600;
   text-decoration: none;
   opacity: 0;
   -webkit-transition: background-color 0.2s ease;

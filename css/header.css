@@ -122,7 +122,10 @@
 }
 @media (max-width: 575px) {
   .header {
-    background-position: calc(50% + 20rem) -8rem;
+    background-position: calc(50% + 20rem) -7rem;
+  }
+  .header .col-lg-6 {
+    margin-top: -2rem;
   }
   .header_text {
     width: 100%;

@@ -7,7 +7,6 @@ footer {
   left: 0;
   line-height: 4rem;
 }
-
 footer a {
   margin-right: 0.15rem;
   float: left;
@@ -16,19 +15,16 @@ footer a {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-
 footer a i {
   margin-right: 0.35rem;
   position: relative;
   top: -0.15rem;
   font-size: 1.25rem;
 }
-
 footer a:hover {
   cursor: pointer;
   color: #F5EE5D;
 }
-
 footer span {
   display: inline-block;
   position: absolute;
@@ -37,4 +33,24 @@ footer span {
   font-size: 1.15rem;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+@media (max-width: 575px) {
+  footer a {
+    margin: 0;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  footer a i {
+    margin: 0;
+  }
+  footer a:first-child {
+    margin-left: -0.9rem;
+  }
+  footer a:nth-child(2) {
+    margin-left: 0.9rem;
+  }
 }

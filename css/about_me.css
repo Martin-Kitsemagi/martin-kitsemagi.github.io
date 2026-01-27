@@ -107,3 +107,9 @@
     padding-right: 0.9rem;
   }
 }
+@media (max-width: 575px) {
+  .about_me .col-lg-6:last-child {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
